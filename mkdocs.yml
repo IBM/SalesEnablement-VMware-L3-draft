@@ -1,0 +1,124 @@
+# Project info
+site_name: IBM Cloud for VMware Solutions
+site_description: IBM Cloud for VMware Solutions Level 3 Demonstration Guide now with VMware as a Service
+site_author: Andrew R. Jones (andrewj@us.ibm.com)
+copyright: Copyright &copy; 2022, 2023 IBM
+
+# Repository
+repo_name:  IBM/SalesEnablement-VMware-L3-draft
+
+#repo_url: https://github.com/IBM/SalesEnablement-VMware-L3-draft
+#edit_uri: edit/master/docs
+docs_dir: docs
+
+
+nav:
+  - 'NOT READY FOR REVIEW (NRFR) - Welcome': 'index.md'
+  - 'NRFR - VMware as a Service':
+    - 'NRFR - Introduction': 'VMwaaS/Introduction.md'
+    - 'NRFR - VMwaaS - single-tenant':
+      - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
+      - 'NRFR - Managing': 
+        - 'NRFR - Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
+        - 'NRFR - Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
+        - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
+    - 'NRFR - VMwaaS - multitenant':
+      - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
+      - 'NRFR - Managing': 
+        - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
+        - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
+    - 'NRFR - Using VMwaaS': 
+      - 'NRFR - Overview': 'VMwaaS/Using/UsingIntro.md'
+      - 'NRFR - Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
+      - 'NRFR - Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
+    - 'NRFR - The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
+  - 'NRFR - VMware vCenter Server':
+    - 'NRFR - Introduction': 'VCS/Introduction.md'
+    - 'NRFR - Provisioning': 'VCS/Provisioning.md'
+    - 'NRFR - Managing': 'VCS/Managing.md'
+  - 'NRFR - VMware Cloud Foundation':
+    - 'NRFR - Introduction': 'VCF/Introduction.md'
+    - 'NRFR - Provisioning': 'VCF/Provisioning.md'
+    - 'NRFR - Managing': 'VCF/Managing.md'  
+  - 'NRFR - Next steps': 'NextSteps.md'
+  - 'NRFR - VMware Solutions Shared (OPTIONAL)':
+    - 'NRFR - Introduction': 'Shared/Introduction.md'
+    - 'NRFR - Provisioning': 'Shared/Provisioning.md'
+    - 'NRFR - Managing': 'Shared/Managing.md'
+    - 'NRFR - Hands On Access': 'Shared/HandsOn.md'
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+    - mkdocs-video
+    - macros
+    - search
+
+markdown_extensions:
+  - sane_lists
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - attr_list
+
+extra:
+  generator: false
+  supportEmail: "andrewj@us.ibm.com"
+  supportSlack: 
+    name: "#cloud-platform-demo-feedback"
+    url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
+  gitRepo: "https://github.com/IBM/SalesEnablement-VMware-L3-draft"
+  learningplan:
+    name: "IBM Cloud for VMware Solutions Level 3"
+  level2learningplan:
+    name: "IBM Cloud for VMware Solutions Sales Foundation"
+    YLurl: "https://yourlearning.ibm.com/activity/PLAN-9B285157EA97"
+    BPurl: "https://learn.ibm.com/course/view.php?id=11142"
+  offering:
+    name: "IBM Cloud for VMware Solutions"
+  guide:
+    name: "IBM Cloud for VMware Solutions - Level 3 Demonstration Guide"
+    url: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/"
+  itz:
+    account: "2326338 - ITZ-VMWARE"
+    collection: ""
+    environment: ""
+    resourceGroup: "Enablement-L3"
+    dedicated:
+      instanceName: "vcs-l3"
+      clusterName: "vcs-dv-consolidated"
+    VMwaaS:
+      siteName: "se-le-site"
+      pvdc: "se-l3-provider"
+      cluster1: "se-l3-cluster1"
+      vdc1: "se-l3-development"
+      vdc2: "se-l3-test"
+      dcgroup: "se-l3-dc-group"
+      network: "se-l3-network"
+      networkMT: "se-l3-mt-network"
+    VMwaaSmt:
+      sitename: "IBM VMwaaS Multitenant - WDC"
+      vdc: "mt-vdc"
+      
