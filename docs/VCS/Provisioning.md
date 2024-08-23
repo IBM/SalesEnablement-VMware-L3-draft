@@ -62,7 +62,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
             Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
 
-            Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>**here**</a>.
+            Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank">**here**</a>.
 
 
         === "Cyber Recovery"
@@ -83,7 +83,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
             - Caveonix RiskForesight
 
-            Learn more about the **Cyber Recovery** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank>**here**</a>.
+            Learn more about the **Cyber Recovery** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
 
 
         === "Regulated Workloads"
@@ -115,7 +115,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
             - VMware HCX
             - F5 BIG-IP
 
-            Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank>**here**</a>.
+            Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
 
 
 6. Click the **Resource Group** pull-down menu.
