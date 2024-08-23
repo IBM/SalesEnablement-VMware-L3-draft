@@ -33,9 +33,9 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 5. Explore the four (4) **Resource type** options for VCF on Classic.
 
-    The descriptions that follow are from the **About** page in the IBM Cloud portal. Read the description of each **Resource type** to learn more and understand the differences so they can be explained to clients.
+     Expand the **Resource types** section and learn the differences between each **Resource type**. The descriptions are from the **About** page in the IBM Cloud portal.
 
-    !!! Note "Resource types"
+    ??? Note "Resource types"
 
         === "Automated"       
             
