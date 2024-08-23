@@ -32,32 +32,32 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
     After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more abou the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
 5. Explore the four (4) **Resource type** options for VCF on Classic.
 
-    The descriptions that follow are from teh **About** page in the IBM Cloud portal. Read the description of each **Resource type** to learn more and understand the differences so they can be explained to clients.
+    The descriptions that follow are from the **About** page in the IBM Cloud portal. Read the description of each **Resource type** to learn more and understand the differences so they can be explained to clients.
 
     === "Automated"       
-            VMware Cloud Foundation for Classic - Automated is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three IBM Cloud bare metal servers, shared file-level storage or dedicated VMware vSAN storage, and it includes the automatic deployment and configuration of an easy to manage logical edge firewall that is powered by VMware NSX.
+            
+        VMware Cloud Foundation for Classic - Automated is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three IBM Cloud bare metal servers, shared file-level storage or dedicated VMware vSAN storage, and it includes the automatic deployment and configuration of an easy to manage logical edge firewall that is powered by VMware NSX.
 
-            The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute capacity rapidly when needed. IBM Cloud provides you with full, native root access to the VMware ESXi hosts, NSX Manager, and the centralized platform for management, vCenter Server.
+        The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute capacity rapidly when needed. IBM Cloud provides you with full, native root access to the VMware ESXi hosts, NSX Manager, and the centralized platform for management, vCenter Server.
 
-            You can move your workloads to and from the cloud without changing your apps, tools, scripts, or investing in new skills. Platform instances and expansion nodes are priced per month and they include access to IBM Support and all VMware components that comprise the service.
+        You can move your workloads to and from the cloud without changing your apps, tools, scripts, or investing in new skills. Platform instances and expansion nodes are priced per month and they include access to IBM Support and all VMware components that comprise the service.
 
-            Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank>here</a>.
+        Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank>here</a>.
 
     === "Flexible"
-        
-            Formerly VMware vSphere
+        Formerly VMware vSphere
     
-            VMware Cloud Foundation for Classic - Flexible gives you maximum flexibility to build your own IBM-hosted environment using VMware-compatible hardware and the right set of VMware components that fit your business needs and expertise.
+        VMware Cloud Foundation for Classic - Flexible gives you maximum flexibility to build your own IBM-hosted environment using VMware-compatible hardware and the right set of VMware components that fit your business needs and expertise.
 
-            You can design your hosted VMware environment any way you want: from a single ESXi server to a robust software-defined data center (SDDC) architecture. The VMware Cloud Foundation for Classic - Flexible helps you extend your on-premises VMware environment into IBM Cloud.
+        You can design your hosted VMware environment any way you want: from a single ESXi server to a robust software-defined data center (SDDC) architecture. The VMware Cloud Foundation for Classic - Flexible helps you extend your on-premises VMware environment into IBM Cloud.
 
-            VMware Cloud Foundation for Classic - Flexible lets you start as small as a single ESXi server and scale the instance by rapidly provisioning ESXi on single-tenant bare metal servers. Expand your on-premises data center capacity without sacrificing the enhanced security of dedicated infrastructure. VMware Cloud Foundation for Classic - Flexible also offers the latest native VMware encryption options at the VM-level or at the vSAN datastore-level.
+        VMware Cloud Foundation for Classic - Flexible lets you start as small as a single ESXi server and scale the instance by rapidly provisioning ESXi on single-tenant bare metal servers. Expand your on-premises data center capacity without sacrificing the enhanced security of dedicated infrastructure. VMware Cloud Foundation for Classic - Flexible also offers the latest native VMware encryption options at the VM-level or at the vSAN datastore-level.
 
-            Access the IBM-hosted VMware environment with the same level of control and visibility that you have on-premises. With full administration permissions to the VMware stack, you have total control and can continue leveraging your investment in tools, scripts, and training to manage the off-premises environment.
+        Access the IBM-hosted VMware environment with the same level of control and visibility that you have on-premises. With full administration permissions to the VMware stack, you have total control and can continue leveraging your investment in tools, scripts, and training to manage the off-premises environment.
 
-            Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
+        Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
 
-            Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>here</a>.
+        Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>here</a>.
 
 6. Click the **Resource Group** pull-down menu.
 7. Select the **{{itz.resourceGroup}}** option.
