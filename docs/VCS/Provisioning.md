@@ -7,10 +7,7 @@ Note, fields that require a text entry (e.g. service name) are pre-populated in 
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-clickthru:
-    vcsProvisioning
-
-**Click-thru demo:** <a href={{clickthru.vcsProvisioning}} target ="_blank">Provision an instance of VCF for Classic</a>
+    **Click-thru demo:** <a href={{clickthru.vcsProvisioning}} target ="_blank">Provision an instance of VCF for Classic</a>
 
 <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
 
