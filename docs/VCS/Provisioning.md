@@ -1,4 +1,4 @@
-Now it is time to provision a VMware vCenter Server (VCS) instance. Use the click-thru demonstration below to practice provisioning a VCS instance.
+Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-thru demonstration below to practice provisioning a VCF for Classic instance.
 
 Note, fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
 
@@ -7,7 +7,12 @@ Note, fields that require a text entry (e.g. service name) are pre-populated in 
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-**Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a>
+clickthru:
+    vcsProvisioning
+
+**Click-thru demo:** <a href={{clickthru.vcsProvisioning}} target ="_blank">Provision an instance of VCF for Classic</a>
+
+<!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
 3. Click the **VMware vCenter Server** tile.

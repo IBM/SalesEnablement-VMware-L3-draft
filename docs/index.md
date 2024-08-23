@@ -1,12 +1,3 @@
-<!-- !!! Warning "Maintenance outage on Thursday, January 11 starting at 1p.m. EST"
-
-    On Thursday, January 11, 2024 beginning at 1p.m. EST, one of the VMware as a Service (VMwaaS) instances (**se-le-site**) wil undergo maintenance. During this maintenance, the underlying VMware NSX-T deployment will be upgraded. This event is expected to last approximately 4 hours. The site and the 2 associated virtual data centers (se-l3-development and se-l3-test) will be unavailable during this period. This outage only affects your ability to complete the **Using VMware Cloud Director** section of this demonstration.
-
-    Once the maintenance is complete, this warning message will be removed.  
-
-    Thanks, and we appreciate your patience. -->
-
-
 !!! Note Update
 
     This Level 3 was originally written in late 2022. Since, the IBM Cloud for VMware Solutions portfolio has added several new offerings including:
@@ -22,8 +13,6 @@
     The plan is to phase out the **VMware Shared** offering in 2024/2025. Given that direction, this Level 3 has been updated to include  **VMwaaS** and **VCF** modules. The **VMware Shared** module is now optional. Not all of the videos have been updated and some will reference **VMware Shared** and **VMware Dedicated**. The Stand and Deliver requirements for IBM employees and the business partner quiz have been updated to reflect these changes. 
     
     Note, images and videos in this demonstration guide may not reflect the latest changes in the IBM Cloud portal.
-
-![type:video](./_videos/VMware L3 Welcome.mp4)
 
 Welcome to the **IBM Cloud for VMware Solutions - Level 3** course and demonstration guide! The goal is to provide IBMers and Business Partner sellers the knowledge and tools to demonstrate the **IBM Cloud for VMware Solutions** offerings.
 
