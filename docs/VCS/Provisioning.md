@@ -44,7 +44,8 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
             You can move your workloads to and from the cloud without changing your apps, tools, scripts, or investing in new skills. Platform instances and expansion nodes are priced per month and they include access to IBM Support and all VMware components that comprise the service.
 
-            Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank>here</a>.
+            Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank">**here**</a>.
+
 
         === "Flexible"
         
@@ -60,7 +61,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
             Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
 
-            Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>here</a>.
+            Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>**here**</a>.
 
 6. Click the **Resource Group** pull-down menu.
 7. Select the **{{itz.resourceGroup}}** option.
