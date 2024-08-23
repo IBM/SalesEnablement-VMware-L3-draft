@@ -29,7 +29,8 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
     
         The VMware licensing model has changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.
     
-    After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more abou the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
+    After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more about the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
+
 5. Explore the four (4) **Resource type** options for VCF on Classic.
 
     The descriptions that follow are from the **About** page in the IBM Cloud portal. Read the description of each **Resource type** to learn more and understand the differences so they can be explained to clients.
@@ -63,10 +64,61 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
             Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>**here**</a>.
 
+        === "Cyber Recovery"
+
+            The value of data is increasing exponentially. Protecting your organization starts with protecting critical data against threats, including ransomware and other sophisticated cyberthreats. Regardless of the industry, geography, or size, every organization is data-driven today, which makes data the currency of the internet economy and therefore a valuable resource and asset.
+
+            The modern threat of cyberattacks and the importance of maintaining the confidentiality, availability, and integrity of data beyond backup and disaster recovery requires a modern IBM Cloud solution that is coupled with advanced offerings in the VMware environment to protect your vital data and systems.
+
+            The Cyber Recovery offering on IBM Cloud can serve as part of your overall cyber resilience strategy, as the IBM advanced automation enables you to increase business agility, accelerate time to market, improve cloud economics, and reduce business risk.
+
+            Included services
+
+            - Veeam with Linux hardened repository
+            - Juniper vSRX
+            - FortiGate Virtual Appliance
+
+            Recommended services
+
+            - Caveonix RiskForesight
+
+            Learn more about the **Cyber Recovery** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank>**here**</a>.
+
+        === "Regulated Workloads"
+
+            With the ever increasing threat of cybersecurity breaches and the challenges that come up when you navigate a changing complex regulatory landscape, financial services companies need a solution to help them meet their security requirements and compliance readiness more quickly.
+
+            IBM Cloud for VMware Regulated Workload solution is built on IBM's industry-leading experience in financial services industry and also on partnerships with three major global banks. The foundation of the solution starts with IBM's unique policy controls framework that feeds into the solution's secure-by-default reference architecture and a zero-trust security model.
+
+            IBM's advanced automation deploys the standardized architecture with the full VMware Software Defined Data Center (SDDC) stack on single-tenant bare metal servers. It also includes VMware vSphere 7 and NSX-T 3, dedicated vSAN storage, and a perimeter edge cluster for extra protection. All hosts are deployed with private-only ports that are enabled on the physical NICs and the network segmentation enables privileged user separation of duties enforcement. All together, this solution provides a new level of compute, networking, and workload isolation.
+
+            The deployment of additional market-leading services helps financial services companies demonstrate regulatory compliance faster and makes it easier and more efficient to maintain compliance readiness.
+
+            Service prerequisites
+
+            - Hyper Protect Crypto Services
+            - KMIP for VMware
+            - Direct Link Dedicated
+
+            Included services
+
+            - Veeam 12
+            - Caveonix RiskForesight
+            - VMware Aria Log Insight
+            - Juniper vSRX
+            - FortiGate Virtual Appliance
+
+            Optional services
+
+            - VMware HCX
+            - F5 BIG-IP
+
+            Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank>**here**</a>.
+
 6. Click the **Resource Group** pull-down menu.
 7. Select the **{{itz.resourceGroup}}** option.
 
-    VCS supports multisite vCenter Server instances. In this demonstration, only a primary instance is provisioned. Learn more about multisite vCenter instances <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite" target="_blank">here</a>.
+    VCS supports multisite vCenter Server instances. In this demonstration, only a primary instance is provisioned. Learn more about multisite vCenter instances <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview" target="_blank">here</a>.
 
 8. Click **Licensing** in the left hand menu.
 
