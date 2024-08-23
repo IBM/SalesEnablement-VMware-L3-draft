@@ -45,6 +45,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
         Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank>here</a>.
 
     === "Flexible"
+        
         Formerly VMware vSphere
     
         VMware Cloud Foundation for Classic - Flexible gives you maximum flexibility to build your own IBM-hosted environment using VMware-compatible hardware and the right set of VMware components that fit your business needs and expertise.
