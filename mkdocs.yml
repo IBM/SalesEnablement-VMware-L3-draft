@@ -82,7 +82,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - attr_list
-
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 extra:
   generator: false
   supportEmail: "andrewj@us.ibm.com"

@@ -1,6 +1,16 @@
 Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-thru demonstration below to practice provisioning a VCF for Classic instance.
 
-Note, fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
+!!! Important "About the IBM Technology Zone (ITZ) environment"
+
+    The steps that follow are specific to the provision process of VCF for Classic as of August 2024. 
+
+    The steps can be used in the provided click through demonstration. 
+    
+    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until step XXX. If using the IBM Cloud portal and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do NOT have permission to provision or modify existing resources. However, using the live IBM Cloud portal in this manner can be leveraged in a "baking show" style demonstration. Instead of clicking **Create**, return to the VCF for Classic resources page in the Portal to show the already provisioned instance, and continue to demonstrate the management capabilities of VCF on Classic.
+
+    If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!
+
+Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
 
 !!! tip
     Not sure where to click or what to do next? Simply click anywhere on the screen and the spot to click next will be highlighted.
@@ -12,138 +22,162 @@ Note, fields that require a text entry (e.g. service name) are pre-populated in 
 <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
-3. Click the **VMware vCenter Server** tile.
+3. Click the **VMware Cloud Foundation (VCF) for Classic** tile.
+4. Click the **Information** dialog.
 
-??? question "BP quiz question"
-    Take note of the VMware vSphere version.
+    The message states:
+    
+        The VMware licensing model has changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.
+    
+    After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more abou the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
+5. Explore the four (4) **Resource type** options for VCF on Classic.
 
-4. Click in the **Instance name** text entry field.
+    The descriptions that follow are from teh **About** page in the IBM Cloud portal. Read the description of each **Resource type** to learn more and understand the differences so they can be explained to clients.
 
-The Instance name field will automatically change to {{itz.dedicated.instanceName}}. The IBM Cloud portal provides the ability to provision a new instance based on a previously saved template.
+    === "Automated"
+        VMware Cloud Foundation for Classic - Automated is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three IBM Cloud bare metal servers, shared file-level storage or dedicated VMware vSAN storage, and it includes the automatic deployment and configuration of an easy to manage logical edge firewall that is powered by VMware NSX.
 
-5. Click the **Resource Group** pull-down menu.
-6. Select the **{{itz.resourceGroup}}** option.
+        The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute capacity rapidly when needed. IBM Cloud provides you with full, native root access to the VMware ESXi hosts, NSX Manager, and the centralized platform for management, vCenter Server.
 
-VCS supports multisite vCenter Server instances. In this demonstration, only a primary instance is provisioned. Learn more about multisite vCenter instances <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite" target="_blank">here</a>.
+        You can move your workloads to and from the cloud without changing your apps, tools, scripts, or investing in new skills. Platform instances and expansion nodes are priced per month and they include access to IBM Support and all VMware components that comprise the service.
 
-7. Click **Licensing** in the left hand menu.
+        Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank>here</a>.
 
-Learn more about the licensing options <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings" target="_blank">here</a>.
+    === "Flexible"
+        Formerly VMware vSphere
+    
+        VMware Cloud Foundation for Classic - Flexible gives you maximum flexibility to build your own IBM-hosted environment using VMware-compatible hardware and the right set of VMware components that fit your business needs and expertise.
 
-??? question "BP quiz question"
-    Take note of the 4 NSX license options.
+        You can design your hosted VMware environment any way you want: from a single ESXi server to a robust software-defined data center (SDDC) architecture. The VMware Cloud Foundation for Classic - Flexible helps you extend your on-premises VMware environment into IBM Cloud.
 
-8. Under the **NSX** section, click the pull-down menu that currently shows **Data Center SP Professional**.
-9. Select the **Data Center SP Advanced** option.
+        VMware Cloud Foundation for Classic - Flexible lets you start as small as a single ESXi server and scale the instance by rapidly provisioning ESXi on single-tenant bare metal servers. Expand your on-premises data center capacity without sacrificing the enhanced security of dedicated infrastructure. VMware Cloud Foundation for Classic - Flexible also offers the latest native VMware encryption options at the VM-level or at the vSAN datastore-level.
 
-In this deployment, a single **Consolidated** cluster will be used. **Consolidated** clusters are used for both the management components of the VCS deployment as well as client workloads. This is typically fine for small deployments, and will potentially save the client some money. However, for larger deployments with varying performance requirements for workloads, separating the management cluster from other workload clusters is the preferred architecture. Refer to the documentation for more details on management and workload clusters <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-consoli" target="_blank">here</a>.
+        Access the IBM-hosted VMware environment with the same level of control and visibility that you have on-premises. With full administration permissions to the VMware stack, you have total control and can continue leveraging your investment in tools, scripts, and training to manage the off-premises environment.
 
-Later the other options for to provision dedicated **Workload** and **Edge services** clusters will be explored, but for this environment a single **Consolidated** cluster is used.
+        Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
 
-10. Under **Data center location**, click the **Geography** pull-down menu that currently shows **NA South**.
+        Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>here</a>.
 
-Notice, VCS instances can be deployed in many of the IBM Cloud data centers located around the world. Typically, data centers are selected based upon geographic location either for data sovereignty and/or proximity reasons. However, it is also important to note that not all the IBM Cloud data centers have the same capabilities. Consult the **IBM Cloud data center availability** section of the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning" target="_blank">here</a>.
+6. Click the **Resource Group** pull-down menu.
+7. Select the **{{itz.resourceGroup}}** option.
 
-11. Select the **NA West** option.
-12. Select the **SJC04** data center option.
+    VCS supports multisite vCenter Server instances. In this demonstration, only a primary instance is provisioned. Learn more about multisite vCenter instances <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite" target="_blank">here</a>.
 
-Next, a hardware configuration for the bare-metal servers needs to be specified. VCS can be provisioned on many different hardware configurations, including SAP certified hardware.
+8. Click **Licensing** in the left hand menu.
 
-13. Click the **Dual Intel Xeon Silver 4210** radio button in the **CPU model** table.
-14. Click the **RAM** pull-down menu that currently shows **768 GB**.
-15. Select the **128 GB** option.
-16. Click the **Include a separate, additional workload cluster** checkbox.
+    Learn more about the licensing options <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings" target="_blank">here</a>.
 
-Notice the form expands to allow a new hardware configuration to be specified for a separate **Workload** cluster just like for the **Consolidated** cluster. If a client desires to separate their workload cluster from the management cluster, this option should be selected. Often clients will opt for multiple workload cluster based upon the CPU, memory, and storage requirements of the workloads.
+9.  Under the **NSX** section, click the pull-down menu that currently shows **Data Center SP Professional**.
+10. Select the **Data Center SP Advanced** option.
 
-17. Click the **Include a separate, additional workload cluster.** checkbox again to **disable** the separate **Workload cluster**.
-18. Click the **Edge services cluster** checkbox.
+    In this deployment, a single **Consolidated** cluster will be used. **Consolidated** clusters are used for both the management components of the VCS deployment as well as client workloads. This is typically fine for small deployments, and will potentially save the client some money. However, for larger deployments with varying performance requirements for workloads, separating the management cluster from other workload clusters is the preferred architecture. Refer to the documentation for more details on management and workload clusters <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-consoli" target="_blank">here</a>.
 
-A dedicated **Edge services** cluster is often desirable for large deployments that require additional separation of the edge services and custom firewall components. Notice the hardware options for the **Edge services** cluster are fewer than for the **Consolidate** and **Workload** clusters.
+    Later the other options for to provision dedicated **Workload** and **Edge services** clusters will be explored, but for this environment a single **Consolidated** cluster is used.
 
-19. Click the **Edge services cluster** checkbox again to **disable** the separate **Edge services cluster**.
-20. Click the **Domain name** text entry field under the **Network interface** section.
+11. Under **Data center location**, click the **Geography** pull-down menu that currently shows **NA South**.
 
-Network planning for any VCS deployment is critical. Clients are expected to make informed decisions when provisioning their VCS environment and when specifying network configuration options. More planning information is available in the VCS documentation starting <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver" target="_blank">here</a>.
+    Notice, VCS instances can be deployed in many of the IBM Cloud data centers located around the world. Typically, data centers are selected based upon geographic location either for data sovereignty and/or proximity reasons. However, it is also important to note that not all the IBM Cloud data centers have the same capabilities. Consult the **IBM Cloud data center availability** section of the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning" target="_blank">here</a>.
 
-A valid **Domain name** needs to be specified for the VCS deployment. The Domain name field will automatically change to **myroot.mydomain.com** for this environment. Notice how both the **Hostname prefix** and **Domain name** fields are used to specify the complete hostnames for the bare-metal servers. The **Configure host names individually** checkbox can be used for clients that desire to specify hostnames individually.
+12. Select the **NA West** option.
+13. Select the **SJC04** data center option.
 
-21. Click the **Add-on services** option in left hand menu.
+    Next, a hardware configuration for the bare-metal servers needs to be specified. VCS can be provisioned on many different hardware configurations, including SAP certified hardware.
 
-When ordering a VCS instances, clients can also include add-on services.
+14. Click the **Dual Intel Xeon Silver 4210** radio button in the **CPU model** table.
+15. Click the **RAM** pull-down menu that currently shows **768 GB**.
+16. Select the **128 GB** option.
+17. Click the **Include a separate, additional workload cluster** checkbox.
 
-22. Click the **Edit** link in the **Veeam 11** tile under **Recommended services**.
+    Notice the form expands to allow a new hardware configuration to be specified for a separate **Workload** cluster just like for the **Consolidated** cluster. If a client desires to separate their workload cluster from the management cluster, this option should be selected. Often clients will opt for multiple workload cluster based upon the CPU, memory, and storage requirements of the workloads.
 
-Veeam on IBM Cloud seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM
+18. Click the **Include a separate, additional workload cluster.** checkbox again to **disable** the separate **Workload cluster**.
+19. Click the **Edge services cluster** checkbox.
 
-23. Click the **Name** text entry field in the **Configure Veeam** dialog.
+    A dedicated **Edge services** cluster is often desirable for large deployments that require additional separation of the edge services and custom firewall components. Notice the hardware options for the **Edge services** cluster are fewer than for the **Consolidate** and **Workload** clusters.
 
-The **Name** field will automatically change to **veeam-l3**.
+20. Click the **Edge services cluster** checkbox again to **disable** the separate **Edge services cluster**.
+21. Click the **Domain name** text entry field under the **Network interface** section.
 
-In the next steps, specify the size and performance of the storage to be used by Veeam. More information on Veeam capacity planning can be found <a href="https://helpcenter.veeam.com/archive/one/100/reporter/capacity_planning_for_repositories.html" target="_blank">here</a>.
+    Network planning for any VCS deployment is critical. Clients are expected to make informed decisions when provisioning their VCS environment and when specifying network configuration options. More planning information is available in the VCS documentation starting <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver" target="_blank">here</a>.
 
-24. Click the **Storage size** pull-down menu that currently shows **4000 GB**.
-25. Select the **2000 GB** option.
-26. Click the **Storage performance** pull-down menu that currently shows **0.25 IOPS/GB**.
-27. Select the **0.25 IOPS/GB** option.
-28. Click **Save**.
-29. Click the **Edit** link in the **Caveonix RiskForesight 4.0.0** add-on services tile.
+    A valid **Domain name** needs to be specified for the VCS deployment. The Domain name field will automatically change to **myroot.mydomain.com** for this environment. Notice how both the **Hostname prefix** and **Domain name** fields are used to specify the complete hostnames for the bare-metal servers. The **Configure host names individually** checkbox can be used for clients that desire to specify hostnames individually.
 
-The Caveonix RiskForesight™ service can help to manage cyber risk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. Learn more about Caveonix <a href="" target="_blank">here</a>.
+22. Click the **Add-on services** option in left hand menu.
 
-30. Click **Cancel**.
-31. Click the toggle switch in the **Caveonix RiskForesight 4.0.0** add-on services tile to disable Caveonix.
-32. Click the **Business continuity and migration** pull-down menu.
+    When ordering a VCS instances, clients can also include add-on services.
 
-The VMware HCX service extends the networks of on-premises data centers into IBM Cloud, and it helps migrate virtual machines (VMs) to and from IBM Cloud without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. Clients can modernize their VMware environment without the need to refactor or modify existing applications, as HCX enables a seamless transformation. With HCX, clients can bring their IP subnet ranges into IBM Cloud while ensuring the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. Learn more about HCX <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations" target="_blank">here</a>.
+23. Click the **Edit** link in the **Veeam 11** tile under **Recommended services**.
 
-The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in VMware virtual environments on IBM Cloud. Learn more about Zerto <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr" target="_blank">here</a>.
+    Veeam on IBM Cloud seamlessly integrates directly with your VMware hypervisors to help your enterprise achieve high availability. This service provides recovery points and time objectives for your applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM
 
-33. Click the **Business continuity and migration** pull-down menu again.
-34. Click the **Security and compliance** pull-down menu.
+24. Click the **Name** text entry field in the **Configure Veeam** dialog.
 
-The Entrust CloudControl service (formerly known as HyTrust CloudControl) enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing. Learn more about Entrust CloudControl <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations" target="_blank">here</a>.
+    The **Name** field will automatically change to **veeam-l3**.
 
-The F5 BIG-IP service (F5 BIG-IP Virtual Edition) provides intelligent layer 4 thru layer 7 load balancing and traffic management services at a local and global scale, provides robust network and web application firewall protection, and secure and federated application access. Learn more about F5 BIG-IP <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations" target="_blank">here</a>.
+    In the next steps, specify the size and performance of the storage to be used by Veeam. More information on Veeam capacity planning can be found <a href="https://helpcenter.veeam.com/archive/one/100/reporter/capacity_planning_for_repositories.html" target="_blank">here</a>.
 
-The FortiGate Virtual Appliance service deploys a pair of FortiGate Virtual Appliances to a VCS environment, which can help reduce risk by implementing critical security controls within virtual infrastructure. Learn more about FortiGate Virtual Appliance <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations" target="_blank">here</a>.
+25. Click the **Storage size** pull-down menu that currently shows **4000 GB**.
+26. Select the **2000 GB** option.
+27. Click the **Storage performance** pull-down menu that currently shows **0.25 IOPS/GB**.
+28. Select the **0.25 IOPS/GB** option.
+29. Click **Save**.
+30. Click the **Edit** link in the **Caveonix RiskForesight 4.0.0** add-on services tile.
 
-Juniper vSRX is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere environment. Learn more about Juniper vSRX <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview" target="_blank">here</a>.
+    The Caveonix RiskForesight™ service can help to manage cyber risk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. Learn more about Caveonix <a href="" target="_blank">here</a>.
 
-35. Click the **Security and compliance** pull-down menu again.
-36. Click the **Transformation and modernization of VMware applications** pull-down menu.
+31. Click **Cancel**.
+32. Click the toggle switch in the **Caveonix RiskForesight 4.0.0** add-on services tile to disable Caveonix.
+33. Click the **Business continuity and migration** pull-down menu.
 
-The Red Hat OpenShift for VMware service deploys a Red Hat OpenShift cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The Red Hat OpenShift components are deployed as virtual machines (VMs) or appliances by using VMware NSX software-defined networking. Learn more about Red Hat OpenShift for VMware <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview" target="_blank">here</a>.
+    The VMware HCX service extends the networks of on-premises data centers into IBM Cloud, and it helps migrate virtual machines (VMs) to and from IBM Cloud without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. Clients can modernize their VMware environment without the need to refactor or modify existing applications, as HCX enables a seamless transformation. With HCX, clients can bring their IP subnet ranges into IBM Cloud while ensuring the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. Learn more about HCX <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations" target="_blank">here</a>.
 
-37. Click the **Transformation and modernization of VMware applications** pull-down menu again.
-38. Click the **Management tools** pull-down menu.
+    The Zerto service integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in VMware virtual environments on IBM Cloud. Learn more about Zerto <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr" target="_blank">here</a>.
 
-The vRealize Operations and vRealize Log Insight services deploy the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools. These tools help clients operate and monitor the performance, health, and capacity of their IBM-hosted, dedicated VMware environment. The service also includes vRLI to help troubleshoot issues by using log files more quickly. Learn more about VMware vRealize Operations and Log Insight <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview" target="_blank">here</a>.
+34. Click the **Business continuity and migration** pull-down menu again.
+35. Click the **Security and compliance** pull-down menu.
 
-39. Click the **Management tools** pull-down menu again.
-40. Click the **I understand that the account listed below will be charged for infrastructure** checkbox.
-41. Click the **I have read and agreed to the third-party service agreements listed below** checkbox.
-42. Click **Create**.
+    The Entrust CloudControl service (formerly known as HyTrust CloudControl) enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing. Learn more about Entrust CloudControl <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations" target="_blank">here</a>.
 
-Notice the messages being displayed. The status of the provisioning process can be observed.
+    The F5 BIG-IP service (F5 BIG-IP Virtual Edition) provides intelligent layer 4 thru layer 7 load balancing and traffic management services at a local and global scale, provides robust network and web application firewall protection, and secure and federated application access. Learn more about F5 BIG-IP <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations" target="_blank">here</a>.
 
-43. Click **Resources** in left hand menu.
-44. Click **vCenter Server** under **Resources** in the left hand menu.
-45. Click the **{{itz.dedicated.instanceName}}** in the table.
+    The FortiGate Virtual Appliance service deploys a pair of FortiGate Virtual Appliances to a VCS environment, which can help reduce risk by implementing critical security controls within virtual infrastructure. Learn more about FortiGate Virtual Appliance <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations" target="_blank">here</a>.
 
-Notice the **Creating** status at the top of the screen by the instance name.
+    Juniper vSRX is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere environment. Learn more about Juniper vSRX <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview" target="_blank">here</a>.
 
-46. Click the **Infrastructure** option in the left hand menu.
+36. Click the **Security and compliance** pull-down menu again.
+37. Click the **Transformation and modernization of VMware applications** pull-down menu.
 
-Notice the single, consolidated cluster requested earlier listed in the table and the status is **Initializing**.
+    The Red Hat OpenShift for VMware service deploys a Red Hat OpenShift cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The Red Hat OpenShift components are deployed as virtual machines (VMs) or appliances by using VMware NSX software-defined networking. Learn more about Red Hat OpenShift for VMware <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview" target="_blank">here</a>.
 
-47. Click the **Deployment history** option in the left hand menu.
+38. Click the **Transformation and modernization of VMware applications** pull-down menu again.
+39. Click the **Management tools** pull-down menu.
 
-Notice the steps and timestamps as the VCS instances is being provisioned.
-Now, fast forward 11 hours.
+    The vRealize Operations and vRealize Log Insight services deploy the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools. These tools help clients operate and monitor the performance, health, and capacity of their IBM-hosted, dedicated VMware environment. The service also includes vRLI to help troubleshoot issues by using log files more quickly. Learn more about VMware vRealize Operations and Log Insight <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview" target="_blank">here</a>.
 
-48. Click anywhere on the screen.
+40. Click the **Management tools** pull-down menu again.
+41. Click the **I understand that the account listed below will be charged for infrastructure** checkbox.
+42. Click the **I have read and agreed to the third-party service agreements listed below** checkbox.
+43. Click **Create**.
 
-Notice 11 hours have elapsed and the VCS instance is now ready to use.
+    Notice the messages being displayed. The status of the provisioning process can be observed.
+
+44. Click **Resources** in left hand menu.
+45. Click **vCenter Server** under **Resources** in the left hand menu.
+46. Click the **{{itz.dedicated.instanceName}}** in the table.
+
+    Notice the **Creating** status at the top of the screen by the instance name.
+
+47. Click the **Infrastructure** option in the left hand menu.
+
+    Notice the single, consolidated cluster requested earlier listed in the table and the status is **Initializing**.
+
+48. Click the **Deployment history** option in the left hand menu.
+
+    Notice the steps and timestamps as the VCS instances is being provisioned.
+    Now, fast forward 11 hours.
+
+49. Click anywhere on the screen.
+
+    Notice 11 hours have elapsed and the VCS instance is now ready to use.
 
 Proceed to the next module of this demonstration script to learn how to manage a VCS instance.
