@@ -113,5 +113,7 @@ cp.imagesJSONCacheForLocal=true;cp.imageToJSONPathMap={
 "dr/Failure_Shape_61.png": "img7.json",
 "dr/Failure_Shape_63.png": "img7.json",
 "dr/Failure_Shape_64.png": "img7.json",
+"dr/SmartShape_4.png": "img7.json",
+"dr/VCFClassicProvisioning.png": "img7.json",
 "dr/loading.gif": "img7.json",
 "___":"___"};
