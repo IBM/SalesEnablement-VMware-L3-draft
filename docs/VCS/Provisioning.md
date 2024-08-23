@@ -27,7 +27,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     The message states:
     
-        The VMware licensing model has changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.
+    *The VMware licensing model has changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.*
     
     After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more about the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
 
@@ -64,6 +64,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
             Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank>**here**</a>.
 
+
         === "Cyber Recovery"
 
             The value of data is increasing exponentially. Protecting your organization starts with protecting critical data against threats, including ransomware and other sophisticated cyberthreats. Regardless of the industry, geography, or size, every organization is data-driven today, which makes data the currency of the internet economy and therefore a valuable resource and asset.
@@ -83,6 +84,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
             - Caveonix RiskForesight
 
             Learn more about the **Cyber Recovery** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank>**here**</a>.
+
 
         === "Regulated Workloads"
 
@@ -114,6 +116,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
             - F5 BIG-IP
 
             Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank>**here**</a>.
+
 
 6. Click the **Resource Group** pull-down menu.
 7. Select the **{{itz.resourceGroup}}** option.
