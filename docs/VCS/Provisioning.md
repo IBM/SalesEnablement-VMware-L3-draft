@@ -34,8 +34,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     The descriptions that follow are from teh **About** page in the IBM Cloud portal. Read the description of each **Resource type** to learn more and understand the differences so they can be explained to clients.
 
-    === "Automated"
-        
+    === "Automated"       
             VMware Cloud Foundation for Classic - Automated is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three IBM Cloud bare metal servers, shared file-level storage or dedicated VMware vSAN storage, and it includes the automatic deployment and configuration of an easy to manage logical edge firewall that is powered by VMware NSX.
 
             The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute capacity rapidly when needed. IBM Cloud provides you with full, native root access to the VMware ESXi hosts, NSX Manager, and the centralized platform for management, vCenter Server.
