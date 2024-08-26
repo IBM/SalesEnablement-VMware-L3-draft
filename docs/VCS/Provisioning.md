@@ -3,12 +3,10 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
     The steps that follow are specific to the provision process of VCF for Classic as of August 2024. 
-
-    The steps can be used in the provided click through demonstration. 
     
-    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until step XXX. If using the IBM Cloud portal and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do NOT have permission to provision or modify existing resources. However, using the live IBM Cloud portal in this manner can be leveraged in a "baking show" style demonstration. Instead of clicking **Create**, return to the VCF for Classic resources page in the Portal to show the already provisioned instance, and continue to demonstrate the management capabilities of VCF on Classic.
+    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until the last step to create the instance. If using the ITZ cloud account and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do **NOT** have permission to provision or modify existing resources. However, using the live IBM Cloud portal in this manner can be leveraged in a "baking show" style demonstration. Instead of clicking **Create**, return to the VCF for Classic resources page in the Portal to show the already provisioned instance, and continue to demonstrate the management capabilities of VCF on Classic.
 
-    If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!
+    **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
 Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
 
@@ -314,16 +312,16 @@ More information for these, and other IBM and non-IBM services can be found in t
 
     The steps that follow illustrate how to select, configure, and deselect **Add-on services**. Details about these services and their value are not included. Refer to the link above for information about each available service.
 
-1.  Click **Edit** for the **Veeam 12.1** add-on service.
+47.  Click **Edit** for the **Veeam 12.1** add-on service.
 
     The automation for deploying additional services may allow specific parameters and configuration choices to be set. For Veeam (a third-party backup and disaster recovery product), the client has the ability to specify details about the repository and the number of VM licenses to provision.
 
-2.  Click **Save**.
-3.  Deselect **Caveonix RiskForesight 5.0.0**.
+48.  Click **Save**.
+49.  Deselect **Caveonix RiskForesight 5.0.0**.
 
     While recommended for VCF for Classic deployments, it is possible for clients to deselect **Add-on services**. Caveonix assists clients in managing cyber and compliance risk.
 
-4.  Click **Add-on services** in left menu.
+50.  Click **Add-on services** in left menu.
 
     **Add-on services** are logically grouped by categories like recommended services, business continuity and migration, security and compliance, transformation and modernization, and management tools; however, many of these services could be classified in more than one of these categories.
 

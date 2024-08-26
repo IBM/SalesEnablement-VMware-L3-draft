@@ -32,10 +32,10 @@ nav:
       - 'NRFR - Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
       - 'NRFR - Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
     - 'NRFR - The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
-  - 'NRFR - VMware vCenter Server':
-    - 'NRFR - Introduction': 'VCS/Introduction.md'
-    - 'NRFR - Provisioning': 'VCS/Provisioning.md'
-    - 'NRFR - Managing': 'VCS/Managing.md'
+  - 'VMware Cloud Foundation for Classic':
+    - 'Introduction': 'VCS/Introduction.md'
+    - 'Provisioning': 'VCS/Provisioning.md'
+    - 'Managing': 'VCS/Managing.md'
   - 'NRFR - VMware Cloud Foundation':
     - 'NRFR - Introduction': 'VCF/Introduction.md'
     - 'NRFR - Provisioning': 'VCF/Provisioning.md'
