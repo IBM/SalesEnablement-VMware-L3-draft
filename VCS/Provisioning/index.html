@@ -1332,7 +1332,7 @@
 <li>Click the <strong>NFS storage</strong> option.</li>
 <li>
 <p>Select <strong>Configure shares individually</strong>.</p>
-<p>NFS file shares can have different sizes and performance characteristics. The ability to specify different configurations can be used to rightsize the environment based upon the storage performance characteristics of different workloads.</p>
+<p>NFS file shares can have different sizes and performance characteristics. The ability to specify different configurations for each file share can be used to rightsize the environment based upon the storage performance characteristics of different workloads.</p>
 </li>
 <li>
 <p>Click <strong>Add shared storage</strong>.</p>
@@ -1347,7 +1347,7 @@
 <li>Click <strong>Additional clusters (optional)</strong> in left menu.</li>
 <li>
 <p>Select <strong>Deploy separate workload cluster</strong>.</p>
-<p>When specifying an additional workload cluster new specifications for the cluster can be selected:</p>
+<p>When specifying an additional workload cluster, new specifications for the cluster can be selected including specifying a different geography than the consolidated cluster.</p>
 <ul>
 <li>Cluster name</li>
 <li>Cluster location (geography, datacenter, and pod)</li>
@@ -1365,7 +1365,7 @@
 </li>
 <li>
 <p>Select <strong>Deploy gateway cluster</strong>.</p>
-<p>The <strong>Deploy gateway cluster</strong> option deploys a dedicated cluster for network edge and any custom firewall requirements. The gateway cluster is created in the same location as the consolidated cluster. When specifying an additional workload cluster new specifications for the cluster can be selected:</p>
+<p>The <strong>Deploy gateway cluster</strong> option deploys a dedicated cluster for network edge and any custom firewall requirements. The gateway cluster is created in the same location as the consolidated cluster. Specifications for the network cluster are:</p>
 <ul>
 <li>Cluster name </li>
 <li>CPU model (limited options)</li>
@@ -1404,14 +1404,72 @@
 </li>
 <li>
 <p>Click <strong>Add-on services</strong> in left menu.</p>
-<p>VCF for Classic supports several <strong>Add-on services</strong>. For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. More information for these services can be found in the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.</p>
 </li>
 </ol>
+<p>VCF for Classic supports several <strong>Add-on services</strong>. </p>
+<p>For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. </p>
+<details class="note">
+<summary>Available <strong>Add-on services</strong> as of September, 2024</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked id="recommended-services" name="__tabbed_2" type="radio"><input id="business-continuity-and-migration" name="__tabbed_2" type="radio"><input id="security-and-compliance" name="__tabbed_2" type="radio"><input id="transformation-and-modernization-of-vmware-applications" name="__tabbed_2" type="radio"><input id="management-tools" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="recommended-services">Recommended services</label><label for="business-continuity-and-migration">Business continuity and migration</label><label for="security-and-compliance">Security and compliance</label><label for="transformation-and-modernization-of-vmware-applications">Transformation and modernization of VMware applications</label><label for="management-tools">Management tools</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>
+<p>Veeam - Veeam on IBM Cloud seamlessly integrates directly VMware hypervisors to help enterprises achieve high availability. This service provides recovery points and time objectives for applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, control both the backup and restore of all virtual machines (VMs) directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM.</p>
+</li>
+<li>
+<p>Caveonix RiskForesight - Caveonix RiskForesight on IBM Cloud can help manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. Caveonix RiskForesight on IBM Cloud is a non-IBM product that is offered under terms and conditions from Caveonix, not IBM.</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>
+<p>HCX - VMware HCX on IBM Cloud extends the networks of on-premises data centers into IBM Cloud, and it helps migrate virtual machines (VMs) to and from IBM Cloud without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. Users can modernize their VMware® environment without the need to refactor or modify existing applications, as HCX enables a seamless transformation. With HCX, users can bring IP subnet ranges into IBM Cloud and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.</p>
+</li>
+<li>
+<p>Zerto - Zerto on IBM Cloud integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in VMware virtual environments on IBM Cloud. Zerto on IBM Cloud is a non-IBM product that is offered under terms and conditions from Zerto, not IBM.</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>
+<p>F5 BIG-IP - F5 BIG-IP® on IBM Cloud® (F5 BIG-IP Virtual Edition) provides:</p>
+<ul>
+<li>Intelligent L4-L7 load balancing and traffic management services at a local and global scale.</li>
+<li>Robust network and web application firewall protection.</li>
+<li>Secure and federated application access.</li>
+</ul>
+<p>F5 BIG-IP on IBM Cloud is a non-IBM product that is offered under terms and conditions from F5 Networks, not IBM.</p>
+</li>
+<li>
+<p>FortiGate Virtual Appliance - FortiGate Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual Appliances, which can help reduce risk by implementing critical security controls within a virtual infrastructure. FortiGate Virtual Appliance on IBM Cloud is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.</p>
+</li>
+<li>
+<p>Juniper vSRX - Juniper vSRX on IBM Cloud is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware® infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere® environment. Juniper vSRX on IBM Cloud is a non-IBM product that is offered under terms and conditions from Juniper Network, not IBM.</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Red Hat OpenShift for VMware - The Red Hat OpenShift for VMware service deploys an Red Hat OpenShift cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The Red Hat OpenShift components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition - These tools help operate and monitor the performance, health, and capacity of IBM-hosted, dedicated VMware environment. VMware Aria Operations for Logs helps troubleshoot issues by using log files more quickly. VMware Aria Operations and VMware Aria Operations for Logs on IBM Cloud are non-IBM products offered under terms and conditions from VMware, not IBM.        </li>
+</ul>
+</div>
+</div>
+</div>
+</details>
+<p>More information for these, and other IBM and non-IBM services can be found in the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The steps that follow illustrate how to select, configure, and deselect <strong>Add-on services</strong>. Details about these services and their value are not included. Refer to the link above for information about each available service.</p>
 </div>
-<ol start="47">
+<ol>
 <li>
 <p>Click <strong>Edit</strong> for the <strong>Veeam 12.1</strong> add-on service.</p>
 <p>The automation for deploying additional services may allow specific parameters and configuration choices to be set. For Veeam (a third-party backup and disaster recovery product), the client has the ability to specify details about the repository and the number of VM licenses to provision.</p>
