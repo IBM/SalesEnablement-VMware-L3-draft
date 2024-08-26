@@ -24,7 +24,7 @@
     
     
       
-        <title>NRFR - Managing - IBM Cloud for VMware Solutions</title>
+        <title>Managing - IBM Cloud for VMware Solutions</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NRFR - Managing
+              Managing
             
           </span>
         </div>
@@ -765,7 +765,7 @@
             
   
   <span class="md-ellipsis">
-    NRFR - VMware vCenter Server
+    VMware Cloud Foundation for Classic
   </span>
   
 
@@ -775,7 +775,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            NRFR - VMware vCenter Server
+            VMware Cloud Foundation for Classic
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -789,7 +789,7 @@
         
   
   <span class="md-ellipsis">
-    NRFR - Introduction
+    Introduction
   </span>
   
 
@@ -809,7 +809,7 @@
         
   
   <span class="md-ellipsis">
-    NRFR - Provisioning
+    Provisioning
   </span>
   
 
@@ -836,7 +836,7 @@
         
   
   <span class="md-ellipsis">
-    NRFR - Managing
+    Managing
   </span>
   
 
@@ -1130,167 +1130,30 @@
                   
 
 
-  <h1>NRFR - Managing</h1>
+  <h1>Managing</h1>
 
-<div><p>Now it is time to manage the VMware vCenter Server (VCS) instance. Use the click-thru demonstration below to practice managing a VCS instance.</p>
+<div><p>Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-thru demonstration below to practice provisioning a VCF for Classic instance.</p>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>The steps that follow are specific to the management capabilities for Classic as of August 2024. </p>
+<p>The steps <strong>CANNOT</strong> be used in the ITZ environment that was reserved for this course. To save costs, the VCF for Classic instance was removed after the creation of the associated click through demonstrations. </p>
+</div>
+<p>Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Not sure where to click or what to do next? Simply click anywhere on the screen and the spot to click next will be highlighted.</p>
 </div>
 <ol>
-<li>Open the link below and then click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png"> to begin the demonstration.</li>
+<li>
+<p>Open the link below and then click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png"> to begin the demonstration.</p>
+<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html" target="_blank">Provision an instance of VCF for Classic</a></p>
+</li>
 </ol>
-<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Managing/index.html" target="_blank">Manage an instance of IBM Cloud VMware Solutions <strong>Dedicated</strong></a></p>
+<!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
+
 <ol start="2">
-<li>Click the <strong>VMware</strong> <img alt="" src="../_attachments/VMicon.png"> icon in the left hand menu bar.</li>
-<li>Click the <strong>Resources</strong> option in left hand menu.</li>
-<li>Click the <strong>vCenter Server</strong> option under <strong>Resources</strong> in left hand menu.</li>
-<li>Click the <strong>vcs-l3</strong> entry in the list of VCS instances.</li>
-<li>Click the <strong>Actions</strong> pulldown menu at top right.</li>
-<li>Click the <strong>Delete instance</strong> option.</li>
+<li>Click <strong>VMware</strong> <img alt="" src="../_attachments/VMicon.png"> icon in the left hand menu bar.</li>
 </ol>
-<p>Read the information provided regarding deleting a VCS instance.</p>
-<ol start="8">
-<li>Click the <strong>Cancel</strong> button.</li>
-<li>Click the <strong>Infrastructure</strong> option in left hand menu.</li>
-<li>Click the <strong>vcs-dv-consolidated</strong> entry in the list of clusters.</li>
-</ol>
-<p>Recall from the provisioning click-thru demonstration that a three node converged cluster was created. From this page hosts can be added and removed from the cluster.</p>
-<ol start="11">
-<li>Click the <strong>Add</strong> button to add a host.</li>
-</ol>
-<p>Notice the options for adding a host to the existing cluster.</p>
-<p>In addition to specifying the number of hosts to add, the bare metal server configuration can be specified. As a best practice, all hosts in a cluster should be homogeneous, that is, they should all have the same bare metal configuration. Thus, the default is to utilize the same configuration as the existing hosts. In some circumstances, it may be necessary to provision hosts of a different flavor. These could include the need to have hosts with more memory or performance, the need to move off of configurations going out of support, etc. In these circumstances, the best practice is to provision all the new hosts, and then de-provision the old hosts allowing VMware to automatically move workloads from the old to the new hosts.</p>
-<ol start="12">
-<li>Click the <strong>vcs-dv-consolidated</strong> link at the top of the page.</li>
-<li>Click the <strong>Add</strong> button for <strong>Storage</strong>.</li>
-</ol>
-<p>Notice additional storage shares can be added to the cluster. Shares can be added using any of the performance settings: 0.25, 2, 4, or 10 input/output operations per second per gigabyte (IOPS/GB).</p>
-<ol start="14">
-<li>Click the <strong>vcs-dv-consolidated</strong> link at the top of the page.</li>
-<li>Click the <strong>View resource</strong> link next to <strong>Private VLAN</strong> in the <strong>Network interface</strong> section.</li>
-</ol>
-<p>Take a minute to review the details of the <strong>Private VLAN</strong> that was created when the cluster was created.</p>
-<ol start="16">
-<li>Click anywhere on the screen to return to the cluster overview page.</li>
-<li>Click the <strong>Infrastructure</strong> option in left hand menu.</li>
-<li>Click the <strong>Add</strong> button.</li>
-</ol>
-<p>Recall, when originally provisioned, this VCS instance was created with a single consolidate cluster for both the VMware management, workloads, and edge services. From this page, new workload and edge services clusters can be added to the existing VCS instance. The information required and steps to complete the configuration of the additional workloads are very similar to when the original cluster was provisioned.</p>
-<p>Notice, new workload clusters can be provisioned in different IBM Cloud data centers with different bare metal server configurations. This flexibility allows client scenarios like:</p>
-<ul>
-<li>
-<p>production workloads run on <strong>high performance</strong> clusters and test workloads run on lower cost, lower performance clusters</p>
-</li>
-<li>
-<p>highly available (HA) workloads across geographic regions</p>
-</li>
-<li>
-<p>disaster recovery (DR)</p>
-</li>
-</ul>
-<ol start="19">
-<li>Click the <strong>Edge services cluster</strong> radio button.</li>
-</ol>
-<details class="question">
-<summary>BP quiz question</summary>
-<p>Take note of CPU model options for <strong>Edge services clusters</strong>.</p>
-</details>
-<ol start="20">
-<li>Click the <strong>vcs-l3 (primary)</strong> link at the top of the page.</li>
-<li>Click the <strong>Services</strong> option in the left hand menu.</li>
-<li>Click the <strong>Veeam</strong> link in the table of <strong>Services</strong>.</li>
-</ol>
-<p>Notice the details provided for the <strong>Veeam</strong> service. Instructions and the necessary IDs and passwords are provided for accessing the <strong>Veeam</strong> instances that were automatically deployed with the VCS instance. Note, one of the first steps that clients will want to perform is to configure Veeam to backup deployed VMs.</p>
-<ol start="23">
-<li>Click anywhere on the screen to continue.</li>
-<li>Click the <strong>Add</strong> button.</li>
-</ol>
-<p>Notice that all the services that were not initially deployed at provisioning are still available to be deployed using automation. Review the services again in the next steps.</p>
-<ol start="25">
-<li>Click the <strong>Business continuity and migration</strong> title to hide the tile.</li>
-<li>Click the <strong>Security and compliance</strong> title to hide the tile.</li>
-<li>Click the <strong>Transformation and modernization of VMware applications</strong> title to hide the tile.</li>
-<li>Click the <strong>Management tools</strong> title to hide the tile.</li>
-<li>Click the <strong>vcs-l3 (primary)</strong> link at the top of the page.</li>
-<li>Click the <strong>Licensing</strong> option in the left hand menu.</li>
-</ol>
-<p>IBM Cloud for VMware Solutions offers multiple options for VMware NSX licensing. Notice the different capabilities of each licensing option. Clients can change the license for NSX.</p>
-<ol start="31">
-<li>Click the <strong>Change license</strong> button.</li>
-<li>Click the <strong>Choose edition</strong> pull-down menu.</li>
-<li>Click the <strong>Cancel</strong> button.</li>
-<li>Click the <strong>Deployment history</strong> option in the left hand menu.</li>
-</ol>
-<p>This screen image was created shortly after the provisioning completed for the instance. Notice only 10 of the 37 entries are displayed. For a complete list, expand the section below.</p>
-<details>
-<summary>Full listing of events in chronological order</summary>
-<p>11/14/22 10:50  Start creating instance user and required services</p>
-<p>11/14/22 10:51  Ordering additional private VLAN</p>
-<p>11/14/22 10:51  Ordering license of vCenter Server</p>
-<p>11/14/22 10:51  Ordering vCenter Server upcharges</p>
-<p>11/14/22 10:51  Ordering 1 NFS Storage(s) for cluster vcs-dv-consolidated</p>
-<p>11/14/22 10:51  Start ordering management share</p>
-<p>11/14/22 10:51  Ordering 2 socket NSX license or licenses of vCenter Server</p>
-<p>11/14/22 10:51  Creating instance user and required services completed</p>
-<p>11/14/22 10:52  Start ordering 3 bare metal ESXi servers</p>
-<p>11/14/22 10:52  Verifying bare metal ESXi servers order</p>
-<p>11/14/22 10:52  Start ordering Windows VSI for Active Directory/DNS</p>
-<p>11/14/22 10:52  Start ordering subnets</p>
-<p>11/14/22 10:52  Additional private VLAN is provisioned</p>
-<p>11/14/22 10:53  Granting access to NFS storages to new subnet</p>
-<p>11/14/22 10:53  Subnet is ready</p>
-<p>11/14/22 11:20  Windows VSI for Active Directory/DNS is ready</p>
-<p>11/14/22 14:41  Bare metal ESXi server(s) with Private IP address(es) 10.87.32.138, 10.87.32.161, 10.87.32.175 are ready for cluster</p>
-<p>11/14/22 14:42  Start ordering IBM CloudBuilder VSI</p>
-<p>11/14/22 15:05  IBM CloudBuilder VSI is ready</p>
-<p>11/14/22 15:09  Successfully trunked the additional private VLAN to bare metal servers</p>
-<p>11/14/22 15:17  IBM CloudBuilder is ready for service</p>
-<p>11/14/22 16:48  Start vCenter Server installation and configuration</p>
-<p>11/14/22 17:06  vCenter Server installation and configuration completed</p>
-<p>11/14/22 19:07  Start management services setup</p>
-<p>11/14/22 19:12  IBM operational services are running</p>
-<p>11/14/22 19:13  Ordering new VSI for Clouddriver</p>
-<p>11/14/22 19:13  Preparing Clouddriver</p>
-<p>11/14/22 19:26  Clouddriver VSI (10.87.32.142) is provisioned</p>
-<p>11/14/22 19:42  Dismissing IBM CloudBuilder VSI</p>
-<p>11/14/22 19:54  Start ordering service infrastructure</p>
-<p>11/14/22 19:55  Service infrastructure Veeam endurance iSCSI storage is ready</p>
-<p>11/14/22 19:56  Start requesting service creation to IBM CloudDriver</p>
-<p>11/14/22 19:56  Start obtaining service infrastructure</p>
-<p>11/14/22 21:52  Service Veeam has been installed successfully.</p>
-<p>11/14/22 21:55  Release Clouddriver (10.87.32.142)</p>
-<p>11/14/22 21:56  vCenter Server instance is ready to use</p>
-<p>11/14/22 23:55  Cancel Clouddriver VSI (10.87.32.142)</p>
-</details>
-<ol start="35">
-<li>Click the <strong>Summary</strong> option in the left hand menu.</li>
-</ol>
-<p>Notice the information provided for the various VMware management components. The user ID and passwords to the components are made available to the client's administrators as VCS is NOT a fully managed service. The client is responsible for managing the VMware components like VCS, NSX, etc. Learn more about customer responsibilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info" target="_blank">here</a>.</p>
-<ol start="36">
-<li>Click the <strong>vCenter console</strong> link at the top of the page.</li>
-</ol>
-<p>Note, in order to access the vCenter console a VPN connection to the IBM Cloud private network must first be provisioned. At a high level these are:</p>
-<ul>
-<li>Create a VPN password from your IBM Cloud user details page.</li>
-<li>Log in to the data center VPN portal using your VPN credentials.</li>
-<li>Copy the IP address and the host name of the vCenter Server and paste it into the hosts file (/etc/hosts) on your local computer</li>
-</ul>
-<p>More information about this process can be found <a href="https://www.ibm.com/cloud/vpn-access" target="_blank">here</a>.</p>
-<ol start="37">
-<li>Click the <strong>LOGIN</strong> button.</li>
-</ol>
-<p>At this point, those familiar with VMware vCenter should feel right at home with the vCenter environment. As stated earlier, this demonstration guide is focused on the <strong>IBM Cloud</strong> aspects of the IBM Cloud for VMware Solutions offering and not VMware components deployed as part of the offering. In the final steps, review a few of the vCenter pages that align with the configuration parameters specified when the VCS instance was deployed.</p>
-<p>On the <strong>Summary</strong> page, notice this vCenter instances is managing 1 cluster that currently has 3 hosts and 12 virtual machines. Recall from the provisioning we created 1 consolidated cluster with 3 hosts.</p>
-<ol start="38">
-<li>Click the <strong>Hosts &amp; Clusters</strong> tab.</li>
-<li>Click the <strong>Datastores</strong> tab.</li>
-</ol>
-<p>Recall when this VCS instance was created, only 1 data store was added. However, as part of the base deployment several others were created as well for the management components.</p>
-<ol start="40">
-<li>Click the <strong>VMs</strong> tab.</li>
-</ol>
-<p>All the VMs that are currently deployed are associated with the VMware management components, edge services, and Veeam. At this point, clients could begin to deploy their own workloads.</p>
 <p>That concludes the <strong>managing</strong> portion of the demonstration.</p></div>
 
 
