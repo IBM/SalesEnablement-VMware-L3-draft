@@ -140,7 +140,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 41. Click **Cancel** in the **Storage** table.
     
-The **Network interface** section provides detailed information on the vLANs used in the instance. Notice the **download** (![](_attachments/downloadIcon.png)) icon above the vLAN tables. Use this button to download a comma separated value (CSV) file of all the associated subnets and IP addresses associated with the cluster.
+    The **Network interface** section provides detailed information on the vLANs used in the instance. Notice the **download** (![](_attachments/downloadIcon.png)) icon above the vLAN tables. Use this button to download a comma separated value (CSV) file of all the associated subnets and IP addresses associated with the cluster.
 
 42.  Expand the **10.213.88.128/25** subnet in the **Private VLAN** table.
 

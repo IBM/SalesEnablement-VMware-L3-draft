@@ -4,6 +4,6 @@ The entire environment can be provisioned in a matter of hours, and the elastic 
 
 In the following chapters, you will:
 
-- Explore the process of provisioning a **VCF for Classic** instance via the IBM Cloud portal.
+- Learn how to provision a **VCF for Classic** instance using IBM Cloud portal.
 
-- Explore using the IBM Cloud portal to manage a **VCF for Classic** instance.
+- Explore managing a **VCF for Classic** instance using the IBM Cloud portal and various VMware management consoles.

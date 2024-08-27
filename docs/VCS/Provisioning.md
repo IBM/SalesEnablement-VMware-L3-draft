@@ -1,4 +1,4 @@
-Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-thru demonstration below to practice provisioning a VCF for Classic instance.
+Use the click-thru demonstration below to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -352,7 +352,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 The provisioning process for the VCF for Classic instance begins. When all specified infrastructure components with the request configurations are available this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
 
-The VCS for Classic automation performs a lot of steps. At a very high level, al the infrastructure is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are also deployed. 
+The VCS for Classic automation performs a lot of steps. At a  high level, all the infrastructure is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
 
 During the provisioning process, the status of the instance will be updated in the IBM Cloud portal. In addition, depending on the user's notification preferences in the IBM Cloud portal, e-mails are sent as major steps in the automation are started and completed. Additionally, service tickets will be opened if there are delays in the notification. The user can observe and comment on the individual service tickets.
 
