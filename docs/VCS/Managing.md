@@ -2,7 +2,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    The steps that follow are specific to the management capabilities for Classic as of August 2024. 
+    The steps that follow are specific to the management capabilities of VCF for Classic as of August 2024. 
  
     The steps **CANNOT** be used in the ITZ environment that was reserved for this course. To save costs, the VCF for Classic instance was removed after the creation of the associated click through demonstrations. 
 

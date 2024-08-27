@@ -29,9 +29,9 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
     
     After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more about the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
 
-VCF on Classic supports four (4) **Resource type** options. For this demonstration, only the **VMware Cloud Foundation for Classic - Automated** resource type is used. Expand the **Resource types** section and learn the differences between each **Resource type**. The descriptions are from the **About** page in the IBM Cloud portal.
+    VCF on Classic supports four (4) **Resource type** options. For this demonstration, only the **VMware Cloud Foundation for Classic - Automated** resource type is used. Expand the **Resource types** section and learn the differences between each **Resource type**. The descriptions are from the **About** page in the IBM Cloud portal.
 
-??? Note "Resource types"
+    ??? Note "Resource types"
 
     === "Automated"       
             
@@ -138,15 +138,15 @@ VCF on Classic supports four (4) **Resource type** options. For this demonstrati
 
 12.  Select **Default**.
 
-Two additional options are available in the **General information** section.
+    Two additional options are available in the **General information** section.
 
-- **Instance configuration name**
+     - **Instance configuration name**
   
-    It is possible to save a configuration in the IBM Cloud portal prior to creating an instance. This will be highlighted later. Users can choose from previously saved instance configurations to fill the configuration settings automatically.  
+        It is possible to save a configuration in the IBM Cloud portal prior to creating an instance. This will be highlighted later. Users can choose from previously saved instance configurations to fill the configuration settings automatically.  
 
-- **Instance type**
+    - **Instance type**
 
-    VCF for Classic supports both **primary** and **secondary** instance types. A **primary** instance is either a single instance in the environment or the first instance in a multi-site topology. A **secondary** instance connects to an existing (primary) instance in the environment for high availability.
+        VCF for Classic supports both **primary** and **secondary** instance types. A **primary** instance is either a single instance in the environment or the first instance in a multi-site topology. A **secondary** instance connects to an existing (primary) instance in the environment for high availability.
 
 13.  Click **Consolidated cluster** in left menu.
 
@@ -178,7 +178,7 @@ Two additional options are available in the **General information** section.
 
 23. Select **384 GB**.
 
-The **Number of bare metal servers** field specifies how many servers are created in the cluster. A minimum of 3 servers is required. All users will utilize the same configuration specified. As of August 2024, a maximum of 51 servers can be specified for a cluster. For the latest information on the supported number of bare metal servers, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number" target="_blank">**here**</a>.
+    The **Number of bare metal servers** field specifies how many servers are created in the cluster. A minimum of 3 servers is required. All users will utilize the same configuration specified. As of August 2024, a maximum of 51 servers can be specified for a cluster. For the latest information on the supported number of bare metal servers, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number" target="_blank">**here**</a>.
 
 24. Click the **vSAN storage** option.
 
@@ -241,9 +241,9 @@ The **Number of bare metal servers** field specifies how many servers are create
 39. Deselect **Deploy gateway cluster**.
 40. Click **Network interface** in left menu.
 
- Network planning for any VCS deployment is critical. Clients are expected to make informed decisions when provisioning their VCS environment and when specifying network configuration options. More planning information is available in the VCS documentation starting <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver" target="_blank">here</a>.
+    Network planning for any VCS deployment is critical. Clients are expected to make informed decisions when provisioning their VCS environment and when specifying network configuration options. More planning information is available in the VCS documentation starting <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver" target="_blank">here</a>.
  
- The **Hostname prefix** applies to all hosts in the instance.
+    The **Hostname prefix** applies to all hosts in the instance.
 
 41. Click the **Domain name** entry field.
 
@@ -266,11 +266,11 @@ The **Number of bare metal servers** field specifies how many servers are create
 
 46. Click **Add-on services** in left menu.
 
-VCF for Classic supports several **Add-on services**. 
+    VCF for Classic supports several **Add-on services**. 
 
-For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. 
+    For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. 
 
-??? Note "Available **Add-on services** as of September, 2024"
+    ??? Note "Available **Add-on services** as of September, 2024"
 
     === "Recommended services"       
             
@@ -306,11 +306,11 @@ For this demonstration, only 2 services will be selected. Sellers should familia
 
         - VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition - These tools help operate and monitor the performance, health, and capacity of IBM-hosted, dedicated VMware environment. VMware Aria Operations for Logs helps troubleshoot issues by using log files more quickly. VMware Aria Operations and VMware Aria Operations for Logs on IBM Cloud are non-IBM products offered under terms and conditions from VMware, not IBM.        
 
-More information for these, and other IBM and non-IBM services can be found in the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
+    More information for these, and other IBM and non-IBM services can be found in the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
 
-!!! Warning 
+    !!! Warning 
 
-    The steps that follow illustrate how to select, configure, and deselect **Add-on services**. Details about these services and their value are not included. Refer to the link above for information about each available service.
+        The steps that follow illustrate how to select, configure, and deselect **Add-on services**. Details about these services and their value are not included. Refer to the link above for information about each available service.
 
 47.  Click **Edit** for the **Veeam 12.1** add-on service.
 
@@ -325,23 +325,26 @@ More information for these, and other IBM and non-IBM services can be found in t
 
     **Add-on services** are logically grouped by categories like recommended services, business continuity and migration, security and compliance, transformation and modernization, and management tools; however, many of these services could be classified in more than one of these categories.
 
-!!! warning
+    !!! warning
 
-    Instead of simulating scrolling in the IBM Cloud portal, these steps have users click the **Add-on services** option in the left menu multiple times. In the IBM Cloud portal, users would just scroll down in the browser to view the entire set of available services.
+        Instead of simulating scrolling in the IBM Cloud portal, these steps have users click the **Add-on services** option in the left menu multiple times. In the IBM Cloud portal, users would just scroll down in the browser to view the entire set of available services.
 
 51. Click **Add-on services**.
 52. Select **VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition 8.17**.
 
     The new licensing of VMware software was mentioned earlier. Not all of the VMware software products that are licensed as part of VCF for Classic are automatically installed.
 
-Before proceeding to the agreements and final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.
+    Before proceeding to the agreements and final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.
 
-    a. An itemized summary of the components and options selected is presented along with the estimated costs.
-    b. A client can enter a promotion code for discounted pricing.
-    c. The configuration options specified can be saved and reused for future provisioning activity.
-    d. The current estimate can be saved for later pricing activities.
+        a. An itemized summary of the components and options selected is presented along with the estimated costs.
 
-    ![](_attachments/summaryPanel.png)
+        b. A client can enter a promotion code for discounted pricing.
+        
+        c. The configuration options specified can be saved and reused for future provisioning activity.
+        
+        d. The current estimate can be saved for later pricing activities.
+
+        ![](_attachments/summaryPanel.png)
 
 53. Select **I understand that the following account will be charged for infrastructure**.
 54. Select **I have read and agreed to the following third-party service agreements**.
