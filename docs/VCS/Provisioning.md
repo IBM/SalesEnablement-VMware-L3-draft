@@ -272,39 +272,39 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     ??? Note "Available **Add-on services** as of September, 2024"
 
-    === "Recommended services"       
+        === "Recommended services"       
             
-        - Veeam - Veeam on IBM Cloud seamlessly integrates directly VMware hypervisors to help enterprises achieve high availability. This service provides recovery points and time objectives for applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, control both the backup and restore of all virtual machines (VMs) directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM.
+            - Veeam - Veeam on IBM Cloud seamlessly integrates directly VMware hypervisors to help enterprises achieve high availability. This service provides recovery points and time objectives for applications and data. The recovery points and time objectives can be provided in less than 15 minutes after configuration is completed. By using this service, control both the backup and restore of all virtual machines (VMs) directly from the Veeam console. Veeam on IBM Cloud is a non-IBM product that is offered under terms and conditions from Veeam, not IBM.
 
-        - Caveonix RiskForesight - Caveonix RiskForesight on IBM Cloud can help manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. Caveonix RiskForesight on IBM Cloud is a non-IBM product that is offered under terms and conditions from Caveonix, not IBM.
+            - Caveonix RiskForesight - Caveonix RiskForesight on IBM Cloud can help manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations. Caveonix RiskForesight on IBM Cloud is a non-IBM product that is offered under terms and conditions from Caveonix, not IBM.
 
-    === "Business continuity and migration"
+        === "Business continuity and migration"
 
-        - HCX - VMware HCX on IBM Cloud extends the networks of on-premises data centers into IBM Cloud, and it helps migrate virtual machines (VMs) to and from IBM Cloud without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. Users can modernize their VMware environment without the need to refactor or modify existing applications, as HCX enables a seamless transformation. With HCX, users can bring IP subnet ranges into IBM Cloud and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
+            - HCX - VMware HCX on IBM Cloud extends the networks of on-premises data centers into IBM Cloud, and it helps migrate virtual machines (VMs) to and from IBM Cloud without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. Users can modernize their VMware environment without the need to refactor or modify existing applications, as HCX enables a seamless transformation. With HCX, users can bring IP subnet ranges into IBM Cloud and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
   
-        - Zerto - Zerto on IBM Cloud integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in VMware virtual environments on IBM Cloud. Zerto on IBM Cloud is a non-IBM product that is offered under terms and conditions from Zerto, not IBM.
+            - Zerto - Zerto on IBM Cloud integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in VMware virtual environments on IBM Cloud. Zerto on IBM Cloud is a non-IBM product that is offered under terms and conditions from Zerto, not IBM.
 
-    === "Security and compliance"
+        === "Security and compliance"
 
-        - F5 BIG-IP - F5 BIG-IP® on IBM Cloud® (F5 BIG-IP Virtual Edition) provides:
+            - F5 BIG-IP - F5 BIG-IP® on IBM Cloud® (F5 BIG-IP Virtual Edition) provides:
 
-            - Intelligent L4-L7 load balancing and traffic management services at a local and global scale.
-            - Robust network and web application firewall protection.
-            - Secure and federated application access.
+              - Intelligent L4-L7 load balancing and traffic management services at a local and global scale.
+              - Robust network and web application firewall protection.
+              - Secure and federated application access.
 
             F5 BIG-IP on IBM Cloud is a non-IBM product that is offered under terms and conditions from F5 Networks, not IBM.
 
-        - FortiGate Virtual Appliance - FortiGate Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual Appliances, which can help reduce risk by implementing critical security controls within a virtual infrastructure. FortiGate Virtual Appliance on IBM Cloud is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.
+            - FortiGate Virtual Appliance - FortiGate Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual Appliances, which can help reduce risk by implementing critical security controls within a virtual infrastructure. FortiGate Virtual Appliance on IBM Cloud is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.
 
-        - Juniper vSRX - Juniper vSRX on IBM Cloud is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware® infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere® environment. Juniper vSRX on IBM Cloud is a non-IBM product that is offered under terms and conditions from Juniper Network, not IBM.
+            - Juniper vSRX - Juniper vSRX on IBM Cloud is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware® infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere® environment. Juniper vSRX on IBM Cloud is a non-IBM product that is offered under terms and conditions from Juniper Network, not IBM.
 
-    === "Transformation and modernization of VMware applications"
+        === "Transformation and modernization of VMware applications"
 
-        - Red Hat OpenShift for VMware - The Red Hat OpenShift for VMware service deploys an Red Hat OpenShift cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The Red Hat OpenShift components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
+            - Red Hat OpenShift for VMware - The Red Hat OpenShift for VMware service deploys an Red Hat OpenShift cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The Red Hat OpenShift components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
-    === "Management tools"
+        === "Management tools"
 
-        - VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition - These tools help operate and monitor the performance, health, and capacity of IBM-hosted, dedicated VMware environment. VMware Aria Operations for Logs helps troubleshoot issues by using log files more quickly. VMware Aria Operations and VMware Aria Operations for Logs on IBM Cloud are non-IBM products offered under terms and conditions from VMware, not IBM.        
+            - VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition - These tools help operate and monitor the performance, health, and capacity of IBM-hosted, dedicated VMware environment. VMware Aria Operations for Logs helps troubleshoot issues by using log files more quickly. VMware Aria Operations and VMware Aria Operations for Logs on IBM Cloud are non-IBM products offered under terms and conditions from VMware, not IBM.        
 
     More information for these, and other IBM and non-IBM services can be found in the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
 
@@ -336,15 +336,15 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     Before proceeding to the agreements and final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.
 
-        a. An itemized summary of the components and options selected is presented along with the estimated costs.
+    a. An itemized summary of the components and options selected is presented along with the estimated costs.
 
-        b. A client can enter a promotion code for discounted pricing.
+    b. A client can enter a promotion code for discounted pricing.
         
-        c. The configuration options specified can be saved and reused for future provisioning activity.
+    c. The configuration options specified can be saved and reused for future provisioning activity.
         
-        d. The current estimate can be saved for later pricing activities.
+    d. The current estimate can be saved for later pricing activities.
 
-        ![](_attachments/summaryPanel.png)
+    ![](_attachments/summaryPanel.png)
 
 53. Select **I understand that the following account will be charged for infrastructure**.
 54. Select **I have read and agreed to the following third-party service agreements**.
