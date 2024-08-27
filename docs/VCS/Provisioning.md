@@ -33,85 +33,85 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     ??? Note "Resource types"
 
-    === "Automated"       
+        === "Automated"       
             
-        VMware Cloud Foundation for Classic - Automated is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three IBM Cloud bare metal servers, shared file-level storage or dedicated VMware vSAN storage, and it includes the automatic deployment and configuration of an easy to manage logical edge firewall that is powered by VMware NSX.
+            VMware Cloud Foundation for Classic - Automated is a hosted private cloud that delivers the VMware vSphere stack as a service. The VMware environment is built on top of a minimum of three IBM Cloud bare metal servers, shared file-level storage or dedicated VMware vSAN storage, and it includes the automatic deployment and configuration of an easy to manage logical edge firewall that is powered by VMware NSX.
 
-        The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute capacity rapidly when needed. IBM Cloud provides you with full, native root access to the VMware ESXi hosts, NSX Manager, and the centralized platform for management, vCenter Server.
+            The entire environment can be provisioned in a matter of hours, and the elastic bare metal infrastructure can scale out the compute capacity rapidly when needed. IBM Cloud provides you with full, native root access to the VMware ESXi hosts, NSX Manager, and the centralized platform for management, vCenter Server.
 
-        You can move your workloads to and from the cloud without changing your apps, tools, scripts, or investing in new skills. Platform instances and expansion nodes are priced per month and they include access to IBM Support and all VMware components that comprise the service.
+            You can move your workloads to and from the cloud without changing your apps, tools, scripts, or investing in new skills. Platform instances and expansion nodes are priced per month and they include access to IBM Support and all VMware components that comprise the service.
 
-        Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank">**here**</a>.
+            Learn more about the **Automated** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview" target="_blank">**here**</a>.
 
 
-    === "Flexible"
+        === "Flexible"
         
-        Formerly VMware vSphere
+            Formerly VMware vSphere
     
-        VMware Cloud Foundation for Classic - Flexible gives you maximum flexibility to build your own IBM-hosted environment using VMware-compatible hardware and the right set of VMware components that fit your business needs and expertise.
+            VMware Cloud Foundation for Classic - Flexible gives you maximum flexibility to build your own IBM-hosted environment using VMware-compatible hardware and the right set of VMware components that fit your business needs and expertise.
 
-        You can design your hosted VMware environment any way you want: from a single ESXi server to a robust software-defined data center (SDDC) architecture. The VMware Cloud Foundation for Classic - Flexible helps you extend your on-premises VMware environment into IBM Cloud.
+            You can design your hosted VMware environment any way you want: from a single ESXi server to a robust software-defined data center (SDDC) architecture. The VMware Cloud Foundation for Classic - Flexible helps you extend your on-premises VMware environment into IBM Cloud.
 
-        VMware Cloud Foundation for Classic - Flexible lets you start as small as a single ESXi server and scale the instance by rapidly provisioning ESXi on single-tenant bare metal servers. Expand your on-premises data center capacity without sacrificing the enhanced security of dedicated infrastructure. VMware Cloud Foundation for Classic - Flexible also offers the latest native VMware encryption options at the VM-level or at the vSAN datastore-level.
+            VMware Cloud Foundation for Classic - Flexible lets you start as small as a single ESXi server and scale the instance by rapidly provisioning ESXi on single-tenant bare metal servers. Expand your on-premises data center capacity without sacrificing the enhanced security of dedicated infrastructure. VMware Cloud Foundation for Classic - Flexible also offers the latest native VMware encryption options at the VM-level or at the vSAN datastore-level.
 
-        Access the IBM-hosted VMware environment with the same level of control and visibility that you have on-premises. With full administration permissions to the VMware stack, you have total control and can continue leveraging your investment in tools, scripts, and training to manage the off-premises environment.
+            Access the IBM-hosted VMware environment with the same level of control and visibility that you have on-premises. With full administration permissions to the VMware stack, you have total control and can continue leveraging your investment in tools, scripts, and training to manage the off-premises environment.
 
-        Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
+            Platform instances and expansion nodes are priced per month and include access to IBM Support and all VMware product licenses that comprise the service.
 
-        Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank">**here**</a>.
-
-
-    === "Cyber Recovery"
-
-        The value of data is increasing exponentially. Protecting your organization starts with protecting critical data against threats, including ransomware and other sophisticated cyberthreats. Regardless of the industry, geography, or size, every organization is data-driven today, which makes data the currency of the internet economy and therefore a valuable resource and asset.
-
-        The modern threat of cyberattacks and the importance of maintaining the confidentiality, availability, and integrity of data beyond backup and disaster recovery requires a modern IBM Cloud solution that is coupled with advanced offerings in the VMware environment to protect your vital data and systems.
-
-        The Cyber Recovery offering on IBM Cloud can serve as part of your overall cyber resilience strategy, as the IBM advanced automation enables you to increase business agility, accelerate time to market, improve cloud economics, and reduce business risk.
-
-        Included services
-
-        - Veeam with Linux hardened repository
-        - Juniper vSRX
-        - FortiGate Virtual Appliance
-
-        Recommended services
-
-        - Caveonix RiskForesight
-
-        Learn more about the **Cyber Recovery** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
+            Learn more about the **Flexible** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview" target="_blank">**here**</a>.
 
 
-    === "Regulated Workloads"
+        === "Cyber Recovery"
 
-        With the ever increasing threat of cybersecurity breaches and the challenges that come up when you navigate a changing complex regulatory landscape, financial services companies need a solution to help them meet their security requirements and compliance readiness more quickly.
+            The value of data is increasing exponentially. Protecting your organization starts with protecting critical data against threats, including ransomware and other sophisticated cyberthreats. Regardless of the industry, geography, or size, every organization is data-driven today, which makes data the currency of the internet economy and therefore a valuable resource and asset.
 
-        IBM Cloud for VMware Regulated Workload solution is built on IBM's industry-leading experience in financial services industry and also on partnerships with three major global banks. The foundation of the solution starts with IBM's unique policy controls framework that feeds into the solution's secure-by-default reference architecture and a zero-trust security model.
+            The modern threat of cyberattacks and the importance of maintaining the confidentiality, availability, and integrity of data beyond backup and disaster recovery requires a modern IBM Cloud solution that is coupled with advanced offerings in the VMware environment to protect your vital data and systems.
 
-        IBM's advanced automation deploys the standardized architecture with the full VMware Software Defined Data Center (SDDC) stack on single-tenant bare metal servers. It also includes VMware vSphere 7 and NSX-T 3, dedicated vSAN storage, and a perimeter edge cluster for extra protection. All hosts are deployed with private-only ports that are enabled on the physical NICs and the network segmentation enables privileged user separation of duties enforcement. All together, this solution provides a new level of compute, networking, and workload isolation.
+            The Cyber Recovery offering on IBM Cloud can serve as part of your overall cyber resilience strategy, as the IBM advanced automation enables you to increase business agility, accelerate time to market, improve cloud economics, and reduce business risk.
 
-        The deployment of additional market-leading services helps financial services companies demonstrate regulatory compliance faster and makes it easier and more efficient to maintain compliance readiness.
+            Included services
 
-        Service prerequisites
+              - Veeam with Linux hardened repository
+              - Juniper vSRX
+              - FortiGate Virtual Appliance
 
-        - Hyper Protect Crypto Services
-        - KMIP for VMware
-        - Direct Link Dedicated
+            Recommended services
 
-        Included services
+              - Caveonix RiskForesight
 
-        - Veeam 12
-        - Caveonix RiskForesight
-        - VMware Aria Log Insight
-        - Juniper vSRX
-        - FortiGate Virtual Appliance
+            Learn more about the **Cyber Recovery** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
 
-        Optional services
 
-        - VMware HCX
-        - F5 BIG-IP
+        === "Regulated Workloads"
 
-        Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
+            With the ever increasing threat of cybersecurity breaches and the challenges that come up when you navigate a changing complex regulatory landscape, financial services companies need a solution to help them meet their security requirements and compliance readiness more quickly.
+
+            IBM Cloud for VMware Regulated Workload solution is built on IBM's industry-leading experience in financial services industry and also on partnerships with three major global banks. The foundation of the solution starts with IBM's unique policy controls framework that feeds into the solution's secure-by-default reference architecture and a zero-trust security model.
+
+            IBM's advanced automation deploys the standardized architecture with the full VMware Software Defined Data Center (SDDC) stack on single-tenant bare metal servers. It also includes VMware vSphere 7 and NSX-T 3, dedicated vSAN storage, and a perimeter edge cluster for extra protection. All hosts are deployed with private-only ports that are enabled on the physical NICs and the network segmentation enables privileged user separation of duties enforcement. All together, this solution provides a new level of compute, networking, and workload isolation.
+
+            The deployment of additional market-leading services helps financial services companies demonstrate regulatory compliance faster and makes it easier and more efficient to maintain compliance readiness.
+
+            Service prerequisites
+
+              - Hyper Protect Crypto Services
+              - KMIP for VMware
+                - Direct Link Dedicated
+
+            Included services
+
+              - Veeam 12
+              - Caveonix RiskForesight
+              - VMware Aria Log Insight
+              - Juniper vSRX
+              - FortiGate Virtual Appliance
+
+             Optional services
+
+              - VMware HCX
+              - F5 BIG-IP
+
+            Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
 
 
 5. Click **General information** in left menu.
