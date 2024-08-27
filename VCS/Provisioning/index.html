@@ -1160,11 +1160,10 @@
 <p>The message states:</p>
 <p><em>The VMware licensing model has changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.</em></p>
 <p>After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more about the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.</p>
-</li>
-</ol>
 <p>VCF on Classic supports four (4) <strong>Resource type</strong> options. For this demonstration, only the <strong>VMware Cloud Foundation for Classic - Automated</strong> resource type is used. Expand the <strong>Resource types</strong> section and learn the differences between each <strong>Resource type</strong>. The descriptions are from the <strong>About</strong> page in the IBM Cloud portal.</p>
 <details class="note">
 <summary>Resource types</summary>
+</details>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked id="automated" name="__tabbed_1" type="radio"><input id="flexible" name="__tabbed_1" type="radio"><input id="cyber-recovery" name="__tabbed_1" type="radio"><input id="regulated-workloads" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="automated">Automated</label><label for="flexible">Flexible</label><label for="cyber-recovery">Cyber Recovery</label><label for="regulated-workloads">Regulated Workloads</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1226,9 +1225,10 @@
 </div>
 </div>
 </div>
-</details>
-<ol start="5">
-<li>Click <strong>General information</strong> in left menu.</li>
+</li>
+<li>
+<p>Click <strong>General information</strong> in left menu.</p>
+</li>
 <li>
 <p>Click the <strong>VMware vSphere version</strong> drop-down list.</p>
 <p>As of August 2024, VCF for Classic supports both VMware vSphere version 7.0u3 and 8.0u2. Use the <a href="https://www.vmware.com/docs/vmw-version-comparison" target="_blank"><strong>VMware version comparison guide</strong></a> to learn about both.</p>
@@ -1254,8 +1254,6 @@
 </li>
 <li>
 <p>Select <strong>Default</strong>.</p>
-</li>
-</ol>
 <p>Two additional options are available in the <strong>General information</strong> section.</p>
 <ul>
 <li>
@@ -1267,7 +1265,7 @@
 <p>VCF for Classic supports both <strong>primary</strong> and <strong>secondary</strong> instance types. A <strong>primary</strong> instance is either a single instance in the environment or the first instance in a multi-site topology. A <strong>secondary</strong> instance connects to an existing (primary) instance in the environment for high availability.</p>
 </li>
 </ul>
-<ol start="13">
+</li>
 <li>
 <p>Click <strong>Consolidated cluster</strong> in left menu.</p>
 <p>By default, <strong>VCF for Classic - Automated</strong> creates a single, <strong>consolidated cluster</strong> deployment. The <strong>consolidated cluster</strong> is used for both management components and user workloads. Optionally, separate <strong>workload</strong> and <strong>gateway</strong> clusters can be created. These will be explored later.</p>
@@ -1302,10 +1300,8 @@
 </li>
 <li>
 <p>Select <strong>384 GB</strong>.</p>
-</li>
-</ol>
 <p>The <strong>Number of bare metal servers</strong> field specifies how many servers are created in the cluster. A minimum of 3 servers is required. All users will utilize the same configuration specified. As of August 2024, a maximum of 51 servers can be specified for a cluster. For the latest information on the supported number of bare metal servers, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number" target="_blank"><strong>here</strong></a>.</p>
-<ol start="24">
+</li>
 <li>
 <p>Click the <strong>vSAN storage</strong> option.</p>
 <p>VCF for Classic supports both network file system (NFS) and VMware Virtual Storage Area Network (vSAN) storage options. </p>
@@ -1376,11 +1372,11 @@
 <li>
 <p>Deselect <strong>Deploy gateway cluster</strong>.</p>
 </li>
-<li>Click <strong>Network interface</strong> in left menu.</li>
-</ol>
+<li>
+<p>Click <strong>Network interface</strong> in left menu.</p>
 <p>Network planning for any VCS deployment is critical. Clients are expected to make informed decisions when provisioning their VCS environment and when specifying network configuration options. More planning information is available in the VCS documentation starting <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver" target="_blank">here</a>.</p>
 <p>The <strong>Hostname prefix</strong> applies to all hosts in the instance.</p>
-<ol start="41">
+</li>
 <li>
 <p>Click the <strong>Domain name</strong> entry field.</p>
 <p>The specified <strong>Domain name</strong> is used for all hosts in the instance and must conform to specific rules that can be found <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-domain-name" target="_blank">here</a>.</p>
@@ -1403,12 +1399,11 @@
 </li>
 <li>
 <p>Click <strong>Add-on services</strong> in left menu.</p>
-</li>
-</ol>
 <p>VCF for Classic supports several <strong>Add-on services</strong>. </p>
 <p>For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. </p>
 <details class="note">
 <summary>Available <strong>Add-on services</strong> as of September, 2024</summary>
+</details>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked id="recommended-services" name="__tabbed_2" type="radio"><input id="business-continuity-and-migration" name="__tabbed_2" type="radio"><input id="security-and-compliance" name="__tabbed_2" type="radio"><input id="transformation-and-modernization-of-vmware-applications" name="__tabbed_2" type="radio"><input id="management-tools" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="recommended-services">Recommended services</label><label for="business-continuity-and-migration">Business continuity and migration</label><label for="security-and-compliance">Security and compliance</label><label for="transformation-and-modernization-of-vmware-applications">Transformation and modernization of VMware applications</label><label for="management-tools">Management tools</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1462,13 +1457,12 @@
 </div>
 </div>
 </div>
-</details>
 <p>More information for these, and other IBM and non-IBM services can be found in the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The steps that follow illustrate how to select, configure, and deselect <strong>Add-on services</strong>. Details about these services and their value are not included. Refer to the link above for information about each available service.</p>
 </div>
-<ol start="47">
+</li>
 <li>
 <p>Click <strong>Edit</strong> for the <strong>Veeam 12.1</strong> add-on service.</p>
 <p>The automation for deploying additional services may allow specific parameters and configuration choices to be set. For Veeam (a third-party backup and disaster recovery product), the client has the ability to specify details about the repository and the number of VM licenses to provision.</p>
@@ -1483,29 +1477,32 @@
 <li>
 <p>Click <strong>Add-on services</strong> in left menu.</p>
 <p><strong>Add-on services</strong> are logically grouped by categories like recommended services, business continuity and migration, security and compliance, transformation and modernization, and management tools; however, many of these services could be classified in more than one of these categories.</p>
-</li>
-</ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Instead of simulating scrolling in the IBM Cloud portal, these steps have users click the <strong>Add-on services</strong> option in the left menu multiple times. In the IBM Cloud portal, users would just scroll down in the browser to view the entire set of available services.</p>
 </div>
-<ol start="51">
-<li>Click <strong>Add-on services</strong>.</li>
+</li>
+<li>
+<p>Click <strong>Add-on services</strong>.</p>
+</li>
 <li>
 <p>Select <strong>VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition 8.17</strong>.</p>
 <p>The new licensing of VMware software was mentioned earlier. Not all of the VMware software products that are licensed as part of VCF for Classic are automatically installed.</p>
-</li>
-</ol>
 <p>Before proceeding to the agreements and final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.</p>
 <div class="highlight"><pre><span></span><code>a. An itemized summary of the components and options selected is presented along with the estimated costs.
+
 b. A client can enter a promotion code for discounted pricing.
+
 c. The configuration options specified can be saved and reused for future provisioning activity.
+
 d. The current estimate can be saved for later pricing activities.
 
 ![](_attachments/summaryPanel.png)
 </code></pre></div>
-<ol start="53">
-<li>Select <strong>I understand that the following account will be charged for infrastructure</strong>.</li>
+</li>
+<li>
+<p>Select <strong>I understand that the following account will be charged for infrastructure</strong>.</p>
+</li>
 <li>Select <strong>I have read and agreed to the following third-party service agreements</strong>.</li>
 <li>Click <strong>Create</strong>.</li>
 </ol>
