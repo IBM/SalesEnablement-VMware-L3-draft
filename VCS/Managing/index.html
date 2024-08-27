@@ -1146,15 +1146,346 @@
 <ol>
 <li>
 <p>Open the link below and then click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png"> to begin the demonstration.</p>
-<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html" target="_blank">Provision an instance of VCF for Classic</a></p>
+<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html" target="_blank">Manage an instance of VCF for Classic</a></p>
+</li>
+<li>
+<p>Click the <strong>VMware</strong> <img alt="" src="../_attachments/VMicon.png"> icon in the left hand menu bar.</p>
+</li>
+<li>
+<p>Click <strong>VCF for Classic</strong> under <strong>Resources</strong> in left menu.</p>
+</li>
+<li>
+<p>Click <strong>vcs-se-l3</strong> in the table of VCF for Classic instances.</p>
+<p>The <strong>Summary</strong> page provides information about the VCF for Classic instance including software versions deployed, instance ID, location, and root and single sign-on domain.</p>
+</li>
+<li>
+<p>Click the <strong>Actions</strong> drop-down list.</p>
+<p>There are 2 actions that be performed from the <strong>Actions</strong> menu. The <strong>Refresh</strong> option updates the information about the instance. </p>
+<p>The <strong>Delete instance</strong> option removes the VCF for Classic instance. When deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, there are additional step that must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.</p>
+</li>
+<li>
+<p>Click <strong>Refresh</strong></p>
+</li>
+<li>
+<p>Click the <strong>Access information</strong> tab.</p>
+<p>The <strong>Access information</strong> page provides the details required to access the core VMware components of the VCF for Classic deployment including IP addresses, fully qualified domain names (FQDN), administrative identities, and passwords.</p>
+</li>
+<li>
+<p>Click the <strong>information</strong> (<img alt="" src="../_attachments/infoIcon.png">) icon next to <strong>Access information</strong>.</p>
+<p>It is the client's responsibility to manage the VCF for Classic deployment. All of the administrative passwords for the VMware components should be changed and recorded in the clients own password management system. Once changed, the passwords shown on the <strong>Access information</strong> page will no longer be valid.</p>
+</li>
+<li>
+<p>Click the <strong>information dialog</strong> to dismiss it.</p>
+</li>
+<li>
+<p>Click the <strong>Infrastructure</strong> tab.</p>
+<p>The <strong>Infrastructure</strong> page lists all clusters associated with the VCF for Classic instance. Recall, this instance was provisioned with a single <strong>consolidated cluster</strong>. Had a <strong>workload</strong> or <strong>gateway</strong> cluster been created, those items would be listed. Summary information about the cluster is provided. Individual clusters can be deleted from the page.</p>
+<p>The <strong>Infrastructure</strong> page is where new clusters can be added to the instance.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<p>The <strong>Create cluster</strong> from should look familiar. It is very similar to part of the form used when the VCF for Classic instance was created.</p>
+<p>This form can be used to create both <strong>workload</strong> and <strong>gateway</strong> clusters. First, explore adding a <strong>workload</strong> cluster.</p>
+</li>
+<li>
+<p>Select <strong>Select a different location</strong>.</p>
+<p>If a different location is selected, the cluster will be provisioned in a data center that is different from the one of the VCF for Classic instance. Network latency might occur between the instance and the hosts, and between customer workloads that communicate from different locations.</p>
+</li>
+<li>
+<p>Select <strong>pod 04</strong> for the data center location.</p>
+<p>Notice the new <strong>workload</strong> cluster can use a different server configuration than the initial cluster created. Clients may want smaller or larger <strong>workload</strong> clusters that are right-sized for particular workloads.</p>
+</li>
+<li>
+<p>Click the <strong>information</strong> (<img alt="" src="../_attachments/infoIcon.png">) icon next to <strong>Number of bare metal servers</strong>.</p>
+<p>A minimum of two (2) bare metal servers are required to create a cluster.</p>
+</li>
+<li>
+<p>Click the <strong>information dialog</strong> to dismiss it.</p>
+<p>New <strong>workload</strong> clusters can choose NFS or vSAN for the cluster storage.</p>
+</li>
+<li>
+<p>Click the <strong>Hostname prefix</strong> entry field.</p>
+<p>In the <strong>Network interface</strong> section the same network parameters can be specified as when first creating the VCF for Classic instance. In addition, either the existing virtual local area networks (vLANS) of the instance can be used or new ones can be created.</p>
+</li>
+<li>
+<p>Read and then click the <strong>information</strong> dialog regarding vLANs. </p>
+<p>It is critical that the VMware management components like VMware vCenter Server are able to communicate with the new cluster. Learn more about the topic <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops" target="_blank">here</a>.</p>
+</li>
+<li>
+<p>Click the <strong>Private VLAN</strong> drop-down list.</p>
+</li>
+<li>Select <strong>Allocate a new one</strong>.</li>
+<li>Click the <strong>Secondary private VLAN</strong> drop-down list.</li>
+<li>Select <strong>Allocate a new one</strong>.</li>
+<li>Select the <strong>I understand that th following account will be charged</strong> agreement.</li>
+<li>
+<p>Select the <strong>I have read and agreed to the following third-party service</strong> agreement.</p>
+<p>At this point, the user would click create and the new cluster would start to provision.</p>
+<p>Now, explore the steps to create a new <strong>Gateway cluster</strong></p>
+</li>
+<li>
+<p>Select <strong>Gateway cluster</strong>.</p>
+<p>Notice the <strong>Data center location</strong> is set and can not be changed.</p>
+</li>
+<li>
+<p>Select <strong>Dual Intel Xeon Silver 4210</strong> for the CPU model.</p>
+<p>Notice the additional parameters that can be specified for the gateway cluster.</p>
+</li>
+<li>
+<p>Select the <strong>I understand that th following account will be charged</strong> agreement.</p>
+</li>
+<li>
+<p>Select the <strong>I have read and agreed to the following third-party service</strong> agreement.</p>
+<p>At this point, the user would click create and the new cluster would start to provision.</p>
+<p>Return to the <strong>Infrastructure</strong> page.</p>
+</li>
+<li>
+<p>Click the <strong>vce-se-l3 (primary)</strong> in the breadcrumb trail.</p>
+</li>
+<li>
+<p>Click vcs-mc-consolidated in the cluster table.</p>
+<p>The details page for a cluster provides information about all the components of the cluster including the servers running ESXi, storage, and network. In addition, additional servers and storage can be added to the cluster from this page.</p>
+</li>
+<li>
+<p>Click <strong>Add</strong> in the <strong>ESXi servers</strong> table.</p>
+<p>When adding servers to the cluster, the new servers can either use the same CPU model and configuration or a new configuration. While it is a best practice to have all servers in a cluster be heterogeneous, that is not always possible as CPU models age out and are replaced by newer models. Another scenario is if there is a desire to upgrade all the servers in a cluster to a different CPU model and configuration.</p>
+</li>
+<li>
+<p>Click the <strong>information</strong> (<img alt="" src="../_attachments/infoIcon.png">) icon next to <strong>Maintenance mode</strong>.</p>
+<p>In most circumstances administrators do not want workloads to be assigned to new hosts until all customizations and updates to the host are complete. Bring the hosts up in <strong>Maintenance mode</strong> prevents that from occurring.</p>
+</li>
+<li>
+<p>Click the <strong>information dialog</strong> to dismiss it.</p>
+</li>
+<li>Click <strong>Next</strong>.</li>
+<li>
+<p>Review the screen and click <strong>Next</strong>.</p>
+<p>The new host or hosts can either use the same primary subnets are a different one. The subnets must already exist and be reachable by the VMware management components.</p>
+<p>The next step would be to accept the agreements and then click <strong>Add</strong>. For this demonstration, a new server will not be added.</p>
+</li>
+<li>
+<p>Click the <strong>x</strong> to close the <strong>Add ESXi server</strong> dialog.</p>
+</li>
+<li>
+<p>Select the <strong>host-mf000.se.l3.com</strong> server in the table.</p>
+<p>Notice, when one or more hosts are selected, the <strong>Delete</strong> option becomes available.</p>
+</li>
+<li>
+<p>Click <strong>Cancel</strong> in the <strong>ESXi servers</strong> table.</p>
+</li>
+<li>
+<p>Click <strong>Add</strong> in the <strong>Storage</strong> table.</p>
+<p>Additional NFS storage shares can be added to the cluster. The size and performance tier can be specified for each share.</p>
+<p>Note, if the cluster used vSAN storage, the ability to add new servers and storage for the vSAN cluster would be presented.</p>
+</li>
+<li>
+<p>Click the <strong>x</strong> to close the <strong>Add NFS storage</strong> dialog.</p>
+</li>
+<li>
+<p>Select <strong>management-share</strong> in the <strong>Storage</strong> table.</p>
+<p>Notice, when one or more shares are selected, the <strong>Delete</strong> option becomes available.</p>
+</li>
+<li>
+<p>Click <strong>Cancel</strong> in the <strong>Storage</strong> table.</p>
 </li>
 </ol>
-<!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
-
-<ol start="2">
-<li>Click <strong>VMware</strong> <img alt="" src="../_attachments/VMicon.png"> icon in the left hand menu bar.</li>
+<p>The <strong>Network interface</strong> section provides detailed information on the vLANs used in the instance. Notice the <strong>download</strong> (<img alt="" src="../_attachments/downloadIcon.png">) icon above the vLAN tables. Use this button to download a comma separated value (CSV) file of all the associated subnets and IP addresses associated with the cluster.</p>
+<ol start="42">
+<li>
+<p>Expand the <strong>10.213.88.128/25</strong> subnet in the <strong>Private VLAN</strong> table.</p>
+<p>All of the IP addresses in the subnet are listed along with a status and the use of the address. In this case, these are the IPs associated with the NSX portable subnet.</p>
+</li>
+<li>
+<p>Collapse the <strong>10.213.88.128/25</strong> subnet.</p>
+</li>
+<li>
+<p>Click the <strong>Secondary Private VLAN</strong> tab.</p>
+<p>This table shows the subnets used for private storage and vMotion of VMs in the cluster.</p>
+</li>
+<li>
+<p>Click the <strong>Public VLAN</strong> tab.</p>
+<p>If enabled with public network access, this section show the primary subnet for hosts and virtual server instances, public subnet for customer workload edge, and the public subnet for the management edge.</p>
+</li>
+<li>
+<p>Click <strong>View resource</strong>.</p>
+<p>This link opens a new browser tab or window to the IBM Cloud portal page associated with the networking elements in the table.</p>
+</li>
+<li>
+<p>Click the <strong>x</strong> to the new browser tab.</p>
+</li>
+<li>Click the <strong>All clusters</strong> link to return to the main <strong>Infrastructure</strong> page.</li>
+<li>
+<p>Click the <strong>Services</strong> tab.</p>
+<p>The <strong>Services</strong> page lists all services that have been deployed into the VCF for Classic instance during the provisioning process. The ability to add new services is also available.</p>
+</li>
+<li>
+<p>Click <strong>Add</strong>.</p>
+<p>Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require additional capacity to be added before hand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.</p>
+</li>
+<li>
+<p>Click the <strong>vcs-se-l3 (primary)</strong> link in the breadcrumb trail.</p>
+</li>
+<li>
+<p>Click <strong>Veeam</strong>.</p>
+<p>Information needed to access the Veeam console is shown here. The <strong>Open Veeam Console</strong> button is part of this click through demonstration and is not part of the IBM Cloud portal.</p>
+</li>
+<li>
+<p>Click <strong>Open Veeam Console</strong>.</p>
+<p>The *<em>Veeam</em> suite of tools are deployed on a Microsoft Windows server. This can be a Windows Server VM deployed in the VCF for Classic infrastructure, a virtual server instance (VSI) on IBM Cloud, or a bare metal server on IBM Cloud. The specific steps to establish a virtual private network (VPN), configure the local hosts file, and opening a remote desktop client are not detailed in this click through demonstration. To learn about that process, review the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-vpn" target="_blank">here</a>.</p>
+</li>
+<li>
+<p>Click the first <strong>Veeam Backup</strong> icon on the desktop.</p>
+<p>The credentials to authenticate to the Veeam system was displayed on the service detail page in the IBM Cloud portal. Note, users should change the initial passwords of all services.</p>
+</li>
+<li>
+<p>Deselect <strong>Use windows session authentication</strong>.</p>
+</li>
+<li>Click the <strong>Password</strong> entry field.</li>
+<li>
+<p>Click <strong>Connect</strong>.</p>
+<p>This demonstration is not meant as a deep dive on using Veeam and its associated tools. Refer to the Veeam documentation and Veeam training available on Veeam's web site <a href="www.veeam.com" target="_blank">here</a>. However, in the next steps, create a simple Veeam backup job.</p>
+</li>
+<li>
+<p>Click <strong>Inventory</strong> in left menu.</p>
+</li>
+<li>Click <strong>vcssel3-vc-se.l3.com</strong> in the Virtual Infrastructure directory tree.</li>
+<li>
+<p>Click <strong>VMware-Aria-Operations-for-Logs-Master</strong>.</p>
+<p>The steps to select multiple hosts in the lists is simplified for this click through demonstration. </p>
+</li>
+<li>
+<p>Click the selected hosts.</p>
+<p>The steps open the context menu is simplified as a single click. In the actual console, users would right-click on the lists of selected hosts.</p>
+</li>
+<li>
+<p>Click <strong>Add to backup job</strong>.</p>
+</li>
+<li>
+<p>Click <strong>New job</strong>.</p>
+<p>The <strong>New Backup Job</strong> wizard walks through the process of defining a backup job.</p>
+</li>
+<li>
+<p>Explore the settings on the page and click <strong>Next</strong>.</p>
+</li>
+<li>Explore the <strong>Virtual Machines</strong> page and click <strong>Next</strong>.</li>
+<li>Explore the <strong>Storage</strong> page and click <strong>Next</strong>.</li>
+<li>Explore the <strong>Guest processing</strong> page and click <strong>Next</strong>.</li>
+<li>Select <strong>Run the job automatically</strong>.</li>
+<li>Explore the <strong>Schedule</strong> page and click <strong>Apply</strong>.</li>
+<li>Select <strong>Run the job when I click Finish</strong>.</li>
+<li>Click <strong>Finish</strong>.</li>
+<li>
+<p>Click <strong>Home</strong>.</p>
+<p>Notice the job has been started and is scheduled for future runs as specified when the job was defined.</p>
+</li>
+<li>
+<p>Click <strong>Return to IBM Cloud Portal</strong>.</p>
+</li>
+<li>Click <strong>x</strong> to close the <strong>Veeam</strong> service page.</li>
+<li>
+<p>Click <strong>VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition</strong>.</p>
+<p>Details to access the VMware Aria Operations Manager console and the VMware Aria Operations for Logs console are displayed. Initial passwords should be changed. Accessing the Aria consoles requires a VPN.</p>
+<p>Note, the buttons to open the consoles are part of the IBM Cloud portal.</p>
+</li>
+<li>
+<p>Click <strong>VMware Aria Operations Manager console</strong>.</p>
+<p>Note, the initial log in screen was not captured. It is identical to the one below shown for the <strong>VMware Aria Operations for Logs console</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong> on the <strong>Welcome</strong> page.</p>
+</li>
+<li>Click <strong>I accept the terms of this agreement</strong>.</li>
+<li>Click <strong>Next</strong>.</li>
+<li>Click <strong>Next</strong> on the license key page.</li>
+<li>Click <strong>Next</strong> on the <strong>Customer Experience Improvement Program</strong> page.</li>
+<li>
+<p>Click <strong>Finish</strong>.</p>
+<p><strong>VMware Aria Operations</strong> enables proactive IT operations, management, logging, and diagnostics management for VCF. To learn more about <strong>VMware Aria Operations</strong>, refer to this <a href="https://www.vmware.com/products/cloud-infrastructure/cloud-foundation-operations#features" target="_blank">VMware site</a>.</p>
+</li>
+<li>
+<p>Click <strong>Troubleshoot</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Alerts</strong>.</p>
+<p>The console provides insights into events occurring in the VMware environment. </p>
+</li>
+<li>
+<p>Click <strong>NSX Management service has failed</strong>.</p>
+<p>View the alert messages. Note, these alerts were generated during the automated provisioning process for the VCF for Classic instance. The issues related to the alerts were rectified as the instance became fully deployed and active.</p>
+</li>
+<li>
+<p>Click <strong>Log Analysis</strong> in left menu.</p>
+<p>The console provides insights into the thousands of log messages that occur during the normal operation of a VMware deployment.</p>
+</li>
+<li>
+<p>Click <strong>Visualize</strong> in left menu.</p>
+</li>
+<li>Click <strong>Dashboards</strong> in left menu.</li>
+<li>
+<p>Click <strong>Assess Cost</strong>.</p>
+<p>Since this is a new deployment, there is limited data; however, VMware Aria Operations Manager can help organizations reduce costs and improve efficiency through real-time, predictive capacity and cost analytics.</p>
+</li>
+<li>
+<p>Click <strong>Home</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Inventory</strong>.</p>
+<p>The <strong>Inventory</strong> dashboard shows the number of resources in the environment and help quantify the number of resources based on various perspectives and relationships within the environment.</p>
+</li>
+<li>
+<p>Click <strong>vSphere Inventory Summary</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Environment</strong> in left menu.</p>
+<p>More detailed information on the inventory is also available.</p>
+</li>
+<li>
+<p>Click <strong>x</strong> to close the VMware Aria Operations Manager console tab.</p>
+</li>
+<li>Click <strong>VMware Aria Operations for Logs console</strong>.</li>
+<li>
+<p>Click <strong>Login</strong>.</p>
+<p>Vmware Aria Operations for Logs provides organizations with centralized log management, deep operational visibility, and intelligent analytics for troubleshooting and auditing across a VCF for Classic instance.</p>
+<p>Review the data shown shown on the <strong>Overview</strong> page.</p>
+</li>
+<li>
+<p>Click <strong>Problems</strong> in left menu and review the data presented.</p>
+</li>
+<li>Click <strong>Vmware - vROPs 6.7+</strong> in left menu and review the data presented.</li>
+<li>Click <strong>Cluster - Threads Overview</strong> in left menu and review the data presented.</li>
+<li>Click <strong>VMware - vSphere</strong> in left menu and review the data presented.</li>
+<li>Click <strong>x</strong> to close the browser tab for the VMware Aria Operations for Logs console.</li>
+<li>Click <strong>x</strong> to close the service details page.</li>
+<li>
+<p>Click the <strong>Deployment history</strong> tab.</p>
+<p>The <strong>Deployment history</strong> shows the output of the various deployment steps performed for the instance. This view was taken just after the VCF for Classic completed the initial provisioning process.</p>
+</li>
+<li>
+<p>Click <strong>vCenter console</strong></p>
+<p>Like the other consoles for the add on services, accessing the <strong>vCenter Console</strong> is done through a VPN. The steps an links to establish the VPN are provided on the dialog and were performed outside of this click through demnostration.</p>
+</li>
+<li>
+<p>Click <strong>Go to vCenter console</strong>.</p>
+<p>Review the summary information provided for the deployed environment including capacity and usage data.</p>
+</li>
+<li>
+<p>Click the <strong>Hosts</strong> tab.</p>
+<p>All the ESXi hosts provisioned as part of the consolidate cluster are shown along with their respective, consumpton metric and high availability (HA) state.</p>
+</li>
+<li>
+<p>Click the <strong>Datastores</strong> tab.</p>
+<p>Both the user specified datastores (the two (2) NFS 3 stores of 1,000 gigabytes (GB)) and the datastores required as part of the base infrastructure are displayed.</p>
+</li>
+<li>
+<p>Click the <strong>Networks</strong> tab.</p>
+<p>The <strong>Networks</strong> pages lists all the port groups configured in the instance.</p>
+</li>
+<li>
+<p>Click the <strong>x</strong> to close the <strong>vCenter Server console</strong> tab.</p>
+</li>
+<li>Click the <strong>x</strong> to close the dialog.</li>
 </ol>
-<p>That concludes the <strong>managing</strong> portion of the demonstration.</p></div>
+<p>That concludes the click through demonstration for managing a VCF for Classic instance. </p></div>
 
 
 
