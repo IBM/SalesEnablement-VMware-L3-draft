@@ -114,8 +114,8 @@ extra:
     environment: ""
     resourceGroup: "Enablement-L3"
     dedicated:
-      instanceName: "vcs-l3"
-      clusterName: "vcs-dv-consolidated"
+      instanceName: "vcs-se-l3"
+      clusterName: "vcs-mc-consolidated"
     VMwaaS:
       siteName: "se-le-site"
       pvdc: "se-l3-provider"

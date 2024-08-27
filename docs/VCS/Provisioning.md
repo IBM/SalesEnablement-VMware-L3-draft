@@ -4,7 +4,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
     The steps that follow are specific to the provision process of VCF for Classic as of August 2024. 
     
-    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until the last step to create the instance. If using the ITZ cloud account and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do **NOT** have permission to provision or modify existing resources. However, using the live IBM Cloud portal in this manner can be leveraged in a "baking show" style demonstration. Instead of clicking **Create**, return to the VCF for Classic resources page in the Portal to show the already provisioned instance, and continue to demonstrate the management capabilities of VCF on Classic.
+    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until the last step to create the instance. If using the ITZ cloud account and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do **NOT** have permission to provision or modify existing resources. 
 
     **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
@@ -19,7 +19,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
 
-2. Click **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
+2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
 3. Click the **VMware Cloud Foundation (VCF) for Classic** tile.
 4. Click the **Information** dialog.
 
