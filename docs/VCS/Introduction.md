@@ -3,6 +3,6 @@ automation, and security in a single, client managed platform on IBM Cloud.
 
 In the following chapters, you will:
 
-- Learn how to provision a **VCF for Classic** instance using IBM Cloud portal.
+- Experience how to provision a **VCF for Classic** instance using IBM Cloud portal.
 
 - Explore managing a **VCF for Classic** instance using the IBM Cloud portal and various VMware management consoles.

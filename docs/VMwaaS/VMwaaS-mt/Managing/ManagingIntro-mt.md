@@ -1,4 +1,4 @@
-There are several aspects of managing a VMware as a Service (VMwaaS) multitenant instance on IBM Cloud. At a high level, these are the management of the "on IBM Cloud" aspects of a VMwaaS instance and managing the virtual data center (VDC) with VMware vCloud Director (vCloud Director). 
+There are several aspects of managing a VMware Cloud Foundation (VCF) as a Service (VMwaaS) multitenant instance on IBM Cloud. At a high level, these are the management of the "on IBM Cloud" aspects of a VCF as a Service instance and managing the virtual data center (VDC) with VMware vCloud Director (vCloud Director). 
 
 Using the IBM Cloud portal to manage aspects of the **Virtual Data Center (VDC)** is straight forward and includes tasks like:
 

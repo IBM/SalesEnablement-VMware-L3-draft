@@ -1,30 +1,29 @@
-The following module guides Business Partners and IBM sellers through the process of provisioning a **VMware as a Service (VMwaaS)** *multitenant* instance with the IBM Cloud portal. Extra context on parameters and options is provided illustrating the value of features to users along with links to extra reference material.
+The following module guides Business Partners and IBM sellers through the process of provisioning a **VMware Cloud Foundation (VCF) as a Service (VMwaaS)** *multitenant* instance with the IBM Cloud portal. Extra context on parameters and options is provided illustrating the value of features to users along with links to extra reference material.
 
-#
-# Click-Thru demonstration
------------------------------
+!!! Important "About the IBM Technology Zone (ITZ) environment"
 
- Use the click-thru demonstration to practice the provisioning process. The fields that require a text entry (for example Virtual Data Center name) are automatically populated in the click-thru demonstration. 
-
-!!! Note "Navigation in the click-thru demonstration."
+    The steps that follow are specific to the provision process of VCF as a Service as of August 2024. 
     
-    Not sure where to click or what to do next? Click anywhere on the screen within the click-thru demo page and the spot to interact with next is highlighted. Step-by-step instructions on how to run the demo follow.
+    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until the last step to create the instance. **If using the ITZ cloud account and the *Create* button is clicked, an error will occur.** This is expected as users added to the IBM Cloud for the ITZ environment do **NOT** have permission to provision or modify existing resources. 
 
-#
-# Step-by-step Instructions
-----------------------
+    **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
-!!! Important "Read before continuing!"
+# Click through demonstration
 
-    VMware Solutions, including the VMwaaS and other offerings, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. For this Level 3 course, these steps are intended to be followed in the **click-thru demonstration**; however, they can also be used to create a new instance. If you provision a live VMwaaS instance in your *personal* IBM Cloud account, then your account (and credit card that is associated with that account) is billed for the deployment. **Your user ID does not have permissions to complete these steps in the IBM Technology Zone (ITZ) environment associated with this course. These resources are already created in the ITZ environment.**
+ Use the click through demonstration to practice the provisioning process. The fields that require a text entry (for example Virtual Data Center name) are automatically populated in the click-thru demonstration. 
 
-##
-## Provision a multitenant Virtual Data Center (VDC)
+!!! Note "Navigation in the click through demonstration."
+    
+    Not sure where to click or what to do next? Click anywhere on the screen within the click through demo page and the spot to interact with next is highlighted. Step-by-step instructions on how to run the demo follow.
+
+## Step-by-step Instructions
+### Provision a multitenant Virtual Data Center (VDC)
 
 
 1. Open the click-thru demo and then click play ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-     **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMwaaS-mt-provisioning/index.html" target ="_blank">Provision a multitenant instance of VMwaaS</a>
+    **Click-thru demo:** <a href={{clickthru.vcsaas-mtProvisioning}} target ="_blank">Provision an instance of VCF as a Service - Multitenant</a>
+     <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMwaaS-mt-provisioning/index.html" target ="_blank">Provision a multitenant instance of VMwaaS</a> -->
 
 2. Click the VMware (![](_attachments/VMicon.png)) icon in the navigation menu.
 3. Click the **VMware as a Service** tile.

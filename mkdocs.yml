@@ -16,17 +16,17 @@ nav:
   - 'NOT READY FOR REVIEW (NRFR) - Welcome': 'index.md'
   - 'NRFR - VMware as a Service':
     - 'NRFR - Introduction': 'VMwaaS/Introduction.md'
+    - 'NRFR - VMwaaS - multitenant':
+      - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
+      - 'NRFR - Managing': 
+        - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
+        - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
     - 'NRFR - VMwaaS - single-tenant':
       - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
       - 'NRFR - Managing': 
         - 'NRFR - Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
         - 'NRFR - Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
         - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
-    - 'NRFR - VMwaaS - multitenant':
-      - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
-      - 'NRFR - Managing': 
-        - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
-        - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
     - 'NRFR - Using VMwaaS': 
       - 'NRFR - Overview': 'VMwaaS/Using/UsingIntro.md'
       - 'NRFR - Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
@@ -36,16 +36,16 @@ nav:
     - 'Introduction': 'VCS/Introduction.md'
     - 'Provisioning': 'VCS/Provisioning.md'
     - 'Managing': 'VCS/Managing.md'
-  - 'NRFR - VMware Cloud Foundation':
-    - 'NRFR - Introduction': 'VCF/Introduction.md'
-    - 'NRFR - Provisioning': 'VCF/Provisioning.md'
-    - 'NRFR - Managing': 'VCF/Managing.md'  
+  # - 'NRFR - VMware Cloud Foundation':
+  #   - 'NRFR - Introduction': 'VCF/Introduction.md'
+  #   - 'NRFR - Provisioning': 'VCF/Provisioning.md'
+  #   - 'NRFR - Managing': 'VCF/Managing.md'  
   - 'NRFR - Next steps': 'NextSteps.md'
-  - 'NRFR - VMware Solutions Shared (OPTIONAL)':
-    - 'NRFR - Introduction': 'Shared/Introduction.md'
-    - 'NRFR - Provisioning': 'Shared/Provisioning.md'
-    - 'NRFR - Managing': 'Shared/Managing.md'
-    - 'NRFR - Hands On Access': 'Shared/HandsOn.md'
+  # - 'NRFR - VMware Solutions Shared (OPTIONAL)':
+  #   - 'NRFR - Introduction': 'Shared/Introduction.md'
+  #   - 'NRFR - Provisioning': 'Shared/Provisioning.md'
+  #   - 'NRFR - Managing': 'Shared/Managing.md'
+  #   - 'NRFR - Hands On Access': 'Shared/HandsOn.md'
 
 theme:
   name: material
@@ -100,6 +100,8 @@ extra:
     name: "IBM Cloud for VMware Solutions Sales Foundation"
     YLurl: "https://yourlearning.ibm.com/activity/PLAN-9B285157EA97"
     BPurl: "https://learn.ibm.com/course/view.php?id=11142"
+  badge:
+    name: "IBM Cloud for VMware Solutions Technical Sales Intermediate"
   offering:
     name: "IBM Cloud for VMware Solutions"
   guide:
@@ -108,14 +110,20 @@ extra:
   clickthru:
     vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Provisioning/index.html"
     vcsManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html"
+    vcsaas-mtProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Provisioning/index.html"
+    vcsaas-mtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Managing/index.html"
   itz:
     account: "2326338 - ITZ-VMWARE"
     collection: ""
     environment: ""
-    resourceGroup: "Enablement-L3"
+    resourceGroup: "SalesEnablement-L3-2024"
+    accessGroup: "VMware-SE-L3-2024"
     dedicated:
       instanceName: "vcs-se-l3"
       clusterName: "vcs-mc-consolidated"
+    VCFaaS-mt:
+      name:"vdc-mt-se-l3"
+
     VMwaaS:
       siteName: "se-le-site"
       pvdc: "se-l3-provider"

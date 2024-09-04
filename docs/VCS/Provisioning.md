@@ -4,14 +4,16 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
     The steps that follow are specific to the provision process of VCF for Classic as of August 2024. 
     
-    The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until the last step to create the instance. If using the ITZ cloud account and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do **NOT** have permission to provision or modify existing resources. 
+    These steps can also be used in the IBM Cloud portal. Users can perform these steps to configure the instance in the reserved ITZ environment until the last step (click create). 
+    
+    If using the ITZ cloud account and the **Create** button is clicked, an error will occur. This is expected as users added to the IBM Cloud for the ITZ environment do **NOT** have permission to provision or modify existing resources. 
 
     **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
-Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
+Fields that require a text entry (service name for example) are pre-populated in the click-thru demonstration.
 
 !!! tip
-    Not sure where to click or what to do next? Simply click anywhere on the screen and the spot to click next will be highlighted.
+    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted.
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
@@ -121,7 +123,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 7. Select **vSphere 7.0u3**.
 
-    The **vSphere 7.0u3** version is choose because at this time, VCF for Classic does not support VMware Virtual Storage Area Network (vSAN) on vSphere 8.0u2. If **vSphere 8.0u2** was chosen, the vSAN option would not be visible when specifying the storage type for the **Consolidated cluster**.
+    The **vSphere 7.0u3** version is selected because at this time VCF for Classic does not support VMware Virtual Storage Area Network (vSAN) on vSphere 8.0u2. If **vSphere 8.0u2** was chosen, the vSAN option would not be visible when specifying the storage type for the **Consolidated cluster**.
 
 8. Click the **VMware vCenter Server version** drop-down list.
 
@@ -130,7 +132,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 9.  Select **vCenter Server 8.0**.
 10.  Click the **Instance name** entry field.
 
-    The **Instance name** is used to reference this instance post deployment.
+    The **Instance name** is used to reference this instance post deployment. The instance name is automatically entered in the click through demonstration.
 
 11.  Click the **Resource group** drop-down list.
 
@@ -350,7 +352,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 54. Select **I have read and agreed to the following third-party service agreements**.
 55. Click **Create**.
 
-The provisioning process for the VCF for Classic instance begins. When all specified infrastructure components with the request configurations are available this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
+At this point, the provisioning process for the VCF for Classic instance begins. If all specified infrastructure components with the requested configurations are available, this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
 
 The VCS for Classic automation performs a lot of steps. At a  high level, all the infrastructure is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
 
