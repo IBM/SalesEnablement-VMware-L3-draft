@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#click-through-demonstration" class="md-skip">
           Skip to content
         </a>
       
@@ -354,6 +354,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NRFR - Provisioning
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -363,6 +374,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    Step-by-step Instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-step Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#provision-a-multitenant-virtual-data-center-vdc" class="md-nav__link">
+    Provision a multitenant Virtual Data Center (VDC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -902,6 +952,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    Step-by-step Instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-step Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#provision-a-multitenant-virtual-data-center-vdc" class="md-nav__link">
+    Provision a multitenant Virtual Data Center (VDC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -915,19 +993,114 @@
                   
 
 
-<div><h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
-<p><em>File</em>: <code>VMwaaS/VMwaaS-mt/Provisioning-mt.md</code></p>
-<p><em>UndefinedError</em>: 'dict object' has no attribute 'vcsaas'</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Traceback (most recent call last):
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  File "/Users/andrewjones/Library/Python/3.9/lib/python/site-packages/mkdocs_macros/plugin.py", line 527, in render
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    return md_template.render(**page_variables)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  File "/Users/andrewjones/Library/Python/3.9/lib/python/site-packages/jinja2/environment.py", line 1301, in render
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    self.environment.handle_exception()
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  File "/Users/andrewjones/Library/Python/3.9/lib/python/site-packages/jinja2/environment.py", line 936, in handle_exception
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    raise rewrite_traceback_stack(source=source)
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  File "&lt;template&gt;", line 25, in top-level template code
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'vcsaas'
-</code></pre></div></div>
+<div><p>The following module guides Business Partners and IBM sellers through the process of provisioning a <strong>VMware Cloud Foundation (VCF) as a Service (VMwaaS)</strong> <em>multitenant</em> instance with the IBM Cloud portal. Extra context on parameters and options is provided illustrating the value of features to users along with links to extra reference material.</p>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>The steps that follow are specific to the provision process of VCF as a Service as of August 2024. </p>
+<p>The steps can also be used in the IBM Cloud portal. Users can perform these steps in the ITZ environment that was reserved up until the last step to create the instance. <strong>If using the ITZ cloud account and the <em>Create</em> button is clicked, an error will occur.</strong> This is expected as users added to the IBM Cloud for the ITZ environment do <strong>NOT</strong> have permission to provision or modify existing resources. </p>
+<p><strong>If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!</strong></p>
+</div>
+<h1 id="click-through-demonstration">Click through demonstration</h1>
+<p>Use the click through demonstration to practice the provisioning process. The fields that require a text entry (for example Virtual Data Center name) are automatically populated in the click-thru demonstration. </p>
+<div class="admonition note">
+<p class="admonition-title">Navigation in the click through demonstration.</p>
+<p>Not sure where to click or what to do next? Click anywhere on the screen within the click through demo page and the spot to interact with next is highlighted. Step-by-step instructions on how to run the demo follow.</p>
+</div>
+<h2 id="step-by-step-instructions">Step-by-step Instructions</h2>
+<h3 id="provision-a-multitenant-virtual-data-center-vdc">Provision a multitenant Virtual Data Center (VDC)</h3>
+<ol>
+<li>
+<p>Open the click-thru demo and then click play <img alt="" src="../_attachments/ClickThruPlayButton.png"> to begin the demonstration.</p>
+<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Provisioning/index.html" target="_blank">Provision an instance of VCF as a Service - Multitenant</a>
+ <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMwaaS-mt-provisioning/index.html" target ="_blank">Provision a multitenant instance of VMwaaS</a> --></p>
+</li>
+<li>
+<p>Click the VMware (<img alt="" src="../_attachments/VMicon.png">) icon in the navigation menu.</p>
+</li>
+<li>Click the <strong>VMware as a Service</strong> tile.</li>
+<li>Click the <strong>Help me choose</strong> link.</li>
+</ol>
+<p>These windows provide clients additional information and differentiation between the VMwaaS single- and multitenant offerings. If you are not already familiar with the offerings, read the descriptions that are provided.</p>
+<ol start="5">
+<li>Click the <strong>Compare</strong> tab.</li>
+<li>Click the <strong>x</strong> at the upper right to close the help information window.</li>
+<li>
+<p>Click in the <strong>Name</strong> field.</p>
+<p>Specify a descriptive name for the VCD as it cannot be changed after the site is provisioned.</p>
+</li>
+<li>
+<p>Click the <strong>Resource Group</strong> drop-down menu.</p>
+<p>Resource groups are used to help manage resources and billing in an IBM Cloud account.</p>
+</li>
+<li>
+<p>Click the <strong>Enablement-L3</strong> resource group.</p>
+</li>
+</ol>
+<p>Notice the 2 <strong>Pricing plan</strong> tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-mt_pricing" target="_blank">here</a>. It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they aren't used.</p>
+<ol>
+<li>Click the <strong>Location</strong> button.</li>
+</ol>
+<p>At the time this click-thru demonstration was created, VMwaaS multitenant was only available in Dallas, Frankfurt, and Washington, DC. Refer to the product <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-tenant-plan-deploy" target="_blank">documentation</a> or the IBM Cloud Portal for the list of currently supported locations.</p>
+<ol start="11">
+<li>Click <strong>Washington, DC</strong>.</li>
+</ol>
+<p>At the time this click-thru demonstration was created, only a single <strong>Cloud Director Site</strong> was available in the Washington, DC location. Other management site's will be added as the number of VDCs grow.</p>
+<ol start="12">
+<li>Click the <strong>Provider Virtual Data Center</strong> button.</li>
+</ol>
+<p>Clients can select a specific datacenter with in the selected location geography. Clients want to have this flexibility as they deploy workloads that require higher availability across datacenters. </p>
+<ol start="13">
+<li>Click the <strong>WDC07</strong> datacenter.</li>
+<li>
+<p>Click the <strong>information</strong> icon <img alt="" src="../_attachments/infoIcon.png"> above the <strong>Fast provisioning of VMs using linked clones</strong> toggle button.</p>
+<p>The <strong>Fast provisioning of VMs using linked clones</strong> option saves time by using linked clones for virtual machine provisioning. This option is enabled at the provider virtual data center (PVDC) level. Fast provisioning can be enabled for any VDCs created within the PVDC. If not enabled, all provisioning operations use full clones. To learn more about fast provisioning, check out VMware's documentation <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-4C232B62-4C95-44FF-AD8F-DA2588A5BACC.html" target="_blank">here</a>. </p>
+</li>
+<li>
+<p>Click the <strong>Fast provisioning of VMs using linked clones</strong> toggle button.</p>
+</li>
+<li>
+<p>Click the <strong>information</strong> icon <img alt="" src="../_attachments/infoIcon.png"> above the <strong>Network edge</strong> toggle button.</p>
+<p>VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. Currently, four choices of <strong>edge</strong> types are supported. Note the networking elements that can be enabled with each: </p>
+<ul>
+<li>
+<p><strong>Efficiency</strong> These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. Processors and memory are used from the single tenant site. New edge storage is allocated at an extra cost. Subsequent VDCs, up to 100, can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC.</p>
+</li>
+<li>
+<p><strong>Performance - M</strong> This option is suitable when only Layer 2 (L2) through L4 features such as Network Address Translation (NAT), routing, L4 firewall, and L4 load balancers are required. This option is suitable when the total throughput requirement is less than two gigabits per second (Gbps).</p>
+</li>
+<li>
+<p><strong>Performance - L</strong> This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, and L4 load balancers are required. This option is suitable when the total throughput requirement is in the range of two to 10 Gbps.</p>
+</li>
+<li>
+<p><strong>Performance - XL</strong> This option is suitable when the total throughput required is multiple Gbps for L7 and one or more virtual private networks (VPNs) are required. </p>
+</li>
+</ul>
+<p>The <strong>Create without network edge</strong> option is suitable for centralized networking administration and control over multiple VDCs. Learn more about this option <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vdc-adding#vdc-adding-procedure" target="_blank">here</a>.</p>
+</li>
+<li>
+<p>Click the table of listing the different edge types.</p>
+</li>
+<li>Click the <strong>information</strong> icon <img alt="" src="../_attachments/infoIcon.png"> above the <strong>Enable consumption limits</strong> toggle button.</li>
+</ol>
+<details class="question">
+<summary>BP quiz question</summary>
+<p>Take note of resources that can be used to limit consumption.</p>
+</details>
+<p>vCPU and RAM charges for on-demand VDCs are based on the amount that is used for running workloads. To control costs, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the VDC.</p>
+<ol start="19">
+<li>Click the <strong>vCPU limit (cores)</strong> entry box.</li>
+</ol>
+<p>At the time this click-thru demonstration was created, the default value for vCPU cores was set to the maximum of a VDC. In the future, expect the default to be the minimum of 1, instead of the maximum of 2000.</p>
+<ol start="20">
+<li>Click the <strong>RAM limit (GB)</strong> entry box.</li>
+</ol>
+<p>At the time this click-thru demonstration was created, the default value for RAM was set to the maximum of a VDC. In the future, expect the default setting to be the minimum of 1, instead of the maximum of 40960.</p>
+<ol start="21">
+<li>Click the <strong>I have read and agreed to the following license agreements</strong> checkbox.</li>
+<li>Click the <strong>Create</strong> button.</li>
+</ol>
+<p>The provisioning process is automated. Provisioning time varies based on the configuration and network edge option selected. When the ITZ environment used for this learning plan was originally created, the provisioning of the site took approximately 15 minutes.</p>
+<p>Now that a multitenant <strong>VDC</strong> is provisioned, it is time to look at the management capabilities through the IBM Cloud portal.</p></div>
 
 
 

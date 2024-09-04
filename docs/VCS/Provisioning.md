@@ -21,7 +21,7 @@ Fields that require a text entry (service name for example) are pre-populated in
 
 <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a> -->
 
-2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
+2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 3. Click the **VMware Cloud Foundation (VCF) for Classic** tile.
 4. Click the **Information** dialog.
 
