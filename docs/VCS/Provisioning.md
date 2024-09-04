@@ -2,7 +2,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    The steps that follow are specific to the provision process of VCF for Classic as of August 2024. 
+    The steps that follow are specific to the provisioning process of VCF for Classic as of August 2024. 
     
     These steps can also be used in the IBM Cloud portal. Users can perform these steps to configure the instance in the reserved ITZ environment until the last step (click create). 
     
