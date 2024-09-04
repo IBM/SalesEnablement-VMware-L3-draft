@@ -24,7 +24,7 @@
     
     
       
-        <title>NRFR - Provisioning - IBM Cloud for VMware Solutions</title>
+        <title>Provisioning' - IBM Cloud for VMware Solutions</title>
       
     
     
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NRFR - Provisioning
+              Provisioning'
             
           </span>
         </div>
@@ -358,7 +358,7 @@
           
   
   <span class="md-ellipsis">
-    NRFR - Provisioning
+    Provisioning'
   </span>
   
 
@@ -369,7 +369,7 @@
         
   
   <span class="md-ellipsis">
-    NRFR - Provisioning
+    Provisioning'
   </span>
   
 
@@ -401,6 +401,27 @@
           <li class="md-nav__item">
   <a href="#provision-a-multitenant-virtual-data-center-vdc" class="md-nav__link">
     Provision a multitenant Virtual Data Center (VDC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-settings" class="md-nav__link">
+    Network settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing-plan" class="md-nav__link">
+    Pricing plan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumption-limit" class="md-nav__link">
+    Consumption limit
   </a>
   
 </li>
@@ -973,6 +994,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#network-settings" class="md-nav__link">
+    Network settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing-plan" class="md-nav__link">
+    Pricing plan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumption-limit" class="md-nav__link">
+    Consumption limit
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1015,91 +1057,76 @@
  <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMwaaS-mt-provisioning/index.html" target ="_blank">Provision a multitenant instance of VMwaaS</a> --></p>
 </li>
 <li>
-<p>Click the VMware (<img alt="" src="../_attachments/VMicon.png">) icon in the navigation menu.</p>
+<p>Click the VMware (<img alt="" src="../_attachments/VMicon.png">) icon in the left menu.</p>
 </li>
-<li>Click the <strong>VMware as a Service</strong> tile.</li>
-<li>Click the <strong>Help me choose</strong> link.</li>
-</ol>
-<p>These windows provide clients additional information and differentiation between the VMwaaS single- and multitenant offerings. If you are not already familiar with the offerings, read the descriptions that are provided.</p>
-<ol start="5">
-<li>Click the <strong>Compare</strong> tab.</li>
-<li>Click the <strong>x</strong> at the upper right to close the help information window.</li>
+<li>
+<p>Click the <strong>VMware Cloud Foundation (VCF) as a Service</strong> tile.</p>
+<p>Notice the three (3) tiles under <strong>What would you like to create?"</strong>. For this demonstration, a <strong>Multitenant Virtual data center</strong> will be created. The other two tiles are related to the <strong>Single-tenant</strong> option, one tile to create a VMware Cloud Director (VCD) site, and one tile to create a Virtual data center in the VCD site. </p>
+</li>
+<li>
+<p>Click <strong>VDC details</strong> in left menu.</p>
+</li>
 <li>
 <p>Click in the <strong>Name</strong> field.</p>
-<p>Specify a descriptive name for the VCD as it cannot be changed after the site is provisioned.</p>
+<p>Specify a descriptive name for the VDC as it cannot be changed after the site is provisioned.</p>
 </li>
 <li>
-<p>Click the <strong>Resource Group</strong> drop-down menu.</p>
+<p>Click the <strong>Resource Group</strong> drop-down list.</p>
 <p>Resource groups are used to help manage resources and billing in an IBM Cloud account.</p>
 </li>
 <li>
-<p>Click the <strong>Enablement-L3</strong> resource group.</p>
+<p>Click the <strong>SalesEnablement-L3-2024</strong> resource group.</p>
 </li>
+<li>Click the <strong>Data center</strong> drop-down list.</li>
 </ol>
-<p>Notice the 2 <strong>Pricing plan</strong> tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-mt_pricing" target="_blank">here</a>. It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they aren't used.</p>
-<ol>
-<li>Click the <strong>Location</strong> button.</li>
-</ol>
-<p>At the time this click-thru demonstration was created, VMwaaS multitenant was only available in Dallas, Frankfurt, and Washington, DC. Refer to the product <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-tenant-plan-deploy" target="_blank">documentation</a> or the IBM Cloud Portal for the list of currently supported locations.</p>
+<p>Refer to the product <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-tenant-plan-deploy#tenant-plan-deploy-locations" target="_blank">documentation</a> or the IBM Cloud Portal for the list of currently supported locations.</p>
 <ol start="11">
-<li>Click <strong>Washington, DC</strong>.</li>
+<li>Click <strong>DAL13</strong>.</li>
+<li>
+<p>Enable the <strong>Fast provisioning of VMs using linked clones</strong> <strong>information</strong> switch.</p>
+<p>The <strong>Fast provisioning of VMs using linked clones</strong> option saves time by using linked clones for virtual machine provisioning. You can enable fast provisioning for any VDC created within the resource pool. If not enabled, all provisioning operations use full clones. To learn more about fast provisioning, check out VMware's documentation <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-4C232B62-4C95-44FF-AD8F-DA2588A5BACC.html" target="_blank">here</a>. </p>
+</li>
 </ol>
-<p>At the time this click-thru demonstration was created, only a single <strong>Cloud Director Site</strong> was available in the Washington, DC location. Other management site's will be added as the number of VDCs grow.</p>
-<ol start="12">
-<li>Click the <strong>Provider Virtual Data Center</strong> button.</li>
-</ol>
-<p>Clients can select a specific datacenter with in the selected location geography. Clients want to have this flexibility as they deploy workloads that require higher availability across datacenters. </p>
+<h3 id="network-settings">Network settings</h3>
+<p>There are several network settings available for the multitenant option.</p>
+<p>Clients choose to create the VDC with a network edge. VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. Disabling this option removes the next two selections for <strong>Network connection</strong>.</p>
+<p>Clients can choose to expose the VDC to both the public (internet) and private networks or just the private network.
+When you select private-only workload connectivity, the VDC does not have an incoming or outgoing connectivity path to the public internet and can access IBM Cloud Services only over the private IBM network. </p>
+<p>VDCs can connect to IBM Cloud Transit Gateway to enable the workloads to securely connect to other workloads outside of the private network. For more information, see <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tgw-adding-connections" target="_blank">Using Transit Gateway to interconnect VCF as a Service with IBM Cloud services</a>.</p>
+<p>The connection is made available through the network edge. There are four options for the network edge. Note the number of vCPUs, memory, and pricing associated with each option: </p>
+<div class="highlight"><pre><span></span><code>- **Efficiency** These edges allocate networking resources that can be used by up to 64 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 64 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC.
+
+- **Performance - M** This option is suitable when only Layer 2 (L2) through L4 features such as Network Address Translation (NAT), routing, and L4 firewall are required and the total throughput requirement is in the range 2 - 6 gigabits per second (Gbps).
+
+- **Performance - L** This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2 - 10 Gbps. This option is recommended for high traffic.
+
+- **Performance - XL** This option provides the highest level of edge services and throughput over 10 Gbps.
+</code></pre></div>
+<p>For this demonstration, the default Network settings are used.</p>
+<h3 id="pricing-plan">Pricing plan</h3>
 <ol start="13">
-<li>Click the <strong>WDC07</strong> datacenter.</li>
 <li>
-<p>Click the <strong>information</strong> icon <img alt="" src="../_attachments/infoIcon.png"> above the <strong>Fast provisioning of VMs using linked clones</strong> toggle button.</p>
-<p>The <strong>Fast provisioning of VMs using linked clones</strong> option saves time by using linked clones for virtual machine provisioning. This option is enabled at the provider virtual data center (PVDC) level. Fast provisioning can be enabled for any VDCs created within the PVDC. If not enabled, all provisioning operations use full clones. To learn more about fast provisioning, check out VMware's documentation <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-4C232B62-4C95-44FF-AD8F-DA2588A5BACC.html" target="_blank">here</a>. </p>
+<p>Click <strong>Pricing plan</strong> in left menu.</p>
+<p>Notice the 2 Pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a>. It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.</p>
 </li>
-<li>
-<p>Click the <strong>Fast provisioning of VMs using linked clones</strong> toggle button.</p>
-</li>
-<li>
-<p>Click the <strong>information</strong> icon <img alt="" src="../_attachments/infoIcon.png"> above the <strong>Network edge</strong> toggle button.</p>
-<p>VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. Currently, four choices of <strong>edge</strong> types are supported. Note the networking elements that can be enabled with each: </p>
-<ul>
-<li>
-<p><strong>Efficiency</strong> These edges allocate networking resources that can be used by up to 100 VDCs before another efficiency edge needs to be created. Processors and memory are used from the single tenant site. New edge storage is allocated at an extra cost. Subsequent VDCs, up to 100, can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC.</p>
-</li>
-<li>
-<p><strong>Performance - M</strong> This option is suitable when only Layer 2 (L2) through L4 features such as Network Address Translation (NAT), routing, L4 firewall, and L4 load balancers are required. This option is suitable when the total throughput requirement is less than two gigabits per second (Gbps).</p>
-</li>
-<li>
-<p><strong>Performance - L</strong> This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, and L4 load balancers are required. This option is suitable when the total throughput requirement is in the range of two to 10 Gbps.</p>
-</li>
-<li>
-<p><strong>Performance - XL</strong> This option is suitable when the total throughput required is multiple Gbps for L7 and one or more virtual private networks (VPNs) are required. </p>
-</li>
-</ul>
-<p>The <strong>Create without network edge</strong> option is suitable for centralized networking administration and control over multiple VDCs. Learn more about this option <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vdc-adding#vdc-adding-procedure" target="_blank">here</a>.</p>
-</li>
-<li>
-<p>Click the table of listing the different edge types.</p>
-</li>
-<li>Click the <strong>information</strong> icon <img alt="" src="../_attachments/infoIcon.png"> above the <strong>Enable consumption limits</strong> toggle button.</li>
 </ol>
-<details class="question">
-<summary>BP quiz question</summary>
-<p>Take note of resources that can be used to limit consumption.</p>
-</details>
-<p>vCPU and RAM charges for on-demand VDCs are based on the amount that is used for running workloads. To control costs, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the VDC.</p>
-<ol start="19">
-<li>Click the <strong>vCPU limit (cores)</strong> entry box.</li>
-</ol>
-<p>At the time this click-thru demonstration was created, the default value for vCPU cores was set to the maximum of a VDC. In the future, expect the default to be the minimum of 1, instead of the maximum of 2000.</p>
-<ol start="20">
-<li>Click the <strong>RAM limit (GB)</strong> entry box.</li>
-</ol>
-<p>At the time this click-thru demonstration was created, the default value for RAM was set to the maximum of a VDC. In the future, expect the default setting to be the minimum of 1, instead of the maximum of 40960.</p>
-<ol start="21">
-<li>Click the <strong>I have read and agreed to the following license agreements</strong> checkbox.</li>
+<h3 id="consumption-limit">Consumption limit</h3>
+<p>vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center.</p>
+<ol start="14">
+<li>
+<p>Click the <strong>vCPU limit (cores)</strong> entry box.</p>
+<p>Note the range of the vCPU limit is from 1 to 2000 vCPUs.</p>
+</li>
+<li>
+<p>Click the <strong>RAM limit (GB)</strong> entry box.</p>
+<p>Note the range of RAM is between 1 and 40960 gigabytes (GB).</p>
+</li>
+<li>
+<p>Click the <strong>I have read and agreed to the following license agreements</strong> checkbox.</p>
+</li>
 <li>Click the <strong>Create</strong> button.</li>
 </ol>
-<p>The provisioning process is automated. Provisioning time varies based on the configuration and network edge option selected. When the ITZ environment used for this learning plan was originally created, the provisioning of the site took approximately 15 minutes.</p>
+<p>The provisioning process is automated. Provisioning time varies based on the configuration and network edge option selected. When the ITZ environment used for this learning plan was originally created, the provisioning of the VDC took approximately 15 minutes.</p>
 <p>Now that a multitenant <strong>VDC</strong> is provisioned, it is time to look at the management capabilities through the IBM Cloud portal.</p></div>
 
 
