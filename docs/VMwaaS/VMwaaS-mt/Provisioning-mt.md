@@ -42,8 +42,8 @@ The following module guides Business Partners and IBM sellers through the proces
 
     Refer to the product <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-tenant-plan-deploy#tenant-plan-deploy-locations" target="_blank">documentation</a> or the IBM Cloud Portal for the list of currently supported locations.
 
-11. Click **DAL13**.
-12. Enable the **Fast provisioning of VMs using linked clones** **information** switch.
+9. Click **DAL13**.
+10. Enable the **Fast provisioning of VMs using linked clones** **information** switch.
 
     The **Fast provisioning of VMs using linked clones** option saves time by using linked clones for virtual machine provisioning. You can enable fast provisioning for any VDC created within the resource pool. If not enabled, all provisioning operations use full clones. To learn more about fast provisioning, check out VMware's documentation <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-4C232B62-4C95-44FF-AD8F-DA2588A5BACC.html" target="_blank">here</a>. 
 
@@ -70,23 +70,23 @@ The connection is made available through the network edge. There are four option
 For this demonstration, the default Network settings are used.
 
 ### Pricing plan
-13. Click **Pricing plan** in left menu.
+11. Click **Pricing plan** in left menu.
 
     Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a>. It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
 
 ### Consumption limit
 vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center.
 
-14. Click the **vCPU limit (cores)** entry box.
+12. Click the **vCPU limit (cores)** entry box.
 
     Note the range of the vCPU limit is from 1 to 2000 vCPUs.
 
-15. Click the **RAM limit (GB)** entry box.
+13. Click the **RAM limit (GB)** entry box.
 
     Note the range of RAM is between 1 and 40960 gigabytes (GB).
 
-16. Click the **I have read and agreed to the following license agreements** checkbox.
-22. Click the **Create** button.
+14. Click the **I have read and agreed to the following license agreements** checkbox.
+15. Click the **Create** button.
 
 The provisioning process is automated. Provisioning time varies based on the configuration and network edge option selected. When the ITZ environment used for this learning plan was originally created, the provisioning of the VDC took approximately 15 minutes.
 
