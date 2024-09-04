@@ -22,7 +22,7 @@ The following module guides Business Partners and IBM sellers through the proces
 
 1. Open the click-thru demo and then click play ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-    **Click-thru demo:** <a href={{clickthru.vcsaas-mtProvisioning}} target ="_blank">Provision an instance of VCF as a Service - Multitenant</a>
+    **Click-thru demo:** <a href={{clickthru.vcsaasmtProvisioning}} target ="_blank">Provision an instance of VCF as a Service - Multitenant</a>
      <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMwaaS-mt-provisioning/index.html" target ="_blank">Provision a multitenant instance of VMwaaS</a> -->
 
 2. Click the VMware (![](_attachments/VMicon.png)) icon in the navigation menu.

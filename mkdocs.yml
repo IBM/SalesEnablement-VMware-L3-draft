@@ -110,8 +110,8 @@ extra:
   clickthru:
     vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Provisioning/index.html"
     vcsManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html"
-    vcsaas-mtProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Provisioning/index.html"
-    vcsaas-mtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Managing/index.html"
+    vcsaasmtProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Provisioning/index.html"
+    vcsaasmtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Managing/index.html"
   itz:
     account: "2326338 - ITZ-VMWARE"
     collection: ""
