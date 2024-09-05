@@ -21,7 +21,8 @@ nav:
       - 'Managing a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
       - 'Managing a multitenant site': 'VMwaaS/VMwaaS-mt/Managing-mt-site.md'
       - 'Operating a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Operating-mt.md'
-      - 'Creating a client demonstration using VCF as a Service multitenant': 'VMwaaS/VMwaaS-mt/Demonstrating-mt.md'
+      - 'Monitoring a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Monitoring-mt.md'
+      - 'Demonstrating': 'VMwaaS/VMwaaS-mt/Demonstrating-mt.md'
       # - 'NRFR - Managing': 
       #   - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
       #   - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
