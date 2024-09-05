@@ -15,14 +15,14 @@ docs_dir: docs
 nav:
   - 'Welcome': 'index.md'
   - 'VMware as a Service':
-    - 'Introduction': 'VMwaaS/Introduction.md'
-    - 'VMwaaS - multitenant':
-      - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
-      - 'Managing a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
-      - 'Managing a multitenant site': 'VMwaaS/VMwaaS-mt/Managing-mt-site.md'
-      - 'Operating a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Operating-mt.md'
-      - 'Monitoring a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Monitoring-mt.md'
-      - 'Demonstrating': 'VMwaaS/VMwaaS-mt/Demonstrating-mt.md'
+    - 'Introduction': 'VCFaaS/Introduction.md'
+    - 'VCFaaS - multitenant':
+      - 'Provisioning': 'VCFaaS/VCFaaS-mt/Provisioning-mt.md'
+      - 'Managing a Virtual Data Center instance': 'VCFaaS/VCFaaS-mt/Managing-mt.md'
+      - 'Managing a multitenant site': 'VCFaaS/VCFaaS-mt/Managing-mt-site.md'
+      - 'Operating a Virtual Data Center instance': 'VCFaaS/VCFaaS-mt/Operating-mt.md'
+      - 'Monitoring a Virtual Data Center instance': 'VCFaaS/VCFaaS-mt/Monitoring-mt.md'
+      - 'Demonstrating': 'VCFaaS/VCFaaS-mt/Demonstrating-mt.md'
       # - 'NRFR - Managing': 
       #   - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
       #   - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
@@ -38,10 +38,10 @@ nav:
     #   - 'NRFR - Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
     # - 'NRFR - The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
   - 'VMware Cloud Foundation for Classic':
-    - 'Introduction': 'VCS/Introduction.md'
-    - 'Provisioning': 'VCS/Provisioning.md'
-    - 'Managing': 'VCS/Managing.md'
-    - 'Demonstrating': 'VCS/Demonstrating.md'
+    - 'Introduction': 'VCF-Classic/Introduction.md'
+    - 'Provisioning': 'VCF-Classic/Provisioning.md'
+    - 'Managing': 'VCF-Classic/Managing.md'
+    - 'Demonstrating': 'VCF-Classic/Demonstrating.md'
   # - 'NRFR - VMware Cloud Foundation':
   #   - 'NRFR - Introduction': 'VCF/Introduction.md'
   #   - 'NRFR - Provisioning': 'VCF/Provisioning.md'
