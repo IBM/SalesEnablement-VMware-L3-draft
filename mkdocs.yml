@@ -14,9 +14,9 @@ docs_dir: docs
 
 nav:
   - 'Welcome': 'index.md'
-  - 'VMware Cloud Foundation as a Service':
+  - 'VMware Cloud Foundation (VCF) as a Service':
     - 'Introduction': 'VCFaaS/Introduction.md'
-    - 'VCFaaS - multitenant':
+    - 'VCF as a Service - multitenant':
       - 'Provisioning': 'VCFaaS/VCFaaS-mt/Provisioning-mt.md'
       - 'Managing a Virtual Data Center instance': 'VCFaaS/VCFaaS-mt/Managing-mt.md'
       - 'Managing a multitenant site': 'VCFaaS/VCFaaS-mt/Managing-mt-site.md'

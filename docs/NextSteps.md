@@ -1,3 +1,8 @@
+----
+Add reminder to clean up resources!!!!
+----
+
+
 This {{learningplan.name}} demonstrated several of the {{offering.name}} offerings available. Users learned the basics for provisioning and managing both VMware Cloud Foundation (VCF) as a Service single tenant and multitenant and VMware Cloud Foundation for Classic. 
 
 ## More to learn
