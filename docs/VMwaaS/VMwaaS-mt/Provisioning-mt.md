@@ -11,9 +11,9 @@ The following module guides Business Partners and IBM sellers through the proces
 # Click through demonstration
  Use the click through demonstration to practice the provisioning process. The fields that require a text entry (for example Virtual Data Center name) are automatically populated in the click-thru demonstration. 
 
-!!! Note "Navigation in the click through demonstration."
+!!! tip
     
-    Not sure where to click or what to do next? Click anywhere on the screen within the click through demo page and the spot to interact with next is highlighted. Step-by-step instructions on how to run the demo follow.
+    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
 
 ## Step-by-step Instructions
 ### Provision a multitenant Virtual Data Center (VDC)

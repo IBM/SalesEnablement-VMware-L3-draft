@@ -10,10 +10,9 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
     **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
-Fields that require a text entry (service name for example) are pre-populated in the click-thru demonstration.
-
 !!! tip
-    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted.
+    
+    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
@@ -354,10 +353,10 @@ Fields that require a text entry (service name for example) are pre-populated in
 
 At this point, the provisioning process for the VCF for Classic instance begins. If all specified infrastructure components with the requested configurations are available, this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
 
-The VCS for Classic automation performs a lot of steps. At a  high level, all the infrastructure is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
+The VCS for Classic automation performs hundreds of operations. At a  high level, all the infrastructure (compute and storage) is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
 
-During the provisioning process, the status of the instance will be updated in the IBM Cloud portal. In addition, depending on the user's notification preferences in the IBM Cloud portal, e-mails are sent as major steps in the automation are started and completed. Additionally, service tickets will be opened if there are delays in the notification. The user can observe and comment on the individual service tickets.
+During the provisioning process, the status of the instance will be updated in the IBM Cloud portal. In addition, depending on the user's notification preferences in the IBM Cloud portal, e-mails are sent as major steps in the automation are started and completed. Additionally, service tickets will be opened if there are delays in the automation.
 
-When all steps in the automation are complete and all systems are operational, the status of the instance will change to **Ready**. At this time, the VCF for Classic is ready for use. 
+When all steps in the automation are complete and all systems are operational, the status of the instance will change to **Ready**. At this time, the VCF for Classic instance is ready for use. 
 
-In the next chapter, learn about the management capabilities of a VCF for Classic instance.
+In the next chapter, learn how to manage a VCF for Classic instance using the IBM Cloud portal.

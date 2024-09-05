@@ -9,7 +9,8 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
 
 !!! tip
-    Not sure where to click or what to do next? Simply click anywhere on the screen and the spot to click next will be highlighted.
+    
+    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
