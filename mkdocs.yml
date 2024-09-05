@@ -40,7 +40,7 @@ nav:
     - 'Introduction': 'VCS/Introduction.md'
     - 'Provisioning': 'VCS/Provisioning.md'
     - 'Managing': 'VCS/Managing.md'
-    - 'Demonstrating': VCS/Demonstrating.md'
+    - 'Demonstrating': 'VCS/Demonstrating.md'
   # - 'NRFR - VMware Cloud Foundation':
   #   - 'NRFR - Introduction': 'VCF/Introduction.md'
   #   - 'NRFR - Provisioning': 'VCF/Provisioning.md'
