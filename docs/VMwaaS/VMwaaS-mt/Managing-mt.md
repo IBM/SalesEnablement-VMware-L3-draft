@@ -99,7 +99,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
         **Veeam Backup and Replication Always-On Enterprise** provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed the VDC is provisioned. Learn more about Veeam and the simple install process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.
 
-    ![](_videos/ip-vmware-VCFaaS-addOnServices.png)
+    ![](_attachments/ip-vmware-VCFaaS-addOnServices.png)
 
 ### Interconnectivity
 12. Click the **Interconnectivity** tab.
