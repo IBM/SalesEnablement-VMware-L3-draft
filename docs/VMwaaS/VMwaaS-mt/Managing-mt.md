@@ -140,10 +140,17 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivitySummary.png)
 
+18. Expand the first **Unbound GRE Tunnel**.
 
+    ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityTableExpand.png)
 
+19. Examine the tunnel information displayed.
 
+    ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityTunnelDetails.png)
 
+That concludes the overview of managing a VCF as a Service multitenant instance using the IBM Cloud portal. In later chapters, you will:
 
+- explore accessing the VMware Cloud Director web console to create datacenter groups, networks, and virtual machines (VMs)
+- explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring
 
-Next user VMware vCloud Director's web console to create and manage resources in the VDC.
+In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant site where the VCF as a Service multitenant instance is running.
