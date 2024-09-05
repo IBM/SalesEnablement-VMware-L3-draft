@@ -18,6 +18,8 @@ nav:
     - 'NRFR - Introduction': 'VMwaaS/Introduction.md'
     - 'NRFR - VMwaaS - multitenant':
       - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
+      - 'Managing': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
+      - 'Managing': 'VMwaaS/VMwaaS-mt/Managing-withVDC-mt.md'
       - 'NRFR - Managing': 
         - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
         - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
@@ -115,7 +117,7 @@ extra:
   itz:
     account: "2326338 - ITZ-VMWARE"
     collection: ""
-    environment: ""
+    environment: "https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7"
     resourceGroup: "SalesEnablement-L3-2024"
     accessGroup: "VMware-SE-L3-2024"
     dedicated:
@@ -123,6 +125,7 @@ extra:
       clusterName: "vcs-mc-consolidated"
     VCFaaS-mt:
       name:"vdc-mt-se-l3"
+    tgID: "0136372c-2832-4706-8690-82164d6006a7"
 
     VMwaaS:
       siteName: "se-le-site"
