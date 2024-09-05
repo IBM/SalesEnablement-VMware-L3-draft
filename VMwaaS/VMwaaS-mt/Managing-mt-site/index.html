@@ -948,16 +948,83 @@
 
   <h1>Managing the multitenant site</h1>
 
-<div><p>Managing the VDC is done with the VMware vCloud Director web console, which is accessible through the IBM Cloud portal. This aspect of management includes common VMware administrative tasks like:</p>
-<div class="highlight"><pre><span></span><code>adding and deleting networks, firewalls, VPNs, and network address translation (NAT) rules
-
-adding and deleting virtual machines (VMs), virtual applications (vApps), and affinity rules
-
-managing storage policies and named disks
-
-and other virtual data center capabilities that are exposed through the vCloud Director web console
-</code></pre></div>
-<p>Both of these domains are explored in this demonstration guide. When demonstrating to clients, sellers are encouraged to focus on the "on the IBM Cloud" aspects of the solution.</p></div>
+<div><p>In VMware Cloud Foundation (VCF) as a Service, a <strong>Cloud Director site</strong> is where the physical resources for VCF are managed. </p>
+<p>In VCF as a Service <strong>single-tenant</strong>, the client would be responsible for specifying the compute and storage infrastructure for their site. Using the IBM Cloud portal, the client could grow and shrink their site as they desire.</p>
+<p>In VCF as a Service <strong>multitenant</strong>, IBM manages most aspects of the <strong>Cloud Director site</strong>. Each site may host Virtual Data Centers (VDCs) for many different clients. The only actions clients can perform on the IBM managed site are:</p>
+<ul>
+<li>create new VDCs</li>
+<li>add and remove <strong>Add-on services</strong></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>The steps that follow are specific to the ITZ environment reserved as part of the IBM Cloud for VMware Solutions Level 3 learning plan. If you don't already have an active reservation, you can create one <a href="https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7" target="_blank">here</a>. Follow the directions specified in the "Reserve the environment" activity in the learning plan.</p>
+<p>Remember, in the ITZ environment you will <strong>NOT</strong> have permission to create, delete, or modify resources. You will be utilizing pre-provisioned and pre-configured resources that are shared by all users of the learning plan.</p>
+<p>The steps outlined go up to the point of creating, deleting, or modifying a resource and then instruct you to cancel the pending action. This approach is common for client demonstrations as some events take longer than you would want to wait during a live demonstration. Explain to the client what would occur if the action had been completed (for example, "the resource would then be deleted.").</p>
+<p>If an attempt is made to complete the action in the ITZ environment an error message would be shown like:</p>
+<p><img alt="" src="../_attachments/errorMessage.png"></p>
+</div>
+<ol>
+<li>
+<p>Click the link below to open a browser to the IBM Cloud portal.</p>
+<p><a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal - VCF as a Service</a></p>
+</li>
+<li>
+<p>Switch to the 2326338 - ITZ-VMWARE IBM Cloud account.</p>
+<p><img alt="" src="../_attachments/switchAccount.gif"></p>
+</li>
+<li>
+<p>Click the <strong>Cloud Director sites</strong> tab.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorTab.png"></p>
+</li>
+<li>
+<p>Expand the <strong>IBM VCFaaS Multitenant - DAL</strong> entry.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorTable.png"></p>
+</li>
+<li>
+<p>Examine the information displayed for the site, and then click the <strong>IBM VCFaaS Multitenant - DAL</strong> link.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorTableExpanded.png"></p>
+</li>
+<li>
+<p>Examine the information displayed for the site, and then click the <strong>Virtual data centers</strong> tab.</p>
+<p>Note, the number of VDCs only shows the number of VDCs owned by this IBM Cloud account and not the total number of VDCS in the site that is managed by IBM.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorSiteSummary.png"></p>
+</li>
+<li>
+<p>Examine the VDC information displayed, and then click the <strong>Add-on services</strong> tab.</p>
+<p>Note the ability to create a new VDC. Clicking this button would open the dialog seen earlier when provisioning a new VCF as a Service multitenant instance.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorVDCSummary.png"></p>
+</li>
+<li>
+<p>Examine the <strong>Add-on services</strong> page.</p>
+<p>In the ITZ environment for this learning plan, all available <strong>Add-on services</strong> have already been installed. VMware Cloud Director Availability (VCDA) was installed when the VCD instance was initially provisioned. Veeam Backup and Replication was installed after the VCD instance was provisioned. Before Veeam was installed, an <strong>Add</strong> appeared on the page where Veeam was selected. </p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorAddOns.png"></p>
+</li>
+<li>
+<p>Expand the <strong>VMware Cloud Director Availability (VCDA)</strong> entry.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorAddOnsExpand.png"></p>
+</li>
+<li>
+<p>Examine the information and tabs available for VCDA.</p>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>At this time, administrative access to the <strong>Add-on services</strong> for this instance is not provided. The IBM Cloud Identity Access Management (IAM) controls do not provide sufficient isolation control for these services in a shared environment like the one used by this learning plan. Users will <strong>NOT</strong> be able to open the VCDA console.</p>
+</div>
+<p>Details about the instance endpoints and connections are displayed. Learn more about this topic <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep" target="_blank">here</a>.</p>
+<ul>
+<li>
+<p><strong>Instance endpoints</strong> - Public instance endpoints are provided by IBM. Clients can equest new endpoints for private connections. Additional charges apply when ordering new private endpoints.</p>
+</li>
+<li>
+<p><strong>VMware Shared pairings</strong> - Create and manage cloud-to-cloud connections between the instance and VMware Shared instances. Note, VMware Shared has been withdrawn and will reach end of support on January 15, 2025.</p>
+</li>
+<li>
+<p><strong>VCF as a Service pairings</strong> - Create cloud-to-cloud connections between the instance and another single-tenant or multitenant VCF as a Service instance.</p>
+</li>
+</ul>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instancesDirectorVCDAExpand.png"></p>
+</li>
+</ol>
+<p>That concludes the overview of managing a VCF as a Service multitenant site using the IBM Cloud portal.</p></div>
 
 
 
