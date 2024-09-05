@@ -124,7 +124,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     Watch this video to see how this Transit Gateway connection was created. Note, there is no audio for this video and during longer running provisioning and configuration steps, the elapsed time has been shortened.
 
-![type:video](./_videos/TransitGateway-CreateAndConfigure-final.mp4)
+![type:video](./videos/TransitGateway-CreateAndConfigure-final.mp4)
 
 15. Click the **Architecture diagram** tab in the **Learn more about VMware Cloud Foundation as a Service and Transit Gateway** dialog.
 
