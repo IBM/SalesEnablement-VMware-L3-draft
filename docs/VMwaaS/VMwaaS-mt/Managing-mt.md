@@ -37,9 +37,9 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     ![](_attachments/ip-vmware-VCFaaS-menu.png)
 
-    Notice the 2 tabs: **Virtual data centers** and **Cloud Director sites**. For this demonstration, use only the **{{itz.VCFaaS-mt.name}}** virtual data center (VDC)! As you are accessing the live IBM Cloud portal, the number of data centers you see may vary. The **{{itz.VCFaaS-mt.name}}** VCD is part of the **IBM VCFaaS Multitenant - DAL** VMware Cloud Director (VDC) site. This site is managed by IBM and other tenants that selected the Dallas location. This chapter will only focus on the VDC and not the site.
+    Notice the 2 tabs: **Virtual data centers** and **Cloud Director sites**. For this demonstration, use only the **{{itz.VCFaaSmt.name}}** virtual data center (VDC)! As you are accessing the live IBM Cloud portal, the number of data centers you see may vary. The **{{itz.VCFaaSmt.name}}** VCD is part of the **IBM VCFaaS Multitenant - DAL** VMware Cloud Director (VDC) site. This site is managed by IBM and other tenants that selected the Dallas location. This chapter will only focus on the VDC and not the site.
 
-5. Click **{{itz.VCFaaS-mt.name}}**.
+5. Click **{{itz.VCFaaSmt.name}}**.
 
     ![](_attachments/ip-vmware-VCFaaS-instances.png)
 

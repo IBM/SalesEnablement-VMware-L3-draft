@@ -123,7 +123,7 @@ extra:
     dedicated:
       instanceName: "vcs-se-l3"
       clusterName: "vcs-mc-consolidated"
-    VCFaaS-mt:
+    VCFaaSmt:
       name: "vdc-mt-se-l3"
     tgID: "0136372c-2832-4706-8690-82164d6006a7"
 
