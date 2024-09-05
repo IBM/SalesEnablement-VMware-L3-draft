@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#networking" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -262,7 +267,7 @@
             
   
   <span class="md-ellipsis">
-    VMware Cloud Foundation as a Service
+    VMware Cloud Foundation (VCF) as a Service
   </span>
   
 
@@ -272,7 +277,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            VMware Cloud Foundation as a Service
+            VMware Cloud Foundation (VCF) as a Service
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -320,7 +325,7 @@
             
   
   <span class="md-ellipsis">
-    VCFaaS - multitenant
+    VCF as a Service - multitenant
   </span>
   
 
@@ -330,7 +335,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
-            VCFaaS - multitenant
+            VCF as a Service - multitenant
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -407,6 +412,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Operating a Virtual Data Center instance
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -416,6 +432,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-virtual-machine" class="md-nav__link">
+    Create a virtual machine
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -637,6 +684,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-virtual-machine" class="md-nav__link">
+    Create a virtual machine
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -652,7 +721,194 @@
 
   <h1>Operating a Virtual Data Center instance</h1>
 
-<p>To be written...</p>
+<div><p>Having completed the earlier modules on provisioning a VMware Cloud Foundation (VCF) as a Service multitenant instance, it is now time to operate and use the VCF environment.</p>
+<p>VCF provides a robust private cloud environment running on public cloud infrastructure (like IBM Cloud). VCF includes the full VMware stack of products including vSphere for compute, vSAN for storage, NSX for networking, and Aria for management. </p>
+<p>These VMware products are large, complex, and full of many, many features. The intent of this module is not to demonstrate all the capabilities of VCF, rather to provide basic education and demonstration capabilities that illustrate:</p>
+<ul>
+<li>
+<p>how the <em>"on IBM Cloud"</em> capabilities of the <strong>VCF as a Service multitenant</strong> are exposed through the VMware web console (VMware vCloud Director (VCD))</p>
+</li>
+<li>
+<p>how to provision basic resources including data center groups, networks, and virtual machines using VCD</p>
+</li>
+<li>
+<p>illustrate how a <strong>VCF as a Service multitenant</strong> instance on IBM Cloud is just like VCF in a client's enterprise datacenter</p>
+</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>The steps that follow are specific to the ITZ environment reserved as part of the IBM Cloud for VMware Solutions Level 3 learning plan. If you don't already have an active reservation, you can create one <a href="https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7" target="_blank">here</a>. Follow the directions specified in the "Reserve the environment" activity in the learning plan.</p>
+<p>All of the steps described in this module <strong>CAN</strong> be completed by every user of the shared ITZ environment using VMware vCloud Director (VCD). However, in some instances, creating new resources (like networks) will be discouraged. </p>
+<p><strong>If you opt to create a resource, please delete the resource before your ITZ reservation expires!</strong> Doing so will reduce on going maintenance costs of the environment and help preserve the usability of the shared environment.</p>
+</div>
+<ol>
+<li>
+<p>Click the link below to open a browser to the IBM Cloud portal.</p>
+<p><a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal</a></p>
+</li>
+<li>
+<p>Switch to the 2326338 - ITZ-VMWARE IBM Cloud account.</p>
+<p><img alt="" src="../_attachments/switchAccount.gif"></p>
+</li>
+<li>
+<p>Click vdc-mt-se-l3 in the virtual data centers (VDC) table.</p>
+<p><img alt="" src="../_attachments/vcf-mt-opeartingVCDtable.png"></p>
+</li>
+<li>
+<p>Click <strong>VMware console</strong>.</p>
+<p><img alt="" src="../_attachments/vcf-mt-opeartingVCDinstanceSummary.png"></p>
+</li>
+<li>
+<p>Click <strong>SIGN IN WITH OIDC</strong>.</p>
+<p>Single sign-on has been enabled as part of the <strong>VCF as a Service</strong> integration with VCD. The integration is between the VMware components and IBM Cloud Identity and Access Management (IAM). OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 framework. It allows third-party applications to verify the identity of the end-user and to obtain basic user profile information. Learn more about OIDC <a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol" target="_blank">here</a>. Learn more about the IBM Cloud IAM and VMware sign in capabilities <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcd-ops-guide" target="_blank">here</a>.</p>
+<p><img alt="" src="../_attachments/vcd-LoginScreen.png"></p>
+<div class="admonition warning">
+<p class="admonition-title">You may be asked to reauthenticate to IBM Cloud</p>
+<p>After clicking the <strong>SIGN IN WITH OIDC</strong> button, you may be asked to re-authenticate to IBM Cloud. IBM employees and business partners that have multi-factor authentication (MFA) enabled in their IBM Cloud account may also additional authentication steps to perform. These steps are not detailed here.</p>
+</div>
+</li>
+<li>
+<p>Explore the information displayed on the <strong>Data Centers</strong> summary page and then click the vdc-mt-se-l3 tile.</p>
+<p>The screen capture shown below was taken before any resources were provisioned in the <strong>VCF as a Service</strong> instance. Notice all the 0 counts. Your view will be different and reflect any currently provisioned resources.</p>
+<p><img alt="" src="../_attachments/vcd-DataCentersSummary.png"></p>
+</li>
+</ol>
+<h3 id="networking">Networking</h3>
+<p>The network for a <strong>VCF as a Service</strong> environment is a critical element that clients must plan carefully. Some information on network planning is provided in the IBM Cloud documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vcd-ops-guide#vcd-ops-guide-networking" target="_blank">here</a>. VMware also has good documentation that is accessible through the vCloud Director web console or <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-0544FE2A-B036-43E0-B549-40BACDF261B6.html" target="_blank">here</a>. The network implementation in this demonstration environment is minimal and should not be considered as a best of practice.</p>
+<p>The next steps show how to create a datacenter group, expand the scope of an edge gateway, and create a network that can be used by virtual machines (VMs). Data Center Groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC will be created, but in most client environments, there will be multiple VDCs and connectivity will need to be established between them. To allow network connectivity to VMs a data center group and network needs to be created in the virtual data center. </p>
+<div class="admonition warning">
+<p class="admonition-title">In the ITZ enviroment, you can, but you don't need to</p>
+<p>While you can create a new data center group and network in the instance, there is no need to as they have already been created in the ITZ environment. If you do create new ones, please delete yours, and only yours before your ITZ reservation expires.</p>
+</div>
+<ol start="7">
+<li>
+<p>Click the <strong>Networking</strong> tab.</p>
+<p><img alt="" src="../_attachments/vcd-dataCenters-NetworkingTab.png"></p>
+</li>
+<li>
+<p>Click the <strong>Data Center Groups</strong> tab.</p>
+<p><img alt="" src="../_attachments/vcd-dataCenters-NetworkingTab.png"></p>
+</li>
+<li>
+<p>Click <strong>New</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-dcgNewButton.png"></p>
+</li>
+<li>
+<p>Select the vdc-mt-se-l3 VDC and click <strong>NEXT</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-dcgNewSelectVDCNext.png"></p>
+</li>
+<li>
+<p>Enter a <strong>unique name</strong> and <strong>description</strong> and click <strong>NEXT</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-dcgNewNameDescNext.png"></p>
+</li>
+<li>
+<p>Click <strong>NEXT</strong> on the **Participating VDCs screen.</p>
+<p><img alt="" src="../_attachments/vcd-dcgParticipatingNext.png"></p>
+</li>
+<li>
+<p>Click <strong>CANCEL</strong>.</p>
+<p>A VDC group has already been created in the shared environment, so no need to create one. However, if you really want to, you can click <em>Finish</em>, but please be sure to remove any resources you create.</p>
+<p><img alt="" src="../_attachments/vcd-dcgCancel.png"></p>
+<p>It takes a just few seconds for the VDC group to be created.</p>
+</li>
+<li>
+<p>Click the <strong>Edge Gateways</strong> tab.</p>
+<p><img alt="" src="../_attachments/vcd-dcgToEGTabpng.png"></p>
+</li>
+<li>
+<p>Click vdc-mt-se-l3 in the table. Note the name in the table will have a unique ID appended to it.</p>
+<p><img alt="" src="../_attachments/vcd-eg-Table.png"></p>
+</li>
+<li>
+<p>Click <strong>INCREASE SCOPE</strong>.</p>
+<p>The scope needs to be increased to include the VDC group created earlier.</p>
+<p><img alt="" src="../_attachments/vcd-eg-IncreaseScopeButton.png"></p>
+</li>
+<li>
+<p>Click <strong>DISCARD</strong>.</p>
+<p>This action has already been performed on the existing edge gateway. If you were to create a new one, you would select the group in the table and click <em>OK</em>.</p>
+<p><img alt="" src="../_attachments/vcd-eg-IncreaseScope.png"></p>
+</li>
+<li>
+<p>Click the <strong>Networks</strong> tab.</p>
+<p><img alt="" src="../_attachments/vcd-eg-NetworksTab.png"></p>
+</li>
+<li>
+<p>Click <strong>NEW</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-Networks-AddButton.png"></p>
+</li>
+<li>
+<p>Select <strong>Data Center Group</strong> and select the <strong>vdc-group-mt-se-l3</strong> group then click <strong>NEXT</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-network-Scope.png"></p>
+</li>
+<li>
+<p>Review the <strong>Network Type</strong> page and then click <strong>NEXT</strong>.</p>
+<p>A Routed network is chosen to allow the virtual machines to communicate with each other within the VDCs, and potentially outside to other resources like the Internet or other IBM Cloud services.</p>
+</li>
+<li>
+<p>Enter a <strong>Name</strong> and <strong>Description</strong> and then specify a new CIDR and click <strong>NEXT</strong>.</p>
+<p>In this demonstration environment, a network is created using the non-routable 192.168.1.1/24 private network. Later, explore how network address translation (NAT) can be configured to allow Internet access that uses the public IP addresses associated with the VDC.</p>
+<p>The <em>Dual-Stack Mode</em> enables support for both IPv4 and IPv6 addressing. The <em>Distributed Routing</em> option provides fast and efficient East-West routing. This can be disable to connect to the service router and force all VM traffic through the service router.</p>
+<p><img alt="" src="../_attachments/vcd-network-General.png"></p>
+</li>
+<li>
+<p>Review the <strong>Static IP Pools</strong> page and then click <strong>NEXT</strong>.</p>
+</li>
+<li>
+<p>Enter <strong>161.26.0.10</strong> and <strong>161.26.0.11</strong> for the <strong>Primary DNS</strong> and <strong>Secondary DNS</strong> and click <strong>NEXT</strong>.</p>
+<p>The 161.26.0.10 and 161.26.0.11 addresses are the IBM Cloud public DNS addresses.</p>
+<p><img alt="" src="../_attachments/vcd-network-DNS.png"></p>
+</li>
+<li>
+<p>Click <strong>CANCEL</strong>.</p>
+<p>This action has already been performed on the existing network. If you were to create a new one, you would click <em>FINISH</em>.</p>
+<p><img alt="" src="../_attachments/vcd-network-Cancel.png"></p>
+<p>Once the network is created and the status turns to <strong>Normal</strong>, the next step is to activate dynamic host configuration protocol (DHCP) so VMs are automatically assigned network addresses when they are provisioned.</p>
+</li>
+<li>
+<p>Click <strong>vdc-mt-se-l3-defaultNetwork</strong> in the table.</p>
+<p><img alt="" src="../_attachments/vcd-network-TableCreated.png"></p>
+</li>
+<li>
+<p>Click <strong>DHCP</strong> in left menu.</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPMenu.png"></p>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Please read about the next few steps</p>
+<p>The next few steps <strong>cannot</strong> performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step XYZ.</p>
+</div>
+<ol start="28">
+<li>
+<p>Click <strong>ACTIVATE</strong>.</p>
+<p>Note, this option will not be available for the network already created, rather you will see <em>DEACTIVATE</em>. <strong>DO NOT</strong> <em>deactivate</em> DHCP for the default network!</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPActivate.png"></p>
+</li>
+<li>
+<p>Review the <strong>General Settings</strong> and click <strong>NEXT</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPGeneral.png"></p>
+</li>
+<li>
+<p>Click <strong>ADD</strong> and then enter a valid IP Range for the network's CIDR and then click <strong>NEXT</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPPool.png"></p>
+</li>
+<li>
+<p>Enter <strong>161.26.0.10</strong> and <strong>161.26.0.11</strong> for the <em>DNS Servers</em><em> and click </em><em>NEXT</em>*.</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPDNS.png"></p>
+</li>
+<li>
+<p>Review the settings and click <strong>FINISH</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPFINISH.png"></p>
+</li>
+</ol>
+<p>The network is now setup and ready to be used.</p>
+<h3 id="create-a-virtual-machine">Create a virtual machine</h3>
+<ol start="33">
+<li>
+<p>Click <strong>Applications</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-network-DHCPAppsTab.png"></p>
+</li>
+</ol></div>
 
 
 
