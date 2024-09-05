@@ -18,8 +18,8 @@ nav:
     - 'Introduction': 'VMwaaS/Introduction.md'
     - 'VMwaaS - multitenant':
       - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
-      - 'Managing the Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
-      - 'Managing the multitenant site': 'VMwaaS/VMwaaS-mt/Managing-mt-site.md'
+      - 'Managing a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
+      - 'Managing a multitenant site': 'VMwaaS/VMwaaS-mt/Managing-mt-site.md'
       - 'Operating a Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Operating-mt.md'
       - 'Creating a client demonstration using VCF as a Service multitenant': 'VMwaaS/VMwaaS-mt/Demonstrating-mt.md'
       # - 'NRFR - Managing': 
