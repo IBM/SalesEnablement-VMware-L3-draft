@@ -74,6 +74,8 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 9. Click **Cancel**.
 
+    ![](_attachments/ip-vmware-VCFaaS-instanceModifyLimitCancel.png)
+    
 ### VDC Add-on services
 10. Click the **Add-on services** tab.
 
@@ -83,7 +85,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     !!! Warning "Access to the **Add-on services** not provided in the ITZ environment"
 
-        At this time, administrative access to the **Add-on services** for this instance is not provided. The IBM Cloud Identity Access Management (IAM) controls do not provide enough isolation control for these services in a shared environment like the one used for this learning plan.
+        At this time, administrative access to the **Add-on services** for this instance is not provided. The IBM Cloud Identity Access Management (IAM) controls do not provide sufficient isolation control for these services in a shared environment like the one used by this learning plan.
 
         Several videos of how to use VMware Cloud Director Availability (VCDA) are included in the product documentation, including this one that illustrates <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-vmaas" target="_blank">migration from the VCF as a Service multitenant instance to a VCF as a Service single-tenant instance</a>
 
@@ -97,7 +99,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
         **Veeam Backup and Replication Always-On Enterprise** provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed the VDC is provisioned. Learn more about Veeam and the simple install process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.
 
-    ![](_attachments/ip-vmware-VCFaaS-addOnServices.png)
+    ![](_videos/ip-vmware-VCFaaS-addOnServices.png)
 
 ### Interconnectivity
 12. Click the **Interconnectivity** tab.
