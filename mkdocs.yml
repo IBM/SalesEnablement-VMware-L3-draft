@@ -13,36 +13,39 @@ docs_dir: docs
 
 
 nav:
-  - 'NOT READY FOR REVIEW (NRFR) - Welcome': 'index.md'
-  - 'NRFR - VMware as a Service':
-    - 'NRFR - Introduction': 'VMwaaS/Introduction.md'
-    - 'NRFR - VMwaaS - multitenant':
+  - 'Welcome': 'index.md'
+  - 'VMware as a Service':
+    - 'Introduction': 'VMwaaS/Introduction.md'
+    - 'VMwaaS - multitenant':
       - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
       - 'Managing the Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
       - 'Managing the multitenant site': 'VMwaaS/VMwaaS-mt/Managing-mt-site.md'
-      - 'NRFR - Managing': 
-        - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
-        - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
-    - 'NRFR - VMwaaS - single-tenant':
-      - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
-      - 'NRFR - Managing': 
-        - 'NRFR - Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
-        - 'NRFR - Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
-        - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
-    - 'NRFR - Using VMwaaS': 
-      - 'NRFR - Overview': 'VMwaaS/Using/UsingIntro.md'
-      - 'NRFR - Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
-      - 'NRFR - Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
-    - 'NRFR - The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
+      - 'Operating a Virtual Data Center instance': 'VMwaaS/VMwaas-mt/Operating-mt.md'
+      - 'Creating a client demonstration using VCF as a Service multitenant': 'VMwaaS/VMwaaS-mt/Demonstrating-mt.md'
+      # - 'NRFR - Managing': 
+      #   - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
+      #   - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
+    # - 'NRFR - VMwaaS - single-tenant':
+    #   - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
+    #   - 'NRFR - Managing': 
+    #     - 'NRFR - Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
+    #     - 'NRFR - Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
+    #     - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
+    # - 'NRFR - Using VMwaaS': 
+    #   - 'NRFR - Overview': 'VMwaaS/Using/UsingIntro.md'
+    #   - 'NRFR - Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
+    #   - 'NRFR - Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
+    # - 'NRFR - The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
   - 'VMware Cloud Foundation for Classic':
     - 'Introduction': 'VCS/Introduction.md'
     - 'Provisioning': 'VCS/Provisioning.md'
     - 'Managing': 'VCS/Managing.md'
+    - 'Demonstrating': VCS/Demonstrating.md'
   # - 'NRFR - VMware Cloud Foundation':
   #   - 'NRFR - Introduction': 'VCF/Introduction.md'
   #   - 'NRFR - Provisioning': 'VCF/Provisioning.md'
   #   - 'NRFR - Managing': 'VCF/Managing.md'  
-  - 'NRFR - Next steps': 'NextSteps.md'
+  - 'Next steps': 'NextSteps.md'
   # - 'NRFR - VMware Solutions Shared (OPTIONAL)':
   #   - 'NRFR - Introduction': 'Shared/Introduction.md'
   #   - 'NRFR - Provisioning': 'Shared/Provisioning.md'
