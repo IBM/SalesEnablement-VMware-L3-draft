@@ -18,8 +18,8 @@ nav:
     - 'NRFR - Introduction': 'VMwaaS/Introduction.md'
     - 'NRFR - VMwaaS - multitenant':
       - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
-      - 'Managing': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
-      - 'Managing': 'VMwaaS/VMwaaS-mt/Managing-withVDC-mt.md'
+      - 'Managing the Virtual Data Center instance': 'VMwaaS/VMwaaS-mt/Managing-mt.md'
+      - 'Managing the multitenant site': 'VMwaaS/VMwaaS-mt/Managing-withVDC-mt.md'
       - 'NRFR - Managing': 
         - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
         - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
