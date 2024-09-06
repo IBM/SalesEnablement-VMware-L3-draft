@@ -19,4 +19,45 @@ Demonstrating *infrastructure* solutions is challenging. If the benefit you want
 
 The other challenge is focusing the demonstration on the value add of the solution running on IBM Cloud versus the value of the end product, in this case VMware. As you saw in the previous modules, once a VCF for Classic or VCF as a Service instance is provisioned there are management aspects that IBM Cloud provides that add a lot of value versus on-premises or hosted solutions. These are the benefits to focus on versus just demonstrating that you can create a VM in VMware vCloud Director (VCD). For a technical audience, you may still want to show that step, just to highlight the fact it is VCD as you know it and your skills and processes work just they same in IBM Cloud as they do with their on-premises deployments.
 
+Here are just a few high level demonstration flows you may want to consider:
+
+- VCF for Classic
+  - Client's need:
+    - Move to cloud
+    - Data center evacuation
+  - Goals:
+    - Ease of provisioning a complete VCF stack based on clients needs
+    - Ease of growing the deployment on demand
+  - Benefits:
+    - Rapid deployment
+    - Elasticity and cloud pricing model
+    - Preserve current VMware skills and processes
+  - Demonstration method and flow:
+    - Click through demonstrations to provision and then manage a VCF for Classic instance
+  
+- VCF as a Service multitenant
+  - Client's need:
+    - Meet business growth demands
+    - No increase VMware administration headcount
+    - Reduce costs
+  - Goals:
+    - Ease of provisioning VCF as a Service instance
+    - Ease of controlling costs and consumption
+    - Minimal VMware admin requirements
+  - Benefits:
+    - Rapid deployment
+    - Ease of scale
+    - Ability to easily manage consumption limits
+  - Demonstration method:
+    - Baking show demonstration with pre-provisioned IBM Technology Zone environment
+    - Show information required to provision an VCF as a Service multitenant instance
+    - Show how to adjust consumption limits
+    - Access vCloud director and deploy a VM
+    - Utilize Veeam add-on service to easily protect data
+  
+Mock client demonstrations of both to these are available in the {{learningplan.name}} learning plan in YourLearning (for IBMers) and learn.ibm.com (for Business Partners). 
+
+When preparing for a client demonstration, or for IBMers doing their stand and deliver recording, don't wait to the last minute. Make sure the IBM Technology Zone (ITZ) environment that you need is up and running and the reservation is not about to expire. If the demonstration is to be given virtually, make sure everything works with the e-meeting technology you are using (i.e. Webex, Zoom, and so on).
+
+Make sure you practice the demonstration flow. There is nothing more embarrassing than a demonstration that fails. Know the steps that you are going to take. Know what you will say. Plan on handling errors that might occur. If you are using the "baking show" approach, practice what you will say in the transition from canceling the creation of a resource to moving to a fully provisioned instance. And most importantly, practice, practice, practice.
 
