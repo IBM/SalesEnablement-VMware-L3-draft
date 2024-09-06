@@ -454,8 +454,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-virtual-machine" class="md-nav__link">
-    Create a virtual machine
+  <a href="#create-a-virtual-application-vapp" class="md-nav__link">
+    Create a Virtual Application (vApp)
   </a>
   
 </li>
@@ -698,8 +698,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-virtual-machine" class="md-nav__link">
-    Create a virtual machine
+  <a href="#create-a-virtual-application-vapp" class="md-nav__link">
+    Create a Virtual Application (vApp)
   </a>
   
 </li>
@@ -802,7 +802,7 @@
 <p><img alt="" src="../_attachments/vcd-dcgNewNameDescNext.png"></p>
 </li>
 <li>
-<p>Click <strong>NEXT</strong> on the **Participating VDCs screen.</p>
+<p>Click <strong>NEXT</strong> on the <strong>Participating VDCs</strong> screen.</p>
 <p><img alt="" src="../_attachments/vcd-dcgParticipatingNext.png"></p>
 </li>
 <li>
@@ -876,7 +876,7 @@
 </ol>
 <div class="admonition important">
 <p class="admonition-title">Please read about the next few steps</p>
-<p>The next few steps <strong>cannot</strong> performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step XYZ.</p>
+<p>The next few steps <strong>cannot</strong> performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step 33.</p>
 </div>
 <ol start="28">
 <li>
@@ -902,13 +902,71 @@
 </li>
 </ol>
 <p>The network is now setup and ready to be used.</p>
-<h3 id="create-a-virtual-machine">Create a virtual machine</h3>
+<h3 id="create-a-virtual-application-vapp">Create a Virtual Application (vApp)</h3>
+<p>A VMware vApp is a collection of virtual machines (and potentially other vApp containers) that are operated and monitored as a unit. </p>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>You have permissions to create vApps and virtual machines (VMs) in the ITZ environment. The steps below create a vApp with two VMs. If you create your own vApps or VMs in the environment, be sure to remove them before your ITZ reservation expires.</p>
+</div>
 <ol start="33">
 <li>
 <p>Click <strong>Applications</strong>.</p>
 <p><img alt="" src="../_attachments/vcd-network-DHCPAppsTab.png"></p>
 </li>
-</ol></div>
+<li>
+<p>Click <strong>NEW VAPP</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-vAPP-new.png"></p>
+</li>
+<li>
+<p>Select the <strong>vdc-mt-se-l3</strong> data center and click <strong>NEXT</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-setVCD.png"></p>
+</li>
+<li>
+<p>Enter a unique <strong>Name</strong> and a <strong>Description</strong> and then select <strong>Power on</strong> and then click <strong>ADD VIRTUAL MACHINE</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-NewvApp-AddVM.png"></p>
+</li>
+<li>
+<p>Enter a unique <strong>Name</strong> and <strong>Computer Name</strong>.</p>
+<p>The <strong>Computer Name</strong> will autofill with the specified <strong>Name</strong> unless it does not conform to a valid hostname.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-NewvApp-NewVMName.png"></p>
+</li>
+<li>
+<p>Select a <strong>Template</strong> from the table.</p>
+<p>The <strong>CentOS-7-Template-Official</strong> is a good choice as VMs using this template boot quickly.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-NewvAPp-templateOK.png"></p>
+</li>
+<li>
+<p>Scroll down and change set the <strong>Storage Policy</strong> to <strong>2 IOPS/GB</strong>.</p>
+<p>Review the storage options available. Recall when the <strong>VCF as a Service multitenant</strong> instance was created, there were no storage options specified. Storage is defined at the <strong>site</strong> level and in the case of the <strong>multitenant</strong> offering, managed by IBM. Charges for storage very by the storage policy selected.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-NewvApp-NewVMStorage.png"></p>
+</li>
+<li>
+<p>Review the <strong>Compute</strong> and <strong>NICs</strong> settings and click <strong>OK</strong>.</p>
+<p>a. The <strong>Compute</strong> settings are defined by the template selected.</p>
+<p>b. The network interface cards (NICs) is set to the default network which was created earlier and DHCP is selected.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-NewvApp-cpunics.png"></p>
+</li>
+<li>
+<p>Click <strong>ADD VIRTUAL MACHINE</strong> and <strong>repeat steps 40 and 38</strong> specifying a new name for the 2nd VM.</p>
+<p>After repeating steps 37 and 38, you should now have 2 VMs listed in the table.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-NewvAppCreate.png"></p>
+</li>
+<li>
+<p>Observe the <strong>Recent Tasks</strong> as the vApp and VMs are created and started and then click <strong>the vApp tile</strong>.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-UpAndRunning.png"></p>
+</li>
+<li>
+<p>Observe the VMs in the vApp and the options available.</p>
+<p>a. Notice the state of the VMs. It may take a few minutes for them to show <strong>Powered on</strong>.</p>
+<p>b. Try accessing the VM using the <strong>VM console</strong> link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the <strong>Guest OS Customization</strong>.</p>
+<p>c. Review the <strong>Network Diagram</strong> that VMware generates for the vAPP.</p>
+<p><img alt="" src="../_attachments/vcd-vApp-Details.png"></p>
+</li>
+</ol>
+<p>At this stage, continue to explore the other capabilities exposed through the VMware web console.</p></div>
 
 
 
