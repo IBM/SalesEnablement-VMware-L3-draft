@@ -22,7 +22,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 3. Click the **VMware Cloud Foundation (VCF) for Classic** tile.
-4. Click the **Information** dialog.
+4. Read and then click the **Information** dialog.
 
     The message states:
     
@@ -163,15 +163,15 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
     Data centers are based on a Point of Deployment (POD) architecture where each data center can have more than one POD, depending on the on-demand build out. Each POD consists of racks, servers, networks, and storage, along with backup power generators. Placing application servers across PODs improves availability.
 
-18. Click the **SAP-certified Cascade Lake** central processor unit (CPU) model.
+18. Select the **SAP-certified Cascade Lake** central processor unit (CPU) model.
 
     The SAP-certified option filters the hosts that completed SAP infrastructure as a service (IaaS) certification for compatibility, supportability, and performance with SAP software applications.
 
 19. Click the **next page icon** (![](_attachments/nextPage.png)).
-20. Click the **Cascade Lake** CPU model.
+20. Select the **Cascade Lake** CPU model.
 21. Select the **Dual Intel Xeon Silver 4210** CPU model name.
 
-    Selecting the best CPU model for a deployment is an important step that needs to be considered based upon the workloads that will run in the environment. In addition, the model select will affect the options available for memory and storage.
+    Selecting the best CPU model for a deployment is an important step that needs to be considered based upon the workloads that will run in the environment. In addition, the model selected will affect the options available for memory and storage.
 
 22. Click the **RAM** drop-down list.
 
@@ -208,7 +208,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
     NFS file shares can have different sizes and performance characteristics. The ability to specify different configurations for each file share can be used to rightsize the environment based upon the storage performance characteristics of different workloads.
 
 32.  Click **Add shared storage**.
-33.  Click the **Performance** drop-down list.
+33.  Click the **Performance** drop-down list for **File share 2**.
 
     VCF for Classic supports 4 storage performance options. Each option specifies a maximum IOPS/GB. Higher performance tiers have greater costs.
 
@@ -252,14 +252,14 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
 42. Select **Configure host names individually**.
 
-    Each host provisioned can be uniquely name, otherwise the names will consist of the **Hostname prefix** field and a unique sequential number.
+    Each host provisioned can be uniquely named, otherwise the names will consist of the **Hostname prefix** field and a unique sequential number.
 
 43. Deselect **Configure host names individually**.
 44. Select **Two highly available dedicated Windows Server VMs on the consolidated cluster**.
 
     Two options exist for the Domain Name System (DNS) configuration for the instance. 
     
-    The **Two highly available dedicated Windows Server VMs on the consolidated cluster** option deploys two (2) Microsoft Windows virtual machines (VMs) which enhances security and robustness. If this option is selected, the client must provided two (2) Microsoft Windows Server 2019 Standard edition licenses.
+    The **Two highly available dedicated Windows Server VMs on the consolidated cluster** option deploys two (2) Microsoft Windows virtual machines (VMs) which enhances security and robustness. If this option is selected, the client must provide two (2) Microsoft Windows Server 2019 Standard edition licenses.
 
 45. Select **Single public Windows VSI for Active Directory/DNS**
 
@@ -271,7 +271,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
     For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. 
 
-    ??? Note "Available **Add-on services** as of September, 2024"
+    ??? Note "Available add-on services as of September, 2024"
 
         === "Recommended services"       
             
@@ -320,17 +320,17 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 48.  Click **Save**.
 49.  Deselect **Caveonix RiskForesight 5.0.0**.
 
-    While recommended for VCF for Classic deployments, it is possible for clients to deselect **Add-on services**. Caveonix assists clients in managing cyber and compliance risk.
+    While recommended for VCF for Classic deployments, it is possible for clients to deselect add-on services. Caveonix assists clients in managing cyber and compliance risk.
 
 50.  Click **Add-on services** in left menu.
 
-    **Add-on services** are logically grouped by categories like recommended services, business continuity and migration, security and compliance, transformation and modernization, and management tools; however, many of these services could be classified in more than one of these categories.
+    Add-on services are logically grouped by categories like recommended services, business continuity and migration, security and compliance, transformation and modernization, and management tools; however, many of these services could be classified in more than one of these categories.
 
     !!! warning
 
         Instead of simulating scrolling in the IBM Cloud portal, these steps have users click the **Add-on services** option in the left menu multiple times. In the IBM Cloud portal, users would just scroll down in the browser to view the entire set of available services.
 
-51. Click **Add-on services**.
+51. Click **Add-on services** left menu.
 52. Select **VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition 8.17**.
 
     The new licensing of VMware software was mentioned earlier. Not all of the VMware software products that are licensed as part of VCF for Classic are automatically installed.

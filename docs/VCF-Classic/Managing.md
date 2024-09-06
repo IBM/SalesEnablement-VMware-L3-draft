@@ -16,7 +16,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     **Click-thru demo:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
 
-2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
+2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 
 3. Click **VCF for Classic** under **Resources** in left menu.
 4. Click **{{itz.dedicated.instanceName}}** in the table of VCF for Classic instances.

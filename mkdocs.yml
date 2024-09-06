@@ -22,7 +22,6 @@ nav:
       - 'Managing a multitenant site': 'VCFaaS/VCFaaS-mt/Managing-mt-site.md'
       - 'Operating a Virtual Data Center instance': 'VCFaaS/VCFaaS-mt/Operating-mt.md'
       - 'Monitoring a Virtual Data Center instance': 'VCFaaS/VCFaaS-mt/Monitoring-mt.md'
-      - 'Demonstrating': 'VCFaaS/VCFaaS-mt/Demonstrating-mt.md'
       # - 'NRFR - Managing': 
       #   - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
       #   - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
@@ -41,11 +40,11 @@ nav:
     - 'Introduction': 'VCF-Classic/Introduction.md'
     - 'Provisioning': 'VCF-Classic/Provisioning.md'
     - 'Managing': 'VCF-Classic/Managing.md'
-    - 'Demonstrating': 'VCF-Classic/Demonstrating.md'
   # - 'NRFR - VMware Cloud Foundation':
   #   - 'NRFR - Introduction': 'VCF/Introduction.md'
   #   - 'NRFR - Provisioning': 'VCF/Provisioning.md'
   #   - 'NRFR - Managing': 'VCF/Managing.md'  
+  - 'Client demonstrations': 'Client demonstrations.md'
   - 'Next steps': 'NextSteps.md'
   # - 'NRFR - VMware Solutions Shared (OPTIONAL)':
   #   - 'NRFR - Introduction': 'Shared/Introduction.md'
