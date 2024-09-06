@@ -79,7 +79,7 @@ The next steps show how to create a datacenter group, expand the scope of an edg
 
     ![](_attachments/vcd-dcgNewNameDescNext.png)
 
-12. Click **NEXT** on the **Participating VDCs screen.
+12. Click **NEXT** on the **Participating VDCs** screen.
 
     ![](_attachments/vcd-dcgParticipatingNext.png)
 
@@ -160,7 +160,7 @@ The next steps show how to create a datacenter group, expand the scope of an edg
 
 !!! Important "Please read about the next few steps"
 
-    The next few steps **cannot** performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step XYZ.
+    The next few steps **cannot** performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step 33.
 
 28. Click **ACTIVATE**.
 
@@ -185,12 +185,80 @@ The next steps show how to create a datacenter group, expand the scope of an edg
     ![](_attachments/vcd-network-DHCPFINISH.png)
 
 The network is now setup and ready to be used.
-### Create a virtual machine
+### Create a Virtual Application (vApp)
+ A VMware vApp is a collection of virtual machines (and potentially other vApp containers) that are operated and monitored as a unit. 
+
+!!! Important "About the IBM Technology Zone (ITZ) environment"
+
+    You have permissions to create vApps and virtual machines (VMs) in the ITZ environment. The steps below create a vApp with two VMs. If you create your own vApps or VMs in the environment, be sure to remove them before your ITZ reservation expires.
+
 
 33. Click **Applications**.
 
     ![](_attachments/vcd-network-DHCPAppsTab.png)
 
+34. Click **NEW VAPP**.
+
+    ![](_attachments/vcd-vAPP-new.png)
+
+35. Select the **{{itz.VCFaaSmt.name}}** data center and click **NEXT**.
+
+    ![](_attachments/vcd-vApp-setVCD.png)
+
+36. Enter a unique **Name** and a **Description** and then select **Power on** and then click **ADD VIRTUAL MACHINE**.
+
+
+    ![](_attachments/vcd-vApp-NewvApp-AddVM.png)
+
+37. Enter a unique **Name** and **Computer Name**.
+
+    The **Computer Name** will autofill with the specified **Name** unless it does not conform to a valid hostname.
+
+    ![](_attachments/vcd-vApp-NewvApp-NewVMName.png)
+
+38. Select a **Template** from the table.
+
+    The **CentOS-7-Template-Official** is a good choice as VMs using this template boot quickly.
+
+    ![](_attachments/vcd-vApp-NewvAPp-templateOK.png)
+
+39. Scroll down and change set the **Storage Policy** to **2 IOPS/GB**.
+
+    Review the storage options available. Recall when the **VCF as a Service multitenant** instance was created, there were no storage options specified. Storage is defined at the **site** level and in the case of the **multitenant** offering, managed by IBM. Charges for storage very by the storage policy selected.
+
+    ![](_attachments/vcd-vApp-NewvApp-NewVMStorage.png)
+
+40. Review the **Compute** and **NICs** settings and click **OK**.
+
+    a. The **Compute** settings are defined by the template selected.
+
+    b. The network interface cards (NICs) is set to the default network which was created earlier and DHCP is selected.
+
+    ![](_attachments/vcd-vApp-NewvApp-cpunics.png)
+
+41. Click **ADD VIRTUAL MACHINE** and **repeat steps 40 and 38** specifying a new name for the 2nd VM.
+
+    After repeating steps 37 and 38, you should now have 2 VMs listed in the table.
+
+42. Click **Create**.
+
+    ![](_attachments/vcd-vApp-NewvAppCreate.png)
+
+43. Observe the **Recent Tasks** as the vApp and VMs are created and started and then click **the vApp tile**.
+
+    ![](_attachments/vcd-vApp-UpAndRunning.png)
+
+44. Observe the VMs in the vApp and the options available.
+
+    a. Notice the state of the VMs. It may take a few minutes for them to show **Powered on**.
+    
+    b. Try accessing the VM using the **VM console** link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the **Guest OS Customization**.
+    
+    c. Review the **Network Diagram** that VMware generates for the vAPP.
+
+    ![](_attachments/vcd-vApp-Details.png)
+
+At this stage, continue to explore the other capabilities exposed through the VMware web console.
 
 
 
