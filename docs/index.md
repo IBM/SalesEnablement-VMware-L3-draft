@@ -33,10 +33,22 @@ Business Partners can also utilize the IBM Training live Chat Support service or
 
 ## Using the demonstration guide
 
-The Level 3 demonstration guide is organized into two chapters, covering the ```VMware Cloud Foundation as a Service single and multi-tenant``` and ```VMware Cloud Foundation for Classic``` offerings of the **IBM Cloud for VMware Solutions** portfolio. These chapters contain modules that provide an *Introduction* to the offering, steps to *Provision* a deployment, and explore how clients *Manage* their instances through the IBM Cloud portal and the respective VMware tools.
+The Level 3 demonstration guide is organized into two chapters, covering the **VMware Cloud Foundation (VCF) as a Service** and **VCF for Classic** offerings of the **IBM Cloud for VMware Solutions** portfolio. These chapters contain modules that provide an *Introduction* to the offering, steps to *Provision* an instance, and explore how clients *Manage* their instances through the IBM Cloud portal and the respective VMware tools. The **VCF as a Service** module focuses on the **multitenant** offering and includes modules on operating an instance using VMware vCloud Director (VCD) and monitoring an instance with IBM Cloud Monitoring.
+
+This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as shown in this image.
+
+![](_attachments/demoGuide1.png)
+
+However, if the browser window is sized smaller, the table of contents will only be accessible via the main menu icon (![](_attachments/MainMenuIcon.png)).
+
+![](_attachments/demoGuide2.png)
+
+Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the table of contents.
+
+![](_attachments/demoGuide3.png)
 
 !!! warning "WARNING"
-    The agile nature of cloud means that the interface and layout of the IBM Cloud Portal and the IBM Cloud for VMware Solutions offerings change regularly. Screenshots and videos that are captured within this documentation might not always reflect the current versions available from IBM Cloud.
+    The agile nature of cloud means that the interface and layout of the IBM Cloud Portal and the IBM Cloud for VMware Solutions offerings can change regularly. Screenshots and videos that are captured within this documentation might not reflect the current versions available from IBM Cloud.
 
 In some images, the following styles of highlighting are used:
 
