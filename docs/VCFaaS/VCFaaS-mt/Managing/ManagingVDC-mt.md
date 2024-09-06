@@ -53,7 +53,7 @@ Notice, from here, clients can integrate the VDC into IBM Cloud monitoring, dele
 14. Click **Refresh**
 15. Click the **VMware console** button.
 
-A new browser window or tab opens with the VMware vCloud Director (vCD) web console for the VDC. By default, vCD is integrated with IBM Cloud Identity and Access Management (IAM) system. You can learn more about VDC single sign-on with IBM Cloud IAM <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-iam-integration&interface=ui" target="_blank">here</a>.
+A new browser window or tab opens with the VMware vCloud Director (vCD) web console for the VDC. By default, vCD is integrated with IBM Cloud Identity and Access Management (IAM) system. You can learn more about VDC single sign-on with IBM Cloud IAM <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration" target="_blank">here</a>.
 
 16. Click **SIGN IN WITH SINGLE SIGN-ON**.
 
