@@ -21,39 +21,40 @@ The other challenge is focusing the demonstration on the value add of the soluti
 
 Here are just a few high level demonstration flows you may want to consider:
 
-- VCF for Classic
-  - Client's need:
-    - Move to cloud
-    - Data center evacuation
-  - Goals:
-    - Ease of provisioning a complete VCF stack based on clients needs
-    - Ease of growing the deployment on demand
-  - Benefits:
-    - Rapid deployment
-    - Elasticity and cloud pricing model
-    - Preserve current VMware skills and processes
-  - Demonstration method and flow:
-    - Click through demonstrations to provision and then manage a VCF for Classic instance
+- **VCF for Classic**
+    - Client's need:
+        - Move to cloud
+        - Data center evacuation
+    - Goals:
+        - Ease of provisioning a complete VCF stack based on clients needs
+        - Ease of growing the deployment on demand
+    - Benefits:
+        - Rapid deployment
+        - Elasticity and cloud pricing model
+        - Preserve current VMware skills and processes
+    - Demonstration method and flow:
+        - Click through demonstrations to provision and then manage a VCF for Classic instance
   
-- VCF as a Service multitenant
-  - Client's need:
-    - Meet business growth demands
-    - No increase VMware administration headcount
-    - Reduce costs
-  - Goals:
-    - Ease of provisioning VCF as a Service instance
-    - Ease of controlling costs and consumption
-    - Minimal VMware admin requirements
-  - Benefits:
-    - Rapid deployment
-    - Ease of scale
-    - Ability to easily manage consumption limits
-  - Demonstration method:
-    - Baking show demonstration with pre-provisioned IBM Technology Zone environment
-    - Show information required to provision an VCF as a Service multitenant instance
-    - Show how to adjust consumption limits
-    - Access vCloud director and deploy a VM
-    - Utilize Veeam add-on service to easily protect data
+
+- IBM Cloud for VMware for Sales Level 3 
+    - Client's need:
+        - Meet business growth demands
+        - No increase VMware administration headcount
+        - Reduce costs
+    - Goals:
+        - Ease of provisioning VCF as a Service instance
+        - Ease of controlling costs and consumption
+        - Minimal VMware admin requirements
+    - Benefits:
+        - Rapid deployment
+        - Ease of scale
+        - Ability to easily manage consumption limits
+    - Demonstration method:
+        - Baking show demonstration with pre-provisioned IBM Technology Zone environment
+        - Show information required to provision an VCF as a Service multitenant instance
+        - Show how to adjust consumption limits
+        - Access vCloud director and deploy a VM
+        - Utilize Veeam add-on service to easily protect data
   
 Mock client demonstrations of both to these are available in the {{learningplan.name}} learning plan in YourLearning (for IBMers) and learn.ibm.com (for Business Partners). 
 
