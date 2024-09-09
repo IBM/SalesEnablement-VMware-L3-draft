@@ -760,15 +760,15 @@
 <ol start="6">
 <li>
 <p>Examine the information shown on the VDC instance summary page.</p>
-<p>a. The vCPU and RAM limit shows the consumptions limits that were specified when the instance was provisioned.
-b. The pricing plan selected for the instance.
-c. The VDC site where the VCD is located.
-d. The location of the VCD.
-e. The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command line interfaces (CLIs).
-f. The network edge type.
-g. The connections supported.
-h. The fast provisioning setting.
-i. The public IPs assigned to the VCD instance.</p>
+<p><strong>a.</strong> The vCPU and RAM limit shows the consumptions limits that were specified when the instance was provisioned.</p>
+<p><strong>b.</strong> The pricing plan selected for the instance.</p>
+<p><strong>c.</strong> The VDC site where the VCD is located.</p>
+<p><strong>d.</strong> The location of the VCD.</p>
+<p><strong>e.</strong> The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command line interfaces (CLIs).</p>
+<p><strong>f.</strong> The network edge type.</p>
+<p><strong>g.</strong> The connections supported.</p>
+<p><strong>h.</strong> The fast provisioning setting.</p>
+<p><strong>i.</strong> The public IPs assigned to the VCD instance.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceSummary.png"></p>
 </li>
 <li>
@@ -778,9 +778,9 @@ i. The public IPs assigned to the VCD instance.</p>
 <li>
 <p>Examine the <strong>consumption limit</strong> options.</p>
 <p>Recall that the vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center. Consumption limits can also be turned off.</p>
-<p>a. Toggle to enable or disable consumption limits.
-b. Increase or decrease the maximum number of vCPUs between 1 and 2000.
-c. Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (GB) and 40,960 GB.</p>
+<p><strong>a.</strong> Toggle to enable or disable consumption limits.</p>
+<p><strong>b.</strong> Increase or decrease the maximum number of vCPUs between 1 and 2000.</p>
+<p><strong>c.</strong> Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (GB) and 40,960 GB.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceModifyLimitOptions.png"></p>
 </li>
 <li>
@@ -827,7 +827,7 @@ c. Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (G
 </li>
 <li>
 <p>Examine the <strong>Learn more about VMware Cloud Foundation as a Service and Transit Gateway</strong> guide.</p>
-<p>IBM Cloud Transit Gateway can be used to securely interconnect IBM Cloud VCF as a Service, Classic IaaS, and IBM Virtual Private Cloud infrastructures worldwide, keeping traffic within the IBM Cloud network. Learn more about using Transit Gateway to interconnect VCF as a Service with IBM Cloud services <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tgw-adding-connections" target="_blank">here</a>.</p>
+<p>IBM Cloud Transit Gateway can be used to securely interconnect IBM Cloud VCF as a Service, Classic Infrastructure as a Service (IaaS), and IBM Virtual Private Cloud (VPC) infrastructures worldwide, keeping traffic within the IBM Cloud network. Learn more about using Transit Gateway to interconnect VCF as a Service with IBM Cloud services <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tgw-adding-connections" target="_blank">here</a>.</p>
 <p>As illustrated, creating and configuring a Transit Gateway connection is a 3 step process. Read the high-level descriptions of the steps on the dialog.</p>
 <div class="admonition warning">
 <p class="admonition-title">The Transit Gateway connection in the ITZ environment</p>
@@ -847,11 +847,15 @@ c. Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (G
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceinterconnectivityLearnMoreArchitecture.png"></p>
 </li>
 <li>
-<p>Expand the provisioned transit gateway 0136372c-2832-4706-8690-82164d6006a7.</p>
+<p>Click the <strong>x</strong> to close the architecture diagram.</p>
+<p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceinterconnectivityLearnMoreArchitectureClose.png"></p>
+</li>
+<li>
+<p>If not already expanded, expand the provisioned transit gateway 0136372c-2832-4706-8690-82164d6006a7.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceinterconnectivitySummary.png"></p>
 </li>
 <li>
-<p>Expand the first <strong>Unbound GRE Tunnel</strong>.</p>
+<p>Expand one of the <strong>Unbound GRE Tunnel</strong> entries in the table.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceinterconnectivityTableExpand.png"></p>
 </li>
 <li>
@@ -861,10 +865,14 @@ c. Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (G
 </ol>
 <p>That concludes the overview of managing a VCF as a Service multitenant instance using the IBM Cloud portal. In later chapters, you will:</p>
 <ul>
-<li>explore accessing the VMware Cloud Director web console to create datacenter groups, networks, and virtual machines (VMs)</li>
-<li>explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring</li>
+<li>
+<p>Explore accessing the VMware Cloud Director web console to create datacenter groups, networks, and virtual machines (VMs).</p>
+</li>
+<li>
+<p>Explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring.</p>
+</li>
 </ul>
-<p>In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant site where the VCF as a Service multitenant instance is running.</p></div>
+<p>In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant <strong>site</strong> where the VCF as a Service multitenant instance is running.</p></div>
 
 
 
