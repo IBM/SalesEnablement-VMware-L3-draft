@@ -49,15 +49,23 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 ### VDC instance summary 
 6. Examine the information shown on the VDC instance summary page.
 
-    a. The vCPU and RAM limit shows the consumptions limits that were specified when the instance was provisioned.
-    b. The pricing plan selected for the instance.
-    c. The VDC site where the VCD is located.
-    d. The location of the VCD.
-    e. The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command line interfaces (CLIs).
-    f. The network edge type.
-    g. The connections supported.
-    h. The fast provisioning setting.
-    i. The public IPs assigned to the VCD instance.
+    **a.** The vCPU and RAM limit shows the consumptions limits that were specified when the instance was provisioned.
+
+    **b.** The pricing plan selected for the instance.
+    
+    **c.** The VDC site where the VCD is located.
+    
+    **d.** The location of the VCD.
+    
+    **e.** The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command line interfaces (CLIs).
+    
+    **f.** The network edge type.
+    
+    **g.** The connections supported.
+    
+    **h.** The fast provisioning setting.
+    
+    **i.** The public IPs assigned to the VCD instance.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceSummary.png)
 
@@ -69,9 +77,11 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     Recall that the vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center. Consumption limits can also be turned off.
 
-    a. Toggle to enable or disable consumption limits.
-    b. Increase or decrease the maximum number of vCPUs between 1 and 2000.
-    c. Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (GB) and 40,960 GB.
+    **a.** Toggle to enable or disable consumption limits.
+
+    **b.** Increase or decrease the maximum number of vCPUs between 1 and 2000.
+    
+    **c.** Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (GB) and 40,960 GB.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceModifyLimitOptions.png)
 
@@ -115,7 +125,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 14. Examine the **Learn more about VMware Cloud Foundation as a Service and Transit Gateway** guide.
 
-    IBM Cloud Transit Gateway can be used to securely interconnect IBM Cloud VCF as a Service, Classic IaaS, and IBM Virtual Private Cloud infrastructures worldwide, keeping traffic within the IBM Cloud network. Learn more about using Transit Gateway to interconnect VCF as a Service with IBM Cloud services <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tgw-adding-connections" target="_blank">here</a>.
+    IBM Cloud Transit Gateway can be used to securely interconnect IBM Cloud VCF as a Service, Classic Infrastructure as a Service (IaaS), and IBM Virtual Private Cloud (VPC) infrastructures worldwide, keeping traffic within the IBM Cloud network. Learn more about using Transit Gateway to interconnect VCF as a Service with IBM Cloud services <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tgw-adding-connections" target="_blank">here</a>.
 
     As illustrated, creating and configuring a Transit Gateway connection is a 3 step process. Read the high-level descriptions of the steps on the dialog.
 
@@ -139,21 +149,26 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityLearnMoreArchitecture.png)
 
-17. Expand the provisioned transit gateway {{itz.tgID}}.
+17. Click the **x** to close the architecture diagram.
+
+    ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityLearnMoreArchitectureClose.png)
+
+18. If not already expanded, expand the provisioned transit gateway {{itz.tgID}}.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivitySummary.png)
 
-18. Expand the first **Unbound GRE Tunnel**.
+19. Expand one of the **Unbound GRE Tunnel** entries in the table.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityTableExpand.png)
 
-19. Examine the tunnel information displayed.
+20. Examine the tunnel information displayed.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityTunnelDetails.png)
 
 That concludes the overview of managing a VCF as a Service multitenant instance using the IBM Cloud portal. In later chapters, you will:
 
-- explore accessing the VMware Cloud Director web console to create datacenter groups, networks, and virtual machines (VMs)
-- explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring
+- Explore accessing the VMware Cloud Director web console to create datacenter groups, networks, and virtual machines (VMs).
+  
+- Explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring.
 
-In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant site where the VCF as a Service multitenant instance is running.
+In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant **site** where the VCF as a Service multitenant instance is running.
