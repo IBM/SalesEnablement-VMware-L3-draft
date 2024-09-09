@@ -23,7 +23,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 1. Click the link below to open a browser to the IBM Cloud portal.
 
-    <a href="cloud.ibm.com" target="_blank">IBM Cloud portal</a>
+    <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a>
 
 2. Switch to the {{itz.account}} IBM Cloud account.
 

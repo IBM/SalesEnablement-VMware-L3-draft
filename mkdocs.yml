@@ -94,13 +94,13 @@ markdown_extensions:
           case: lower
 extra:
   generator: false
-  supportEmail: "andrewj@us.ibm.com"
+  supportEmail: "andrewj@us.ibm.com and hlwillia@us.ibm.com"
   supportSlack: 
     name: "#cloud-platform-demo-feedback"
     url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
   gitRepo: "https://github.com/IBM/SalesEnablement-VMware-L3-draft"
   learningplan:
-    name: "IBM Cloud for VMware Solutions Level 3"
+    name: "IBM Cloud for VMware Solutions for Technical Sales Level 3"
   level2learningplan:
     name: "IBM Cloud for VMware Solutions Sales Foundation"
     YLurl: "https://yourlearning.ibm.com/activity/PLAN-9B285157EA97"
@@ -110,7 +110,7 @@ extra:
   offering:
     name: "IBM Cloud for VMware Solutions"
   guide:
-    name: "IBM Cloud for VMware Solutions - Level 3 Demonstration Guide"
+    name: "IBM Cloud for VMware Solutions for Technical Sales Level 3 Demonstration Guide"
     url: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/"
   clickthru:
     vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Provisioning/index.html"

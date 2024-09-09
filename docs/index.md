@@ -1,21 +1,17 @@
 
-Welcome to the **IBM Cloud for VMware Solutions - Level 3** course and demonstration guide! The goal is to provide IBMers and Business Partner sellers the knowledge and tools to demonstrate the **IBM Cloud for VMware Solutions** offerings.
+Welcome to the **{{learningplan.name}}** course and demonstration guide! The goal is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate the **{{offering.name}}}}** offerings.
 
 This course is not intended to serve as an in-depth study of VMware-specific topics; rather the focus is on the *IBM Cloud* aspects of the offerings. Numerous links and pointers to more content around VMware-specific features are included in each of the modules of this course.
 
-!!! tip "ACCREDITATION"
-    
-    To receive Level 3 accreditation, IBMers and Business Partners must demonstrate mastery of the skills that are learned throughout the various modules. 
+## Obtaining the {{badge.name}} badge
+**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple choice questions, with four possible responses (and only one correct answer) for each question. **Hint: keep the demonstration guide open and the associated IBM Technology Zone (TechZone) environment active while taking the quiz.**
 
-**Business Partners** must pass an accreditation quiz upon completing the course. The quiz consists of multiple choice questions, with four possible responses (and only one correct answer) for each question. **Hint: keep the demonstration guide and the associated IBM Technology Zone (TechZone) environment active during the quiz.**
-
-**IBM Sales and Tech Sales** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the pain points that customer has, and the goals they aspire to achieve. The recording must be a demonstration and pitch the value of the IBM solution by using the environments and techniques of this lab.
+**IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the pain points the client has, and the goals they aspire to achieve. The recording must be a demonstration and pitch the value of the IBM solution by using the environments and techniques of this lab.
 
 Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. Before continuing to the next module, read the guidance that follows. Your comprehension of the information outlined will save you time while completing the lab work. **Hint: keep the demonstration guide and the associated IBM Technology Zone (TechZone) environment active when creating the Stand and Deliver.**
 
 ## Support
-
-Think something is down? Check the applicable status pages for current updates:
+Think something is down? Check the applicable status pages for any known issues like a site or service being down:
 
 -  <a href="https://techzone.status.io/" target="_blank">IBM Technology Zone</a>
 -  <a href="https://cloud.ibm.com/status" target="_blank">IBM Cloud</a>
@@ -35,11 +31,11 @@ Business Partners can also utilize the IBM Training live Chat Support service or
 
 The Level 3 demonstration guide is organized into two chapters, covering the **VMware Cloud Foundation (VCF) as a Service** and **VCF for Classic** offerings of the **IBM Cloud for VMware Solutions** portfolio. These chapters contain modules that provide an *Introduction* to the offering, steps to *Provision* an instance, and explore how clients *Manage* their instances through the IBM Cloud portal and the respective VMware tools. The **VCF as a Service** module focuses on the **multitenant** offering and includes modules on operating an instance using VMware vCloud Director (VCD) and monitoring an instance with IBM Cloud Monitoring.
 
-This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as shown in this image.
+This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
 
 ![](_attachments/demoGuide1.png)
 
-However, if the browser window is sized smaller, the table of contents will only be accessible via the main menu icon (![](_attachments/MainMenuIcon.png)).
+However, if the browser window is sized smaller, the table of contents will only be accessible by clicking the main menu icon (![](_attachments/MainMenuIcon.png)) (highlighted by solid green box):
 
 ![](_attachments/demoGuide2.png)
 
@@ -64,41 +60,41 @@ In some images, the following styles of highlighting are used:
 - **Click-thru interactive demonstrations**: Links to click-thru demonstrations open in a new browser window or tab. Click the **play** icon to get started and follow the steps that are outlined. If unsure of how to proceed, click anywhere on the screen and a highlight box indicates where to click next.
 ![](_attachments/welcome-4.png)
 
-## Acronyms
+## Terminology
 
 The following acronyms and short-form terminology are used throughout the guide:
 ```
-Application programming interfaces (APIs)
-Classless inter-domain routing (CIDR)
-Control (ctrl) - The control key on keyboard
-Command (cmd) - The command key on keyboard
-Disaster Recovery (DR)
-Domain Name Service (DNS)
-Dynamic Host Configuration Protocol (DHCP)
-Gigabyte (GB)
-Health Insurance Portability and Accountability Act (HIPAA)
-High Availability (HA)
-IBM Technology Zone (TechZone)
-Identification (ID)
-Identity Access Management (IAM)
-Infrastructure as a Service (IaaS)
-Input/output operations per second (IOPs)
-Internet Protocol (IP)
-Operating System (OS)
-Random access memory (RAM)
-Recovery Point Objective (RPO)
-Reliability, Availability, and Serviceability (RAS)
-Software Defined Data Center (SDDC)
-Secure Shell (SSH)
-User identification (ID)
-Virtual Application (vApp)
-Virtual Central Processor Unit (vCPU)
-VMware as a Service (VMwaaS)
-VMware Cloud Director (VCD)
-VMware Cloud Foundation (VCF)
-VMware vCenter Server (VCS)
-VMware vRealize Log Insight (vRLI)
-VMware vRealize Operations (vROps)
-Virtual Data Center (VDC)
-Virtual Machine (VM)
+**APIs**: Application programming interfaces
+**CIDR**: Classless inter-domain routing 
+**Control (ctrl)**: The control key on keyboard
+**Command (cmd)**: The command key on keyboard
+**DR**: Disaster Recovery 
+**DNS**: Domain Name Service 
+**DHCP**: Dynamic Host Configuration Protocol 
+**GB**: Gigabyte 
+**Gbps**: Gigabits per second
+**HIPAA*: Health Insurance Portability and Accountability Act 
+**HA**: High Availability 
+**ITZ**: IBM Technology Zone 
+**ID**: Identification 
+**IAM**: Identity Access Management 
+**IaaS**: Infrastructure as a Service 
+**IOPs**: Input/output operations per second 
+**IP**: Internet Protocol 
+**OS**: Operating System 
+**RAM**: Random access memory 
+**RPO**: Recovery Point Objective 
+**RAS**: Reliability, Availability, and Serviceability 
+**SDDC**: Software Defined Data Center 
+**SSH**: Secure Shell
+**TechZone**: IBM Technology Zone
+**vApp**: Virtual Application 
+**vCPU**: Virtual Central Processor Unit 
+**VCD**: VMware Cloud Director 
+**VCF**: VMware Cloud Foundation 
+**VDC**: Virtual Data Center 
+**VM**:L Virtual Machine 
+**VCS**: VMware vCenter Server 
+**vRLI**: VMware vRealize Log Insight 
+**vROps**: VMware vRealize Operations 
 ```
