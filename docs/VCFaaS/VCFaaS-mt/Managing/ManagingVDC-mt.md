@@ -1,4 +1,4 @@
-In this click-thru demonstration, explore the management activities for a multi-tenant virtual data center (VDC) instance on IBM Cloud. Note, there are limited administrative tasks through the IBM Cloud portal for VDCs. All the steps that are shown here can be used in the IBM Technology Zone (ITZ) environment you provisioned up to the point of clicking **Create** or **Delete**. Attempts to create new resources in the ITZ environment result in an error similar to the one shown.
+In this click-thru demonstration, explore the management activities for a multitenant virtual data center (VDC) instance on IBM Cloud. Note, there are limited administrative tasks through the IBM Cloud portal for VDCs. All the steps that are shown here can be used in the IBM Technology Zone (ITZ) environment you provisioned up to the point of clicking **Create** or **Delete**. Attempts to create new resources in the ITZ environment result in an error similar to the one shown.
 
 ![](_attachments/CreateFailure.png)
 
