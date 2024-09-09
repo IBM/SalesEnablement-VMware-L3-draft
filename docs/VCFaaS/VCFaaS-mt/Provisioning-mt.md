@@ -72,20 +72,20 @@ For this demonstration, the default Network settings are used.
 ### Pricing plan
 11. Click **Pricing plan** in left menu.
 
-    Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a>. It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
+    Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a> (scroll down to **Details and pricing**). It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
 
 ### Consumption limit
 vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center.
 
-12. Click the **vCPU limit (cores)** entry box.
+12. Click the **vCPU limit (cores)** entry box to set it to 100.
 
     Note the range of the vCPU limit is from 1 to 2000 vCPUs.
 
-13. Click the **RAM limit (GB)** entry box.
+13. Click the **RAM limit (GB)** entry box to set it to 200.
 
     Note the range of RAM is between 1 and 40960 gigabytes (GB).
 
-14. Click the **I have read and agreed to the following license agreements** checkbox.
+14. Click the **I have read and agreed to the following license agreements** checkbox in **Summary** panel.
 15. Click the **Create** button.
 
 The provisioning process is automated. Provisioning time varies based on the configuration and network edge option selected. When the ITZ environment used for this learning plan was originally created, the provisioning of the VDC took approximately 15 minutes.
