@@ -36,7 +36,7 @@ Here are just a few high level demonstration flows you may want to consider:
         - Click through demonstrations to provision and then manage a VCF for Classic instance
   
 
-- IBM Cloud for VMware for Sales Level 3 
+- VCF as a Service multitenant
     - Client's need:
         - Meet business growth demands
         - No increase VMware administration headcount
