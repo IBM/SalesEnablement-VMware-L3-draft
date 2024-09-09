@@ -22,9 +22,13 @@ These VMware products are large, complex, and full of many, many features. The i
 
     <a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal</a>
 
-2. Switch to the {{itz.account}} IBM Cloud account.
+2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
 
-    ![](_attachments/switchAccount.gif)
+    Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.
+
+    ![](_attachments/switchAccount3.gif)
+
+    ![](_attachments/switchAccount4.gif)
 
 3. Click {{itz.VCFaaSmt.name}} in the virtual data centers (VDC) table.
 

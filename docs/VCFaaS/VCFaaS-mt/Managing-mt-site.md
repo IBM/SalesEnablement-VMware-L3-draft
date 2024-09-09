@@ -25,6 +25,12 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
 2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
 
+    Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.
+
+    ![](_attachments/switchAccount3.gif)
+
+    ![](_attachments/switchAccount4.gif)
+
 3. Click the **Cloud Director sites** tab.
 
     ![](_attachments/ip-vmware-VCFaaS-instancesDirectorTab.png)
