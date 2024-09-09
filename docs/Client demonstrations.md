@@ -36,7 +36,7 @@ Here are just a few high level demonstration flows you may want to consider:
         - Click through demonstrations to provision and then manage a VCF for Classic instance
   
 
-- VCF as a Service multitenant
+- **VCF as a Service multitenant**
     - Client's need:
         - Meet business growth demands
         - No increase VMware administration headcount
@@ -58,7 +58,6 @@ Here are just a few high level demonstration flows you may want to consider:
   
 Mock client demonstrations of both to these are available in the {{learningplan.name}} learning plan in YourLearning (for IBMers) and learn.ibm.com (for Business Partners). 
 
-When preparing for a client demonstration, or for IBMers doing their stand and deliver recording, don't wait to the last minute. Make sure the IBM Technology Zone (ITZ) environment that you need is up and running and the reservation is not about to expire. If the demonstration is to be given virtually, make sure everything works with the e-meeting technology you are using (i.e. Webex, Zoom, and so on).
+When preparing for a client demonstration, or for IBMers doing their stand and deliver recording, don't wait to the last minute. Make sure the IBM Technology Zone (ITZ) environment that you need is up and running and the reservation is not about to expire. If the demonstration is to be given virtually, make sure everything works with the e-meeting technology you are using.
 
 Make sure you practice the demonstration flow. There is nothing more embarrassing than a demonstration that fails. Know the steps that you are going to take. Know what you will say. Plan on handling errors that might occur. If you are using the "baking show" approach, practice what you will say in the transition from canceling the creation of a resource to moving to a fully provisioned instance. And most importantly, practice, practice, practice.
-
