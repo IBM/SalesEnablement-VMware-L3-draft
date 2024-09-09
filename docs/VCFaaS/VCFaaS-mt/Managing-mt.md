@@ -7,7 +7,6 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 - accessing the VMware vCloud Director web console
 - accessing add-on services
 - managing interconnectivity
-- adding and accessing IBM Cloud Monitoring
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -25,9 +24,13 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a>
 
-2. Switch to the {{itz.account}} IBM Cloud account.
+2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
 
-    ![](_attachments/switchAccount.gif)
+    Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.
+
+    ![](_attachments/switchAccount1.gif)
+
+    ![](_attachments/switchAccount2.gif)
 
 3. Click the VMware (![](_attachments/VMicon.png)) icon.   
 

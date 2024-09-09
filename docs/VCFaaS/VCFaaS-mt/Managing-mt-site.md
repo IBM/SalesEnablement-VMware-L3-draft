@@ -23,9 +23,7 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
     <a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal - VCF as a Service</a>
 
-2. Switch to the {{itz.account}} IBM Cloud account.
-
-    ![](_attachments/switchAccount.gif)
+2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
 
 3. Click the **Cloud Director sites** tab.
 

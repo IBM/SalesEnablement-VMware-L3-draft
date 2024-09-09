@@ -197,7 +197,7 @@ The network is now setup and ready to be used.
 
     ![](_attachments/vcd-network-DHCPAppsTab.png)
 
-34. Click **NEW VAPP**.
+34. Click the **NEW** drop-down list and select **New vApp**.
 
     ![](_attachments/vcd-vAPP-new.png)
 
