@@ -30,7 +30,7 @@ These VMware products are large, complex, and full of many, many features. The i
 
     ![](_attachments/switchAccount4.gif)
 
-3. Click {{itz.VCFaaSmt.name}} in the virtual data centers (VDC) table.
+3. Click **{{itz.VCFaaSmt.name}}** in the virtual data centers (VDC) table.
 
     ![](_attachments/vcf-mt-opeartingVCDtable.png)
 
@@ -50,7 +50,7 @@ These VMware products are large, complex, and full of many, many features. The i
 
 6. Explore the information displayed on the **Data Centers** summary page and then click the {{itz.VCFaaSmt.name}} tile.
 
-    The screen capture shown below was taken before any resources were provisioned in the **VCF as a Service** instance. Notice all the 0 counts. Your view will be different and reflect any currently provisioned resources.
+    The screen capture shown below was taken before any resources were provisioned in the **VCF as a Service** instance. Your view will be different and reflect any currently provisioned resources.
 
     ![](_attachments/vcd-DataCentersSummary.png)
 
@@ -75,7 +75,7 @@ The next steps show how to create a data center group, expand the scope of an ed
 
     ![](_attachments/vcd-dcgNewButton.png)
     
-10.  Select the {{itz.VCFaaSmt.name}} VDC and click **NEXT**.
+10.  Select the **{{itz.VCFaaSmt.name}}** VDC and click **NEXT**.
 
     ![](_attachments/vcd-dcgNewSelectVDCNext.png)
 
@@ -96,6 +96,8 @@ The next steps show how to create a data center group, expand the scope of an ed
     It takes just a few seconds for the VDC group to be created.
 
 14.  Click the **Edge Gateways** tab.
+
+    Notice the **Recent Tasks** table at the bottom of the page and the status of the recent actions.
 
     ![](_attachments/vcd-dcgToEGTabpng.png)
 
@@ -137,7 +139,7 @@ The next steps show how to create a data center group, expand the scope of an ed
 
 22. Enter a **Name** and **Description** and then specify a new CIDR and click **NEXT**.
 
-    In this demonstration environment, a network is created using the non-routable 192.168.1.1/24 private network. Later, explore how network address translation (NAT) can be configured to allow Internet access that uses the public IP addresses associated with the VDC.
+    In this demonstration environment, a network is created using the non-routable private network CIDR of 192.168.1.1/24. 
 
     The *Dual-Stack Mode* enables support for both IPv4 and IPv6 addressing. The *Distributed Routing* option provides fast and efficient East-West routing. This can be disabled to connect to the service router and force all VM traffic through the service router.
 
@@ -150,7 +152,7 @@ The next steps show how to create a data center group, expand the scope of an ed
 
     ![](_attachments/vcd-network-DNS.png)
 
-25. Click **CANCEL**.
+25. Click **CANCEL** and then **YES** in the **Cancel Wizard** dialog.
 
     This action has already been performed on the existing network. If you were to create a new one, you would click *FINISH*.
 
