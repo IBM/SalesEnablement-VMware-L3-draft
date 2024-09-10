@@ -66,7 +66,7 @@ In some images, the following styles of highlighting are used:
 ## Terminology
 
 The following acronyms and short-form terminology are used throughout the guide:
-```
+
 **APIs**: Application programming interfaces
 **CIDR**: Classless inter-domain routing 
 **Control (ctrl)**: The control key on keyboard
@@ -100,4 +100,4 @@ The following acronyms and short-form terminology are used throughout the guide:
 **VCS**: VMware vCenter Server 
 **vRLI**: VMware vRealize Log Insight 
 **vROps**: VMware vRealize Operations 
-```
+
