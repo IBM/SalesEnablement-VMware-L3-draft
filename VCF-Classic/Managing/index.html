@@ -635,7 +635,6 @@
 <p>The steps that follow are specific to the management capabilities of VCF for Classic as of August 2024. </p>
 <p>The steps <strong>CANNOT</strong> be used in the ITZ environment that was reserved for this course. To save costs, the VCF for Classic instance was removed after the creation of the associated click through demonstrations. </p>
 </div>
-<p>Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.</p>
@@ -643,7 +642,7 @@
 <ol>
 <li>
 <p>Open the link below and then click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png"> to begin the demonstration.</p>
-<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html" target="_blank">Manage an instance of VCF for Classic</a></p>
+<p><strong>Click through demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html" target="_blank">Manage an instance of VCF for Classic</a></p>
 </li>
 <li>
 <p>Click the <strong>VMware</strong> <img alt="" src="../_attachments/VMicon.png"> icon in the left menu.</p>
@@ -658,10 +657,10 @@
 <li>
 <p>Click the <strong>Actions</strong> drop-down list.</p>
 <p>There are 2 actions that be performed from the <strong>Actions</strong> menu. The <strong>Refresh</strong> option updates the information about the instance. </p>
-<p>The <strong>Delete instance</strong> option removes the VCF for Classic instance. When deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, there are additional step that must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.</p>
+<p>The <strong>Delete instance</strong> option removes the VCF for Classic instance. When deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, there are additional steps that must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.</p>
 </li>
 <li>
-<p>Click <strong>Refresh</strong></p>
+<p>Click <strong>Refresh</strong>.</p>
 </li>
 <li>
 <p>Click the <strong>Access information</strong> tab.</p>
@@ -681,7 +680,7 @@
 </li>
 <li>
 <p>Click <strong>Create</strong>.</p>
-<p>The <strong>Create cluster</strong> from should look familiar. It is very similar to part of the form used when the VCF for Classic instance was created.</p>
+<p>The <strong>Create cluster</strong> form should look familiar. It is very similar to part of the form used when the VCF for Classic instance was created.</p>
 <p>This form can be used to create both <strong>workload</strong> and <strong>gateway</strong> clusters. First, explore adding a <strong>workload</strong> cluster.</p>
 </li>
 <li>
@@ -714,33 +713,32 @@
 <li>Select <strong>Allocate a new one</strong>.</li>
 <li>Click the <strong>Secondary private VLAN</strong> drop-down list.</li>
 <li>Select <strong>Allocate a new one</strong>.</li>
-<li>Select the <strong>I understand that th following account will be charged</strong> agreement.</li>
+<li>Select the <strong>I understand that the following account will be charged</strong> agreement.</li>
 <li>
 <p>Select the <strong>I have read and agreed to the following third-party service</strong> agreement.</p>
 <p>At this point, the user would click create and the new cluster would start to provision.</p>
-<p>Now, explore the steps to create a new <strong>Gateway cluster</strong></p>
+<p>Now, explore the steps to create a new <strong>Gateway cluster</strong>.</p>
 </li>
 <li>
 <p>Select <strong>Gateway cluster</strong>.</p>
-<p>Notice the <strong>Data center location</strong> is set and can not be changed.</p>
+<p>Notice the <strong>Data center location</strong> is set and cannot be changed.</p>
 </li>
 <li>
 <p>Select <strong>Dual Intel Xeon Silver 4210</strong> for the CPU model.</p>
 <p>Notice the additional parameters that can be specified for the gateway cluster.</p>
 </li>
 <li>
-<p>Select the <strong>I understand that th following account will be charged</strong> agreement.</p>
+<p>Select the <strong>I understand that the following account will be charged</strong> agreement.</p>
 </li>
 <li>
 <p>Select the <strong>I have read and agreed to the following third-party service</strong> agreement.</p>
 <p>At this point, the user would click create and the new cluster would start to provision.</p>
-<p>Return to the <strong>Infrastructure</strong> page.</p>
 </li>
 <li>
 <p>Click the <strong>vce-se-l3 (primary)</strong> in the breadcrumb trail.</p>
 </li>
 <li>
-<p>Click vcs-mc-consolidated in the cluster table.</p>
+<p>Click <strong>vcs-mc-consolidated</strong> in the cluster table.</p>
 <p>The details page for a cluster provides information about all the components of the cluster including the servers running ESXi, storage, and network. In addition, additional servers and storage can be added to the cluster from this page.</p>
 </li>
 <li>
@@ -757,7 +755,7 @@
 <li>Click <strong>Next</strong>.</li>
 <li>
 <p>Review the screen and click <strong>Next</strong>.</p>
-<p>The new host or hosts can either use the same primary subnets are a different one. The subnets must already exist and be reachable by the VMware management components.</p>
+<p>The new host or hosts can either use the same primary subnets or a different one. The subnets must already exist and be reachable by the VMware management components.</p>
 <p>The next step would be to accept the agreements and then click <strong>Add</strong>. For this demonstration, a new server will not be added.</p>
 </li>
 <li>
@@ -799,7 +797,7 @@
 </li>
 <li>
 <p>Click the <strong>Public VLAN</strong> tab.</p>
-<p>If enabled with public network access, this section show the primary subnet for hosts and virtual server instances, public subnet for customer workload edge, and the public subnet for the management edge.</p>
+<p>If enabled with public network access, this section shows the primary subnet for hosts and virtual server instances, public subnet for customer workload edge, and the public subnet for the management edge.</p>
 </li>
 <li>
 <p>Click <strong>View resource</strong>.</p>
@@ -815,7 +813,7 @@
 </li>
 <li>
 <p>Click <strong>Add</strong>.</p>
-<p>Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require additional capacity to be added before hand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.</p>
+<p>Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require additional capacity to be added beforehand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.</p>
 </li>
 <li>
 <p>Click the <strong>vcs-se-l3 (primary)</strong> link in the breadcrumb trail.</p>
