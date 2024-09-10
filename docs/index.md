@@ -32,7 +32,7 @@ Business Partners can also utilize the IBM Training live Chat Support service or
 
 ## Using the demonstration guide
 
-The Level 3 demonstration guide is organized into two chapters, covering the **VMware Cloud Foundation (VCF) as a Service** and **VCF for Classic** offerings of the **IBM Cloud for VMware Solutions** portfolio. These chapters contain modules that provide an *Introduction* to the offering, steps to *Provision* an instance, and explore how clients *Manage* their instances through the IBM Cloud portal and the respective VMware tools. The **VCF as a Service** module focuses on the **multitenant** offering and includes modules on operating an instance using VMware vCloud Director (VCD) and monitoring an instance with IBM Cloud Monitoring.
+The Level 3 demonstration guide is organized into two chapters; covering the **VMware Cloud Foundation (VCF) as a Service** and **VCF for Classic** offerings of the **IBM Cloud for VMware Solutions** portfolio. These chapters contain modules that provide an *Introduction* to the offering, steps to *Provision* an instance, and explore how clients *Manage* their instances through the IBM Cloud portal and the respective VMware tools. The **VCF as a Service** module focuses on the **multitenant** offering and includes modules on operating an instance using VMware vCloud Director (VCD) and monitoring an instance with IBM Cloud Monitoring.
 
 This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
 

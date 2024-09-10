@@ -1,4 +1,4 @@
-Use the click-thru demonstration below to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
+Use the click through demonstration below to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -155,7 +155,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
 14. Click the **Geography** drop-down list.
 
-    VCF for Classic is available in IBM Cloud datacenters located around the world. For a list of the latest supported locations refer to the <a href="https://cloud.ibm.com/docs/overview?topic=overview-locations" target="_blank">**Region and data center locations for resource deployment**</a> page in the documentation. This documentation provides detailed information about IBM Cloud data centers and multizone region architectures.
+    VCF for Classic is available in IBM Cloud data centers located around the world. For a list of the latest supported locations refer to the <a href="https://cloud.ibm.com/docs/overview?topic=overview-locations" target="_blank">**Region and data center locations for resource deployment**</a> page in the documentation. This documentation provides detailed information about IBM Cloud data centers and multizone region architectures.
 
 15. Select **NA East**.
 16. Select **WDC04** in the **Data center** drop-down list.
@@ -165,7 +165,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
 18. Select the **SAP-certified Cascade Lake** central processor unit (CPU) model.
 
-    The SAP-certified option filters the hosts that completed SAP infrastructure as a service (IaaS) certification for compatibility, supportability, and performance with SAP software applications.
+    The SAP-certified option filters the hosts that completed SAP infrastructure-as-a-service (IaaS) certification for compatibility, supportability, and performance with SAP software applications.
 
 19. Click the **next page icon** (![](_attachments/nextPage.png)).
 20. Select the **Cascade Lake** CPU model.
@@ -219,7 +219,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
     When specifying an additional workload cluster, new specifications for the cluster can be selected including specifying a different geography than the consolidated cluster.
 
     - Cluster name
-    - Cluster location (geography, datacenter, and pod)
+    - Cluster location (geography, data center, and pod)
     - CPU model
     - RAM
     - Number of servers
@@ -252,18 +252,18 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
 42. Select **Configure host names individually**.
 
-    Each host provisioned can be uniquely named, otherwise the names will consist of the **Hostname prefix** field and a unique sequential number.
+    Each host provisioned can be uniquely named; otherwise, the names will consist of the **Hostname prefix** field and a unique sequential number.
 
 43. Deselect **Configure host names individually**.
 44. Select **Two highly available dedicated Windows Server VMs on the consolidated cluster**.
 
     Two options exist for the Domain Name System (DNS) configuration for the instance. 
     
-    The **Two highly available dedicated Windows Server VMs on the consolidated cluster** option deploys two (2) Microsoft Windows virtual machines (VMs) which enhances security and robustness. If this option is selected, the client must provide two (2) Microsoft Windows Server 2019 Standard edition licenses.
+    The **Two highly available dedicated Windows Server VMs on the consolidated cluster** option deploys two (2) Microsoft Windows virtual machines (VMs), which enhances security and robustness. If this option is selected, the client must provide two (2) Microsoft Windows Server 2019 Standard edition licenses.
 
 45. Select **Single public Windows VSI for Active Directory/DNS**
 
-    The **Single public Windows VSI for Active Directory/DNS** option deploys a single Microsoft Windows Server virtual server instance (VSI) for Microsoft Active Directory(AD). The VSI functions as the DNS for the instance where the hosts and VMs are registered.
+    The **Single public Windows VSI for Active Directory/DNS** option deploys a single Microsoft Windows Server virtual server instance (VSI) for Microsoft Active Directory (AD). The VSI functions as the DNS for the instance where the hosts and VMs are registered.
 
 46. Click **Add-on services** in left menu.
 
@@ -330,8 +330,7 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
         Instead of simulating scrolling in the IBM Cloud portal, these steps have users click the **Add-on services** option in the left menu multiple times. In the IBM Cloud portal, users would just scroll down in the browser to view the entire set of available services.
 
-51. Click **Add-on services** left menu.
-52. Select **VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition 8.17**.
+51. Select **VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition 8.17**.
 
     The new licensing of VMware software was mentioned earlier. Not all of the VMware software products that are licensed as part of VCF for Classic are automatically installed.
 
@@ -347,11 +346,11 @@ Use the click-thru demonstration below to practice provisioning a VMware Cloud F
 
     ![](_attachments/summaryPanel.png)
 
-53. Select **I understand that the following account will be charged for infrastructure**.
-54. Select **I have read and agreed to the following third-party service agreements**.
-55. Click **Create**.
+52. Select **I understand that the following account will be charged for infrastructure**.
+53. Select **I have read and agreed to the following third-party service agreements**.
+54. Click **Create**.
 
-At this point, the provisioning process for the VCF for Classic instance begins. If all specified infrastructure components with the requested configurations are available, this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
+At this point, the provisioning process for the VCF for Classic instance begins. If all specified infrastructure components with the requested configurations are available, this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available, the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
 
 The VCS for Classic automation performs hundreds of operations. At a  high level, all the infrastructure (compute and storage) is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
 

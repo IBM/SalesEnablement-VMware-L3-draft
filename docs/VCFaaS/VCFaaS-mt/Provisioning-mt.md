@@ -9,7 +9,7 @@ The following module guides Business Partners and IBM sellers through the proces
     **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
 # Click through demonstration
- Use the click through demonstration to practice the provisioning process. The fields that require a text entry (for example Virtual Data Center name) are automatically populated in the click-thru demonstration. 
+ Use the click through demonstration to practice the provisioning process.
 
 !!! tip
     
@@ -33,7 +33,7 @@ The following module guides Business Partners and IBM sellers through the proces
 
     A descriptive name for the VDC should be used. Once created, the name cannot be changed.
 
-6. Click the **Resource Group** drop-down list.
+6. Click the **Resource group** drop-down list.
 
     Resource groups are used to help manage resources and billing in an IBM Cloud account.
 
@@ -59,11 +59,11 @@ VDCs can connect to IBM Cloud Transit Gateway to enable the workloads to securel
 
 The connection is made available through the network edge. There are four options for the network edge. Note the number of vCPUs, memory, and pricing associated with each option: 
 
-- **Efficiency** These edges allocate networking resources that can be used by up to 64 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 64 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC.
+- **Efficiency** These edges allocate networking resources that can be used by up to 64 VDCs before another efficiency edge needs to be created. The first time an efficiency edge is selected new CPU, RAM, and storage resources are required. CPU and RAM are used from the single-tenant site. New edge storage is allocated at a cost. Subsequent VDCs up to 64 can use this edge at no extra cost. This option is suitable for saving resources and costs with independent networking control per VDC.
 
-- **Performance - M** This option is suitable when only Layer 2 (L2) through L4 features such as Network Address Translation (NAT), routing, and L4 firewall are required and the total throughput requirement is in the range 2 - 6 gigabits per second (Gbps).
+- **Performance - M** This option is suitable when only Layer 2 (L2) through L4 features such as Network Address Translation (NAT), routing, and L4 firewall are required and the total throughput requirement is in the range 2-6 gigabits per second (Gbps).
 
-- **Performance - L** This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2 - 10 Gbps. This option is recommended for high traffic.
+- **Performance - L** This option is suitable when only L2 through L4 features such as NAT, routing, and L4 firewall are required and the total throughput is in the range 2-10 Gbps. This option is recommended for high traffic.
 
 - **Performance - XL** This option provides the highest level of edge services and throughput over 10 Gbps.
 
@@ -72,7 +72,7 @@ For this demonstration, the default Network settings are used.
 ### Pricing plan
 11. Click **Pricing plan** in left menu.
 
-    Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a> (scroll down to **Details and pricing**). It is important to understand that with the on-demand model resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
+    Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a> (scroll down to **Details and pricing**). It is important to understand that with the on-demand model, resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
 
 ### Consumption limit
 vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center.

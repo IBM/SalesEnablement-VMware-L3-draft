@@ -2,11 +2,11 @@ There are two aspects of managing a VMware Cloud Foundation (VCF) as a Service (
 
 This chapter focuses on using the IBM Cloud portal to manage aspects of the Virtual Data Center (VDC) like:
 
-- adding and deleting instances
-- modifying the vCPU and RAM limits of the instance
-- accessing the VMware vCloud Director web console
-- accessing add-on services
-- managing interconnectivity
+- Adding and deleting instances
+- Modifying the vCPU and RAM limits of the instance
+- Accessing the VMware vCloud Director web console
+- Accessing add-on services
+- Managing interconnectivity
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -49,7 +49,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 ### VDC instance summary 
 6. Examine the information shown on the VDC instance summary page.
 
-    **a.** The vCPU and RAM limit shows the consumptions limits that were specified when the instance was provisioned.
+    **a.** The vCPU and RAM limit shows the consumption limits that were specified when the instance was provisioned.
 
     **b.** The pricing plan selected for the instance.
     
@@ -81,7 +81,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     **b.** Increase or decrease the maximum number of vCPUs between 1 and 2000.
     
-    **c.** Increase or decrease teh maximum amount of memory (RAM) between 1 gigabyte (GB) and 40,960 GB.
+    **c.** Increase or decrease the maximum amount of memory (RAM) between 1 gigabyte (GB) and 40960 GB.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceModifyLimitOptions.png)
 
@@ -110,7 +110,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     - **Veeam Backup and Replication**
 
-        **Veeam Backup and Replication Always-On Enterprise** provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed the VDC is provisioned. Learn more about Veeam and the simple install process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.
+        **Veeam Backup and Replication Always-On Enterprise** provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed site where the VDC is provisioned. Learn more about Veeam and the simple install process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.
 
     ![](_attachments/ip-vmware-VCFaaS-addOnServices.png)
 
@@ -127,7 +127,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     IBM Cloud Transit Gateway can be used to securely interconnect IBM Cloud VCF as a Service, Classic Infrastructure as a Service (IaaS), and IBM Virtual Private Cloud (VPC) infrastructures worldwide, keeping traffic within the IBM Cloud network. Learn more about using Transit Gateway to interconnect VCF as a Service with IBM Cloud services <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tgw-adding-connections" target="_blank">here</a>.
 
-    As illustrated, creating and configuring a Transit Gateway connection is a 3 step process. Read the high-level descriptions of the steps on the dialog.
+    As illustrated, creating and configuring a Transit Gateway connection is a 3-step process. Read the high-level descriptions of the steps in the dialog.
 
     !!! Warning "The Transit Gateway connection in the ITZ environment"
 
@@ -155,7 +155,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 18. If not already expanded, expand the provisioned transit gateway {{itz.tgID}}.
 
-    ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivitySummary.png)
+    ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivitySummary2.png)
 
 19. Expand one of the **Unbound GRE Tunnel** entries in the table.
 
@@ -167,7 +167,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 That concludes the overview of managing a VCF as a Service multitenant instance using the IBM Cloud portal. In later chapters, you will:
 
-- Explore accessing the VMware Cloud Director web console to create datacenter groups, networks, and virtual machines (VMs).
+- Explore accessing the VMware Cloud Director web console to create data center groups, networks, and virtual machines (VMs).
   
 - Explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring.
 

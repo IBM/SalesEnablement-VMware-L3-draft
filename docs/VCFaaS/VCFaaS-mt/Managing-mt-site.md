@@ -45,7 +45,7 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
 6. Examine the information displayed for the site, and then click the **Virtual data centers** tab.
 
-    Note, the number of VDCs only shows the number of VDCs owned by this IBM Cloud account and not the total number of VDCS in the site that is managed by IBM.
+    Note, the number of VDCs only shows the number of VDCs owned by this IBM Cloud account and not the total number of VDCs in the site that is managed by IBM.
 
     ![](_attachments/ip-vmware-VCFaaS-instancesDirectorSiteSummary.png)
 
@@ -73,9 +73,9 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
     Details about the instance endpoints and connections are displayed. Learn more about this topic <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep" target="_blank">here</a>.
 
-    - **Instance endpoints** - Public instance endpoints are provided by IBM. Clients can equest new endpoints for private connections. Additional charges apply when ordering new private endpoints.
+    - **Instance endpoints** - Public instance endpoints are provided by IBM. Clients can request new endpoints for private connections. Additional charges apply when ordering new private endpoints.
     
-    - **VMware Shared pairings** - Create and manage cloud-to-cloud connections between the instance and VMware Shared instances. Note, VMware Shared has been withdrawn and will reach end of support on January 15, 2025.
+    - **VMware Shared pairings** - Create and manage cloud-to-cloud connections between the instance and VMware Shared instances. **VMware Shared has been withdrawn and will reach end of support on January 15, 2025.**
 
     - **VCF as a Service pairings** - Create cloud-to-cloud connections between the instance and another single-tenant or multitenant VCF as a Service instance.
 

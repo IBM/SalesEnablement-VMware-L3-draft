@@ -1,6 +1,6 @@
-IBM Cloud Monitoring is a cloud-native, and container-intelligence management system that can be included as part of an VMware Cloud Foundation (VCF) as a Service deployment. Use it to gain operational visibility into the performance and health of applications, services, and platforms. It offers administrators, DevOps teams and developers full-stack telemetry with advanced features to monitor and troubleshoot, define alerts, and design custom dashboards. 
+IBM Cloud Monitoring is a cloud-native, and container-intelligence management system that can be included as part of an VMware Cloud Foundation (VCF) as a Service deployment. Use it to gain operational visibility into the performance and health of applications, services, and platforms. It offers administrators, DevOps teams, and developers full-stack telemetry with advanced features to monitor and troubleshoot, define alerts, and design custom dashboards. 
 
-VCF as a Service provides predefined IBM Cloud Monitoring dashboards. While the default dashboards cannot be changed, they can be copied and the copies can be updated.
+VCF as a Service provides predefined IBM Cloud Monitoring dashboards. While the default dashboards cannot be changed, they can be copied, and the copies can be updated.
 
 The following steps provide a high-level introduction to the default dashboards and covers the basics for IBM Cloud Monitoring. Omitted from these steps is the initial creation of the IBM Cloud Monitoring instance. This is a simple process of specifying the location, pricing plan, and a few other options.
 
@@ -52,7 +52,7 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
 8. Review the data presented in the **VMware as a Service - Director Site** dashboard.
 
-    Very little data in this new environment at the time this screen was captured, but notice the data does reflect the new environment and the first vApp that was created with 2 virtual machines (VMs).
+    Very little data was in this new environment at the time this screen was captured, but notice the data does reflect the new environment, and the first vApp that has 2 virtual machines (VMs).
 
     ![](_attachments/ip-monitoring-site.png)
 
@@ -60,6 +60,6 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
     ![](_attachments/ip-monitoringExplore.png)
 
-As the shard ITZ environment is utilized more, expect to see more data presented in the dashboards. 
+As the shared ITZ environment is utilized more, expect to see more data presented in the dashboards. 
 
 

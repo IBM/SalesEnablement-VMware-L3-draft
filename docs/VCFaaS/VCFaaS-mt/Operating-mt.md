@@ -4,11 +4,11 @@ VCF provides a robust private cloud environment running on public cloud infrastr
 
 These VMware products are large, complex, and full of many, many features. The intent of this module is not to demonstrate all the capabilities of VCF, rather to provide basic education and demonstration capabilities that illustrate:
 
-- how the *"on IBM Cloud"* capabilities of the **VCF as a Service multitenant** are exposed through the VMware web console (VMware vCloud Director (VCD))
+- How the *"on IBM Cloud"* capabilities of the **VCF as a Service multitenant** are exposed through the VMware web console (VMware vCloud Director [VCD]).
   
-- how to provision basic resources including data center groups, networks, and virtual machines using VCD
+- How to provision basic resources including data center groups, networks, and virtual machines using VCD.
 
-- illustrate how a **VCF as a Service multitenant** instance on IBM Cloud is just like VCF in a client's enterprise datacenter
+- Illustrate how a **VCF as a Service multitenant** instance on IBM Cloud is just like VCF in a client's enterprise data center.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -16,7 +16,7 @@ These VMware products are large, complex, and full of many, many features. The i
 
     All of the steps described in this module **CAN** be completed by every user of the shared ITZ environment using VMware vCloud Director (VCD). However, in some instances, creating new resources (like networks) will be discouraged. 
 
-    **If you opt to create a resource, please delete the resource before your ITZ reservation expires!** Doing so will reduce on going maintenance costs of the environment and help preserve the usability of the shared environment.
+    **If you opt to create a resource, please delete the resource before your ITZ reservation expires!** Doing so will reduce ongoing maintenance costs of the environment and help preserve the usability of the shared environment.
 
 1. Click the link below to open a browser to the IBM Cloud portal.
 
@@ -46,7 +46,7 @@ These VMware products are large, complex, and full of many, many features. The i
 
     !!! Warning "You may be asked to reauthenticate to IBM Cloud"
 
-        After clicking the **SIGN IN WITH OIDC** button, you may be asked to re-authenticate to IBM Cloud. IBM employees and business partners that have multi-factor authentication (MFA) enabled in their IBM Cloud account may also additional authentication steps to perform. These steps are not detailed here.
+        After clicking the **SIGN IN WITH OIDC** button, you may be asked to re-authenticate to IBM Cloud. IBM employees and business partners that have multi-factor authentication (MFA) enabled in their IBM Cloud account may also have additional authentication steps to perform. These steps are not detailed here.
 
 6. Explore the information displayed on the **Data Centers** summary page and then click the {{itz.VCFaaSmt.name}} tile.
 
@@ -57,7 +57,7 @@ These VMware products are large, complex, and full of many, many features. The i
 ### Networking
 The network for a **VCF as a Service** environment is a critical element that clients must plan carefully. Some information on network planning is provided in the IBM Cloud documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vcd-ops-guide#vcd-ops-guide-networking" target="_blank">here</a>. VMware also has good documentation that is accessible through the vCloud Director web console or <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-0544FE2A-B036-43E0-B549-40BACDF261B6.html" target="_blank">here</a>. The network implementation in this demonstration environment is minimal and should not be considered as a best of practice.
 
-The next steps show how to create a datacenter group, expand the scope of an edge gateway, and create a network that can be used by virtual machines (VMs). Data Center Groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC will be created, but in most client environments, there will be multiple VDCs and connectivity will need to be established between them. To allow network connectivity to VMs a data center group and network needs to be created in the virtual data center. 
+The next steps show how to create a data center group, expand the scope of an edge gateway, and create a network that can be used by virtual machines (VMs). Data center groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC will be created. However, in most client environments, there will be multiple VDCs, and connectivity will need to be established between them. To allow network connectivity to VMs, a data center group and network needs to be created in the virtual data center. 
 
 !!! Warning "In the ITZ enviroment, you can, but you don't need to"
 
@@ -69,41 +69,45 @@ The next steps show how to create a datacenter group, expand the scope of an edg
 
 8. Click the **Data Center Groups** tab.
 
-    ![](_attachments/vcd-dataCenters-NetworkingTab.png)
+    ![](_attachments/vcd-network-DCGtab.png)
 
 9. Click **New**.
 
     ![](_attachments/vcd-dcgNewButton.png)
-
-10. Select the {{itz.VCFaaSmt.name}} VDC and click **NEXT**.
+    
+10.  Select the {{itz.VCFaaSmt.name}} VDC and click **NEXT**.
 
     ![](_attachments/vcd-dcgNewSelectVDCNext.png)
 
-11. Enter a **unique name** and **description** and click **NEXT**.
+11.  Enter a **unique name** and **description** and click **NEXT**.
 
     ![](_attachments/vcd-dcgNewNameDescNext.png)
 
-12. Click **NEXT** on the **Participating VDCs** screen.
+12.  Click **NEXT** on the **Participating VDCs** screen.
 
     ![](_attachments/vcd-dcgParticipatingNext.png)
 
-13. Click **CANCEL**.
+13.  Click **CANCEL**.
 
     A VDC group has already been created in the shared environment, so no need to create one. However, if you really want to, you can click *Finish*, but please be sure to remove any resources you create.
 
     ![](_attachments/vcd-dcgCancel.png)
 
-    It takes a just few seconds for the VDC group to be created.
+    It takes just a few seconds for the VDC group to be created.
 
-14. Click the **Edge Gateways** tab.
+14.  Click the **Edge Gateways** tab.
 
     ![](_attachments/vcd-dcgToEGTabpng.png)
 
-15. Click {{itz.VCFaaSmt.name}} in the table. Note the name in the table will have a unique ID appended to it.
+15.  Click {{itz.VCFaaSmt.name}} in the table. Note the name in the table will have a unique ID appended to it.
 
     ![](_attachments/vcd-eg-Table.png)
 
 16. Click **INCREASE SCOPE**.
+
+    !!! Important "Scope has already been increased"
+
+        When the network was initially created, the scope was increased. The **DECREASE SCOPE** option will be visible now.
 
     The scope needs to be increased to include the VDC group created earlier.
 
@@ -135,7 +139,7 @@ The next steps show how to create a datacenter group, expand the scope of an edg
 
     In this demonstration environment, a network is created using the non-routable 192.168.1.1/24 private network. Later, explore how network address translation (NAT) can be configured to allow Internet access that uses the public IP addresses associated with the VDC.
 
-    The *Dual-Stack Mode* enables support for both IPv4 and IPv6 addressing. The *Distributed Routing* option provides fast and efficient East-West routing. This can be disable to connect to the service router and force all VM traffic through the service router.
+    The *Dual-Stack Mode* enables support for both IPv4 and IPv6 addressing. The *Distributed Routing* option provides fast and efficient East-West routing. This can be disabled to connect to the service router and force all VM traffic through the service router.
 
     ![](_attachments/vcd-network-General.png)
 
@@ -164,7 +168,7 @@ The next steps show how to create a datacenter group, expand the scope of an edg
 
 !!! Important "Please read about the next few steps"
 
-    The next few steps **cannot** performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step 33.
+    The next few steps **cannot** be performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step 33.
 
 28. Click **ACTIVATE**.
 
@@ -180,7 +184,7 @@ The next steps show how to create a datacenter group, expand the scope of an edg
 
     ![](_attachments/vcd-network-DHCPPool.png)
 
-31. Enter **161.26.0.10** and **161.26.0.11** for the *DNS Servers** and click **NEXT**.
+31. Enter **161.26.0.10** and **161.26.0.11** for the **DNS Servers** and click **NEXT**.
 
     ![](_attachments/vcd-network-DHCPDNS.png)
 
@@ -228,7 +232,7 @@ The network is now setup and ready to be used.
 
 39. Scroll down and change set the **Storage Policy** to **2 IOPS/GB**.
 
-    Review the storage options available. Recall when the **VCF as a Service multitenant** instance was created, there were no storage options specified. Storage is defined at the **site** level and in the case of the **multitenant** offering, managed by IBM. Charges for storage very by the storage policy selected.
+    Review the storage options available. Recall when the **VCF as a Service multitenant** instance was created, there were no storage options specified. Storage is defined at the **site** level and in the case of the **multitenant** offering, managed by IBM. Charges for storage vary by the storage policy selected.
 
     ![](_attachments/vcd-vApp-NewvApp-NewVMStorage.png)
 
@@ -236,13 +240,13 @@ The network is now setup and ready to be used.
 
     a. The **Compute** settings are defined by the template selected.
 
-    b. The network interface cards (NICs) is set to the default network which was created earlier and DHCP is selected.
+    b. The network interface cards (NICs) is set to the default network, which was created earlier, and DHCP is selected.
 
     ![](_attachments/vcd-vApp-NewvApp-cpunics.png)
 
-41. Click **ADD VIRTUAL MACHINE** and **repeat steps 40 and 38** specifying a new name for the 2nd VM.
+41. Click **ADD VIRTUAL MACHINE** and **repeat steps 37 through 40** specifying a new name for the 2nd VM.
 
-    After repeating steps 37 and 38, you should now have 2 VMs listed in the table.
+    After repeating steps 37-40, you should now have 2 VMs listed in the table.
 
 42. Click **Create**.
 

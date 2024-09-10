@@ -6,15 +6,13 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
  
     The steps **CANNOT** be used in the ITZ environment that was reserved for this course. To save costs, the VCF for Classic instance was removed after the creation of the associated click through demonstrations. 
 
-Fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
-
 !!! tip
     
     When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-    **Click-thru demo:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
+    **Click through demo:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 
@@ -27,9 +25,9 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
     There are 2 actions that be performed from the **Actions** menu. The **Refresh** option updates the information about the instance. 
     
-    The **Delete instance** option removes the VCF for Classic instance. When deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, there are additional step that must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.
+    The **Delete instance** option removes the VCF for Classic instance. When deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, there are additional steps that must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.
 
-6. Click **Refresh**
+6. Click **Refresh**.
 7. Click the **Access information** tab.
 
     The **Access information** page provides the details required to access the core VMware components of the VCF for Classic deployment including IP addresses, fully qualified domain names (FQDN), administrative identities, and passwords.
@@ -47,7 +45,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 11. Click **Create**.
     
-    The **Create cluster** from should look familiar. It is very similar to part of the form used when the VCF for Classic instance was created.
+    The **Create cluster** form should look familiar. It is very similar to part of the form used when the VCF for Classic instance was created.
 
     This form can be used to create both **workload** and **gateway** clusters. First, explore adding a **workload** cluster.
 
@@ -79,30 +77,28 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 19. Select **Allocate a new one**.
 20. Click the **Secondary private VLAN** drop-down list.
 21. Select **Allocate a new one**.
-22. Select the **I understand that th following account will be charged** agreement.
+22. Select the **I understand that the following account will be charged** agreement.
 23. Select the **I have read and agreed to the following third-party service** agreement.
 
     At this point, the user would click create and the new cluster would start to provision.
 
-    Now, explore the steps to create a new **Gateway cluster**
+    Now, explore the steps to create a new **Gateway cluster**.
 
 24. Select **Gateway cluster**.
 
-    Notice the **Data center location** is set and can not be changed.
+    Notice the **Data center location** is set and cannot be changed.
 
 25. Select **Dual Intel Xeon Silver 4210** for the CPU model.
 
     Notice the additional parameters that can be specified for the gateway cluster.
 
-26. Select the **I understand that th following account will be charged** agreement.
+26. Select the **I understand that the following account will be charged** agreement.
 27. Select the **I have read and agreed to the following third-party service** agreement.
 
     At this point, the user would click create and the new cluster would start to provision.
 
-    Return to the **Infrastructure** page.
-
 28. Click the **vce-se-l3 (primary)** in the breadcrumb trail.
-29. Click {{itz.dedicated.clusterName}} in the cluster table.
+29. Click **{{itz.dedicated.clusterName}}** in the cluster table.
     
     The details page for a cluster provides information about all the components of the cluster including the servers running ESXi, storage, and network. In addition, additional servers and storage can be added to the cluster from this page.
 
@@ -118,7 +114,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 33. Click **Next**.
 34. Review the screen and click **Next**.
     
-    The new host or hosts can either use the same primary subnets are a different one. The subnets must already exist and be reachable by the VMware management components.
+    The new host or hosts can either use the same primary subnets or a different one. The subnets must already exist and be reachable by the VMware management components.
 
     The next step would be to accept the agreements and then click **Add**. For this demonstration, a new server will not be added.
 
@@ -154,7 +150,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 45.  Click the **Public VLAN** tab.
 
-    If enabled with public network access, this section show the primary subnet for hosts and virtual server instances, public subnet for customer workload edge, and the public subnet for the management edge.
+    If enabled with public network access, this section shows the primary subnet for hosts and virtual server instances, public subnet for customer workload edge, and the public subnet for the management edge.
 
 46. Click **View resource**.
 
@@ -168,7 +164,7 @@ Fields that require a text entry (e.g. service name) are pre-populated in the cl
 
 50. Click **Add**.
 
-    Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require additional capacity to be added before hand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
+    Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require additional capacity to be added beforehand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
 
 51. Click the **vcs-se-l3 (primary)** link in the breadcrumb trail.
 52. Click **Veeam**.
