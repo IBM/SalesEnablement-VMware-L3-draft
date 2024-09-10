@@ -8,12 +8,12 @@ The following module guides Business Partners and IBM sellers through the proces
 
     **If the steps are performed in a different IBM Cloud account where the user has permission to create new resources, the account will be charged for any and all resources provisioned!**
 
-# Click through demonstration
- Use the click through demonstration to practice the provisioning process.
+# click-through demonstration
+ Use the click-through demonstration to practice the provisioning process.
 
 !!! tip
     
-    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
+    When using the click-through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click-through demonstration.
 
 ## Step-by-step Instructions
 ### Provision a multitenant Virtual Data Center (VDC)

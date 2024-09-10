@@ -1,18 +1,18 @@
-Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-thru demonstration below to practice provisioning a VCF for Classic instance.
+Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-through demonstration below to practice provisioning a VCF for Classic instance.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
     The steps that follow are specific to the management capabilities of VCF for Classic as of August 2024. 
  
-    The steps **CANNOT** be used in the ITZ environment that was reserved for this course. To save costs, the VCF for Classic instance was removed after the creation of the associated click through demonstrations. 
+    The steps **CANNOT** be used in the ITZ environment that was reserved for this course. To save costs, the VCF for Classic instance was removed after the creation of the associated click-through demonstrations. 
 
 !!! tip
     
-    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
+    When using the click-through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click-through demonstration.
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-    **Click through demo:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
+    **click-through demo:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 
@@ -169,11 +169,11 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 51. Click the **vcs-se-l3 (primary)** link in the breadcrumb trail.
 52. Click **Veeam**.
 
-    Information needed to access the Veeam console is shown here. The **Open Veeam Console** button is part of this click through demonstration and is not part of the IBM Cloud portal.
+    Information needed to access the Veeam console is shown here. The **Open Veeam Console** button is part of this click-through demonstration and is not part of the IBM Cloud portal.
 
 53. Click **Open Veeam Console**.
 
-    The **Veeam* suite of tools are deployed on a Microsoft Windows server. This can be a Windows Server VM deployed in the VCF for Classic infrastructure, a virtual server instance (VSI) on IBM Cloud, or a bare metal server on IBM Cloud. The specific steps to establish a virtual private network (VPN), configure the local hosts file, and opening a remote desktop client are not detailed in this click through demonstration. To learn about that process, review the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-vpn" target="_blank">here</a>.
+    The **Veeam* suite of tools are deployed on a Microsoft Windows server. This can be a Windows Server VM deployed in the VCF for Classic infrastructure, a virtual server instance (VSI) on IBM Cloud, or a bare metal server on IBM Cloud. The specific steps to establish a virtual private network (VPN), configure the local hosts file, and opening a remote desktop client are not detailed in this click-through demonstration. To learn about that process, review the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-interconnectivity-vpn" target="_blank">here</a>.
 
 54. Click the first **Veeam Backup** icon on the desktop.
 
@@ -189,7 +189,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 59. Click **vcssel3-vc-se.l3.com** in the Virtual Infrastructure directory tree.
 60. Click **VMware-Aria-Operations-for-Logs-Master**.
 
-    The steps to select multiple hosts in the lists is simplified for this click through demonstration. 
+    The steps to select multiple hosts in the lists is simplified for this click-through demonstration. 
 
 61. Click the selected hosts.
 
@@ -271,7 +271,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
     Review the data shown shown on the **Overview** page.
 
 97. Click **Problems** in left menu and review the data presented.
-98. Click **Vmware - vROPs 6.7+** in left menu and review the data presented.
+98. Click **VMware - vROPs 6.7+** in left menu and review the data presented.
 99. Click **Cluster - Threads Overview** in left menu and review the data presented.
 100. Click **VMware - vSphere** in left menu and review the data presented.
 101. Click **x** to close the browser tab for the VMware Aria Operations for Logs console.
@@ -282,7 +282,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 104. Click **vCenter console**
 
-    Like the other consoles for the add on services, accessing the **vCenter Console** is done through a VPN. The steps an links to establish the VPN are provided on the dialog and were performed outside of this click through demnostration.
+    Like the other consoles for the add on services, accessing the **vCenter Console** is done through a VPN. The steps and links to establish the VPN are provided on the dialog and were performed outside of this click-through demonstration.
 
 105. Click **Go to vCenter console**.
     
@@ -290,11 +290,11 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 106. Click the **Hosts** tab.
 
-    All the ESXi hosts provisioned as part of the consolidate cluster are shown along with their respective, consumpton metric and high availability (HA) state.
+    All the ESXi hosts provisioned as part of the consolidate cluster are shown along with their respective, consumption metric and high availability (HA) state.
 
 107. Click the **Datastores** tab.
 
-    Both the user specified datastores (the two (2) NFS 3 stores of 1,000 gigabytes (GB)) and the datastores required as part of the base infrastructure are displayed.
+    Both the user specified datastores (the two [2] NFS 3 stores of 1,000 gigabytes [GB]) and the datastores required as part of the base infrastructure are displayed.
 
 108. Click the **Networks** tab.
     
@@ -303,4 +303,4 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 109. Click the **x** to close the **vCenter Server console** tab.
 110. Click the **x** to close the dialog.
     
-That concludes the click through demonstration for managing a VCF for Classic instance. 
+That concludes the click-through demonstration for managing a VCF for Classic instance. 

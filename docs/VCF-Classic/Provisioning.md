@@ -1,4 +1,4 @@
-Use the click through demonstration below to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
+Use the click-through demonstration below to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -12,7 +12,7 @@ Use the click through demonstration below to practice provisioning a VMware Clou
 
 !!! tip
     
-    When using the click through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click through demonstration.
+    When using the click-through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click-through demonstration.
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
@@ -131,7 +131,7 @@ Use the click through demonstration below to practice provisioning a VMware Clou
 9.  Select **vCenter Server 8.0**.
 10.  Click the **Instance name** entry field.
 
-    The **Instance name** is used to reference this instance post deployment. The instance name is automatically entered in the click through demonstration.
+    The **Instance name** is used to reference this instance post deployment. The instance name is automatically entered in the click-through demonstration.
 
 11.  Click the **Resource group** drop-down list.
 
