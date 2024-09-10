@@ -6,7 +6,7 @@ This course is not intended to serve as an in-depth study of VMware-specific top
 ## Obtaining the {{badge.name}} badge
 **Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple choice questions, with four possible responses (and only one correct answer) for each question. **Hint: keep the demonstration guide open and the associated IBM Technology Zone (TechZone) environment active while taking the quiz.**
 
-**IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the pain points the client has, and the goals they aspire to achieve. The recording must be a demonstration and pitch the value of the IBM solution by using the environments and techniques of this lab.
+**IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the pain points the client has, and the goals they aspire to achieve. The recording must be a demonstration that pitches the value of the IBM solution by using the environments and techniques described in this lab.
 
 Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. Before continuing to the next module, read the guidance that follows. Your comprehension of the information outlined will save you time while completing the lab work. **Hint: keep the demonstration guide and the associated IBM Technology Zone (TechZone) environment active when creating the Stand and Deliver.**
 
@@ -14,16 +14,19 @@ Specific criteria that must be demonstrated as part of the Stand and Deliver rec
 Think something is down? Check the applicable status pages for any known issues like a site or service being down:
 
 -  <a href="https://techzone.status.io/" target="_blank">IBM Technology Zone</a>
+
 -  <a href="https://cloud.ibm.com/status" target="_blank">IBM Cloud</a>
 
 For issues with provisioning or accessing an environment in IBM Technology Zone (ITZ) open a ticket with ITZ support:
+
 - Web:  <a href="https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US" target="_blank">IBM Technology Zone</a>
+
 - E-mail: <a href="mailto:techzone.help@ibm.com" target="_blank">techzone.help.ibm.com</a>
 
 For issues related to specific steps found in the demonstration guide after the ITZ environment is provisioned, contact the authors:
 
-- Slack: <a href="{{supportSlack.url}}" target="_blank">{{supportSlack.name}}</a> - IBM only
-- E-mail: <a href="{{supportEmail}}" target="_blank">{{supportEmail}}</a>
+- Slack: <a href="mailto:{{supportSlack.url}}" target="_blank">{{supportSlack.name}}</a> - IBM only
+- E-mail: <a href="mailto:{{supportEmail}}" target="_blank">{{supportEmail}}</a>
 
 Business Partners can also utilize the IBM Training live Chat Support service or other support methods found on the IBM Training portal <a href="https://ibmcpsprod.service-now.com/its?id=sc_category&sys_id=6568bfafdb2f13008ea7d6fa4b961990" target="_blank">here</a>.
 
