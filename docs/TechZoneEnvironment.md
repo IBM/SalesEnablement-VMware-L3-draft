@@ -43,7 +43,7 @@ Follow these steps to create a reservation in ITZ.
 
     !!! tip "Extending a reservation"
 
-        The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments is allowed.
+        The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments is allowed. Steps to extend the reservation are shown below.
 
     **f**. Accept the ITZ terms and conditions and security policy.
 
@@ -58,7 +58,7 @@ You will receive multiple emails from ITZ as the provisioning process runs. One 
 
 In rare cases, the provisioning process may fail. If you receive and email stating the reservation failed, try again by repeating steps 1-3.
 
-You can extend the reservation to a total of 6 days. Depending on your schedule, you may want to do this. Remember, IBM sellers will need the environment to record their Stand and Deliver, and Business Partners will need it while taking the quiz.
+Once your reservation is in the **Ready** state, you can extend the reservation to a total of 6 days. Depending on your schedule, you may want to do this. Remember, IBM sellers will need the environment to record their Stand and Deliver, and Business Partners will need it while taking the quiz.
 
 4. Click **My reservations** or if the button doesn't work, expand **My Library** and select **My Reservations**.
 
@@ -78,10 +78,6 @@ If you anticipate needing additional time, repeat steps 5 and 6 once more to ext
 
 ## Accept the invitation to join the ITZ IBM Cloud account
 In addition to the ITZ emails, you will receive an email from **IBM Cloud** inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready. If you do not receive the email from IBM Cloud, log into the <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a> and skip to step 8.
-
-!!! Tip "Don't see an email from IBM Cloud?"
-
-    Check your spam folder. If you still cannot find the email, contact the course owners (<a href="mailto:{{supportEmail}}" target="_blank">{{supportEmail}}</a>) and request they resend the invite.
 
 7. Open the email from IBM Cloud, and click **Join now**.
 
@@ -119,6 +115,6 @@ If you are not directed to a page to accept to join the account and land on the 
 
 Note, if your browser window is small, the **Account** drop down list in top menu may be replaced if the **Switch account** icon (![](_attachments/switchAccountIcon.png)). Click the **Switch account** icon to verify the **{{itz.account}}** is selected as the active account.
 
-    ![](_attachments/itzJoinPortalPage8.png)
+![](_attachments/itzJoinPortalPage8.png)
 
 Your ITZ reservation is now active, and you have access to the IBM Cloud account and shared, pre-provisioned resources required to complete the {{learningplan.name}} learning plan.
