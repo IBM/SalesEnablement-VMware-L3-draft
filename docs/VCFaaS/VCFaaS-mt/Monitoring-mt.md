@@ -28,6 +28,10 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
 4. Click **Actions** and select **Monitoring**.
 
+    !!! Info "You may be prompted to authenticate"
+
+        When IBM Cloud Monitoring opens, you may be prompted to re-authenticate to IBM Cloud. Follow the instructions provided. The authentication steps are not listed here.
+
     ![](_attachments/ipMonitoring-Menu.png)
 
 5. Adjust the **timeline** so more data is displayed.
@@ -40,9 +44,15 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
     A few items to note:
 
-    a. The default dashboard is from the library and is called **VMware as a Service - Virtual Data Center**.
-    b. The **Team Scope** is set to the **{{itz.VCFaaSmt.name}}** instance.
-    c. The spike seen here is when the first vApp was created in the environment.
+    **a.** The default dashboard is from the library and is called **VMware as a Service - Virtual Data Center**.
+
+    **b.** The **Team Scope** is set to the **{{itz.VCFaaSmt.name}}** instance.
+
+    **c.** The spike seen here is when the first vApp was created in the environment.
+
+    !!! Tip "Left menu"
+
+        The left menu of IBM Cloud Monitoring may be collapsed to only display icons. If you only see icons, expand the left menu by clicking the ">>" icon.
 
     ![](_attachments/ip-monitoring-defaultDashboard.png)
 

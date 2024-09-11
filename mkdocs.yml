@@ -119,7 +119,8 @@ extra:
     vcsaasmtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Managing/index.html"
   itz:
     account: "2326338 - ITZ-VMWARE"
-    collection: ""
+    collectionName: "IBM Cloud for VMware Solutions - Level 3"
+    collectionURL: "https://techzone.ibm.com/collection/ibm-cloud-for-vmware-level-3"
     environment: "https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7"
     resourceGroup: "SalesEnablement-L3-2024"
     accessGroup: "VMware-SE-L3-2024"

@@ -14,6 +14,8 @@ These VMware products are large, complex, and full of many, many features. The i
 
     The steps that follow are specific to the ITZ environment reserved as part of the {{learningplan.name}} learning plan. If you don't already have an active reservation, you can create one <a href="{{itz.environment}}" target="_blank">here</a>. Follow the directions specified in the "Reserve the environment" activity in the learning plan.
 
+   ** The images shown in this document will look different than the live environment you will be using.** The resources described here will have already been created and other users may have created additional resources.
+    
     All of the steps described in this module **CAN** be completed by every user of the shared ITZ environment using VMware vCloud Director (VCD). However, in some instances, creating new resources (like networks) will be discouraged. 
 
     **If you opt to create a resource, please delete the resource before your ITZ reservation expires!** Doing so will reduce ongoing maintenance costs of the environment and help preserve the usability of the shared environment.
@@ -231,6 +233,7 @@ The network is now setup and ready to be used.
     The **CentOS-7-Template-Official** is a good choice as VMs using this template boot quickly.
 
     ![](_attachments/vcd-vApp-NewvAPp-templateOK.png)
+
 
 39. Scroll down and change set the **Storage Policy** to **2 IOPS/GB**.
 
