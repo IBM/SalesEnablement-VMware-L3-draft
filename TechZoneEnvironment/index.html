@@ -735,13 +735,13 @@
 <p>Before proceeding, read and understand the details about the ITZ environment and your access in the ITZ IBM Cloud account.</p>
 <ul>
 <li>
-<p>You must first accept the invitation to join the ITZ IBM Cloud account before you will be able to access it. Details below in the step-by-step guidance</p>
+<p>You must first accept the invitation to join the ITZ IBM Cloud account before you will be able to access it. Details below in the step-by-step guidance.</p>
 </li>
 <li>
-<p>Your user ID in the ITZ IBM Cloud account is limited. You will <strong>NOT</strong> be able create, delete, or modify the pre-provisioned resources.</p>
+<p>Your user ID in the ITZ IBM Cloud account is limited. You will <strong>not</strong> be able create new IBM Cloud resources (for example you will not be able to provision an VCF as a Service instance). You will <strong>not</strong> be able to delete, or modify the pre-provisioned resources.</p>
 </li>
 <li>
-<p>Your user ID <strong>will</strong> have permission to create, delete, and modify resources in the provisioned VCF as a Service instances. </p>
+<p>Your user ID <strong>will</strong> have permission to create, delete, and modify resources in the provisioned VCF as a Service instances using VMware vCloud Director (VCD). </p>
 </li>
 <li>
 <p>In the VCF as a Service instances, do not delete or modify any of the pre-provisioned resources as described in the demonstration guide.</p>
@@ -750,7 +750,7 @@
 <p>In the VCF as a Service instances, you are responsible for deleting any resources you create. Do this before your ITZ reservation expires.</p>
 </li>
 <li>
-<p>Remember, that the environment is shared by all users of the environment. Do <strong>NOT</strong> delete or modify resources created by other users.</p>
+<p>Remember, that the environment is shared by all users of the environment. Do <strong>not</strong> delete or modify resources created by other users.</p>
 </li>
 </ul>
 </div>
@@ -773,9 +773,10 @@
 <p><strong>c</strong>. Enter a <strong>Purpose description</strong>.</p>
 <p><strong>d</strong>. Select the <strong>itzvmware - AMERICAS - us-south region - dal10 datacenter</strong> in the <strong>Preferred Geography</strong> drop-down.</p>
 <p><strong>e</strong>. The <strong>End date and time</strong> will be st to 2 days after the current date and time.</p>
-<p>!!! tip "Extending a reservation.**</p>
-<div class="highlight"><pre><span></span><code>The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments is allowed.
-</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Extending a reservation</p>
+<p>The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the <strong>Ready</strong> state. Two extensions of 2 day increments is allowed.</p>
+</div>
 <p><strong>f</strong>. Accept the ITZ terms and conditions and security policy.</p>
 <p><strong>g</strong>. When satisfied with the parameters, click <strong>Submit</strong>.</p>
 <p><img alt="" src="../_attachments/itzRSVPReservationPage.png"></p>
@@ -803,7 +804,7 @@
 </ol>
 <p>If you anticipate needing additional time, repeat steps 5 and 6 once more to extend the reservation to the maximum of 6 days.</p>
 <h2 id="accept-the-invitation-to-join-the-itz-ibm-cloud-account">Accept the invitation to join the ITZ IBM Cloud account</h2>
-<p>In addition to the ITZ emails, you will receive an email from <strong>IBM Cloud</strong> inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready.</p>
+<p>In addition to the ITZ emails, you will receive an email from <strong>IBM Cloud</strong> inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready. If you do not receive the email from IBM Cloud, log into the <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a> and skip to step 8.</p>
 <div class="admonition tip">
 <p class="admonition-title">Don't see an email from IBM Cloud?</p>
 <p>Check your spam folder. If you still cannot find the email, contact the course owners (<a href="mailto:andrewj@us.ibm.com;hlwillia@us.ibm.com" target="_blank">andrewj@us.ibm.com;hlwillia@us.ibm.com</a>) and request they resend the invite.</p>
@@ -815,8 +816,8 @@
 <p><img alt="" src="../_attachments/itzJoinEmail.png"></p>
 </li>
 </ol>
-<p><em><em>Clicking the </em>Join now</em> link should open a browser window to an IBM Cloud portal log in page. Follow the directions to log in and accept the invitation to join the account.</p>
-<p>If you are not directed to a page to accept to join the account and land on the main page of the IBM Cloud portal for another IBM Cloud account you are already a member of, follow the next steps.**</p>
+<p>Clicking the <em>Join now</em> link should open a browser window to an IBM Cloud portal log in page. Follow the directions to log in and jump to step 11.</p>
+<p>If you are not directed to a page to accept to join the account and land on the main page of the IBM Cloud portal for another IBM Cloud account you are already a member of, follow the next steps.</p>
 <ol start="8">
 <li>
 <p>Click the <strong>Notifications</strong> icon (<img alt="" src="../_attachments/itzJoinNotificationsIcon.png">).</p>
