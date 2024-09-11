@@ -4,17 +4,17 @@ While some of the modules in the **{{guide.name}}** use click-through demonstrat
 
     Before proceeding, read and understand the details about the ITZ environment and your access in the ITZ IBM Cloud account.
 
-    - You must first accept the invitation to join the ITZ IBM Cloud account before you will be able to access it. Details below in the step-by-step guidance
+    - You must first accept the invitation to join the ITZ IBM Cloud account before you will be able to access it. Details below in the step-by-step guidance.
     
-    - Your user ID in the ITZ IBM Cloud account is limited. You will **NOT** be able create, delete, or modify the pre-provisioned resources.
+    - Your user ID in the ITZ IBM Cloud account is limited. You will **not** be able create new IBM Cloud resources (for example you will not be able to provision an VCF as a Service instance). You will **not** be able to delete, or modify the pre-provisioned resources.
     
-    - Your user ID **will** have permission to create, delete, and modify resources in the provisioned VCF as a Service instances. 
+    - Your user ID **will** have permission to create, delete, and modify resources in the provisioned VCF as a Service instances using VMware vCloud Director (VCD). 
     
     - In the VCF as a Service instances, do not delete or modify any of the pre-provisioned resources as described in the demonstration guide.
     
     - In the VCF as a Service instances, you are responsible for deleting any resources you create. Do this before your ITZ reservation expires.
     
-    - Remember, that the environment is shared by all users of the environment. Do **NOT** delete or modify resources created by other users.
+    - Remember, that the environment is shared by all users of the environment. Do **not** delete or modify resources created by other users.
   
 ## Creating a reservation
 Follow these steps to create a reservation in ITZ.
@@ -41,7 +41,7 @@ Follow these steps to create a reservation in ITZ.
 
     **e**. The **End date and time** will be st to 2 days after the current date and time.
 
-    !!! tip "Extending a reservation.**
+    !!! tip "Extending a reservation"
 
         The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments is allowed.
 
@@ -77,7 +77,7 @@ You can extend the reservation to a total of 6 days. Depending on your schedule,
 If you anticipate needing additional time, repeat steps 5 and 6 once more to extend the reservation to the maximum of 6 days.
 
 ## Accept the invitation to join the ITZ IBM Cloud account
-In addition to the ITZ emails, you will receive an email from **IBM Cloud** inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready.
+In addition to the ITZ emails, you will receive an email from **IBM Cloud** inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready. If you do not receive the email from IBM Cloud, log into the <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a> and skip to step 8.
 
 !!! Tip "Don't see an email from IBM Cloud?"
 
@@ -89,9 +89,9 @@ In addition to the ITZ emails, you will receive an email from **IBM Cloud** invi
 
     ![](_attachments/itzJoinEmail.png)
 
-**Clicking the *Join now* link should open a browser window to an IBM Cloud portal log in page. Follow the directions to log in and accept the invitation to join the account.
+Clicking the *Join now* link should open a browser window to an IBM Cloud portal log in page. Follow the directions to log in and jump to step 11.
 
-If you are not directed to a page to accept to join the account and land on the main page of the IBM Cloud portal for another IBM Cloud account you are already a member of, follow the next steps.**
+If you are not directed to a page to accept to join the account and land on the main page of the IBM Cloud portal for another IBM Cloud account you are already a member of, follow the next steps.
 
 8. Click the **Notifications** icon (![](_attachments/itzJoinNotificationsIcon.png)).
 
