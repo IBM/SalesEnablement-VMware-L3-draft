@@ -113,8 +113,8 @@ If you are not directed to a page to accept to join the account and land on the 
 
     ![](_attachments/itzJoinPortalPage7.png)
 
-Note, if your browser window is small, the **Account** drop down list in top menu may be replaced if the **Switch account** icon (![](_attachments/switchAccountIcon.png)). Click the **Switch account** icon to verify the **{{itz.account}}** is selected as the active account.
+    Note, if your browser window is small, the **Account** drop down list in top menu may be replaced if the **Switch account** icon (![](_attachments/switchAccountIcon.png)). Click the **Switch account** icon to verify the **{{itz.account}}** is selected as the active account.
 
-![](_attachments/itzJoinPortalPage8.png)
+    ![](_attachments/itzJoinPortalPage8.png)
 
 Your ITZ reservation is now active, and you have access to the IBM Cloud account and shared, pre-provisioned resources required to complete the {{learningplan.name}} learning plan.
