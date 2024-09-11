@@ -29,4 +29,96 @@ Follow these steps to create a reservation in ITZ.
 
     ![](_attachments/itzRSVPReserveNow.png)
 
-3. Complete the form 
+3. Complete the form and click **Submit**.
+
+    **a**. You can optionally change the **Name** field for the reservation.
+
+    **b**. Select the **Education** purpose tile.
+
+    **c**. Enter a **Purpose description**.
+
+    **d**. Select the **itzvmware - AMERICAS - us-south region - dal10 datacenter** in the **Preferred Geography** drop-down.
+
+    **e**. The **End date and time** will be st to 2 days after the current date and time.
+
+    !!! tip "Extending a reservation.**
+
+        The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments is allowed.
+
+    **f**. Accept the ITZ terms and conditions and security policy.
+
+    **g**. When satisfied with the parameters, click **Submit**.
+
+    ![](_attachments/itzRSVPReservationPage.png)
+
+## Extend the reservation
+The ITZ provisioning process takes approximately 10 minutes. During this process, your user ID is created in the ITZ IBM Cloud account and added to the appropriate security access group. 
+
+You will receive multiple emails from ITZ as the provisioning process runs. One will state the reservation is provisioning and the other will say the environment is **Ready**. 
+
+In rare cases, the provisioning process may fail. If you receive and email stating the reservation failed, try again by repeating steps 1-3.
+
+You can extend the reservation to a total of 6 days. Depending on your schedule, you may want to do this. Remember, IBM sellers will need the environment to record their Stand and Deliver, and Business Partners will need it while taking the quiz.
+
+4. Click **My reservations** or if the button doesn't work, expand **My Library** and select **My Reservations**.
+
+    With some browsers the **My reservations** button does not always work.
+
+    ![](_attachments/itzMyReservations.png)
+
+5. Click the **overflow icon** (![](_attachments/overflowIcon.png)) on the reservation tile and select **Extend**.
+
+    ![](_attachments/itzExtendMenu.png)
+
+6. Click the **Select a date** option, specify the date to extend to, and then click **Extend**.
+
+    ![](_attachments/itzExtendRsvp.png)
+
+If you anticipate needing additional time, repeat steps 5 and 6 once more to extend the reservation to the maximum of 6 days.
+
+## Accept the invitation to join the ITZ IBM Cloud account
+In addition to the ITZ emails, you will receive an email from **IBM Cloud** inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready.
+
+!!! Tip "Don't see an email from IBM Cloud?"
+
+    Check your spam folder. If you still cannot find the email, contact the course owners (<a href="mailto:{{supportEmail}}" target="_blank">{{supportEmail}}</a>) and request they resend the invite.
+
+7. Open the email from IBM Cloud, and click **Join now**.
+
+    After clicking **Join now** a browser window should open.
+
+    ![](_attachments/itzJoinEmail.png)
+
+**Clicking the *Join now* link should open a browser window to an IBM Cloud portal log in page. Follow the directions to log in and accept the invitation to join the account.
+
+If you are not directed to a page to accept to join the account and land on the main page of the IBM Cloud portal for another IBM Cloud account you are already a member of, follow the next steps.**
+
+8. Click the **Notifications** icon (![](_attachments/itzJoinNotificationsIcon.png)).
+
+    ![](_attachments/itzJoinPortalPage1.png)
+
+9.  Click the most recent notification with the subject **Action required: You are invited to join an account in IBM Cloud**.
+
+    ![](_attachments/itzJoinPortalPage2.png)
+
+10. Click **Join now** in the notification.
+
+    ![](_attachments/itzJoinPortalPage3.png)
+
+11. Select **I accept the product Terms and Conditions of this registration form** in the **Account notice** tile.
+
+    ![](_attachments/itzJoinPortalPage4.png)
+
+12. Click **Proceed** to switch to the ITZ IBM Cloud account.
+
+    ![](_attachments/itzJoinPortalPage5.png)
+
+13. Verify you are logged into the ITZ IBM Cloud account ({{itz.account}}).
+
+    ![](_attachments/itzJoinPortalPage7.png)
+
+Note, if your browser window is small, the **Account** drop down list in top menu may be replaced if the **Switch account** icon (![](_attachments/switchAccountIcon.png)). Click the **Switch account** icon to verify the **{{itz.account}}** is selected as the active account.
+
+    ![](_attachments/itzJoinPortalPage8.png)
+
+Your ITZ reservation is now active, and you have access to the IBM Cloud account and shared, pre-provisioned resources required to complete the {{learningplan.name}} learning plan.
