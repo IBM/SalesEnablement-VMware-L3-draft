@@ -37,7 +37,7 @@ Follow these steps to create a reservation in ITZ.
 
     **c**. Enter a **Purpose description**.
 
-    **d**. Select the **itzvmware - AMERICAS - us-south region - dal10 datacenter** in the **Preferred Geography** drop-down.
+    **d**. Select any geography in the **Preferred Geography** drop-down.
 
     **e**. The **End date and time** will be st to 2 days after the current date and time.
 
