@@ -17,7 +17,7 @@ Think something is down? Check the applicable status pages for any known issues 
 
 -  <a href="https://cloud.ibm.com/status" target="_blank">IBM Cloud</a>
 
-For issues with provisioning or accessing an environment in IBM Technology Zone (ITZ) open a ticket with ITZ support:
+For issues with provisioning an environment in IBM Technology Zone (ITZ) (for example, a failed reservation request due to insufficient quota capacity) open a ticket with ITZ support:
 
 - Web:  <a href="https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US" target="_blank">IBM Technology Zone</a>
 
