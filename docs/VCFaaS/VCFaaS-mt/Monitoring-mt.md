@@ -34,15 +34,15 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
     **4a-work around.** Click the **menu icon** then **Observability** and select **Instances** under the **Monitoring** section.
 
-        ![](_attachments/monitoringWorkaround.png)
+    ![](_attachments/monitoringWorkaround.png)
 
     **4b-work around.** Click **Cloud Monitoring-qp** in the monitoring instances table.
 
-        ![](_attachments/monitoringWorkaround2.png)
+    ![](_attachments/monitoringWorkaround2.png)
 
     **4c-work around.** Click **Open dashboard**.
 
-        ![](_attachments/monitoringWorkaround3.png)
+    ![](_attachments/monitoringWorkaround3.png)
 
 4. Click **Actions** and select **Monitoring**.
 
