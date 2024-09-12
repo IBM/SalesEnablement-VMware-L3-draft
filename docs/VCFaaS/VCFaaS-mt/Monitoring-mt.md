@@ -44,6 +44,12 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
     ![](_attachments/monitoringWorkaround3.png)
 
+    **4d-work around.** In left menu, select **Dashboards** and then **VMware as a Service - Virtual Data Center**.
+
+    ![](_attachments/monitoringWorkaround4.png)
+
+    Continue to **step 5**.
+
 4. Click **Actions** and select **Monitoring**.
 
     !!! Info "You may be prompted to authenticate"
