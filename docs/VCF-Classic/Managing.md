@@ -12,7 +12,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-    **click-through demo:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
+    **Click-through demonstration:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 

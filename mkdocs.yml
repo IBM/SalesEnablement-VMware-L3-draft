@@ -116,6 +116,7 @@ extra:
   clickthru:
     vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Provisioning/index.html"
     vcsManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-Managing/index.html"
+    vcsManagingMenu: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-ManagingMenu/index.html"
     vcsaasmtProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Provisioning/index.html"
     vcsaasmtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Managing/index.html"
   itz:
