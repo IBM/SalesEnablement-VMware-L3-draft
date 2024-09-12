@@ -28,9 +28,9 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
 !!! Danger "Temporary workaround"
 
-    The logical way of accessing the IBM Cloud monitoring instance is described in step 4. However, there seems to be an issue when accessing the monitoring instance this way. Users are receiving an **unknown error**
+    The logical way of accessing the IBM Cloud monitoring instance is described in **step 4**. However, there seems to be an issue when accessing the monitoring instance this way. Users are receiving an **unknown error**.
 
-    As a work around, follow these 3 steps instead and then skip to step 5.
+    **As a work around, follow these 3 steps instead and then skip to step 5.**
 
     **4a-work around.** Click the **menu icon** then **Observability** and select **Instances** under the **Monitoring** section.
 
@@ -44,11 +44,11 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
     ![](_attachments/monitoringWorkaround3.png)
 
-4. Click **Actions** and select **Monitoring**.
+~~4. Click **Actions** and select **Monitoring**.
 
     !!! Info "You may be prompted to authenticate"
 
-        When IBM Cloud Monitoring opens, you may be prompted to re-authenticate to IBM Cloud. Follow the instructions provided. The authentication steps are not listed here.
+        When IBM Cloud Monitoring opens, you may be prompted to re-authenticate to IBM Cloud. Follow the instructions provided. The authentication steps are not listed here.~~
 
     ![](_attachments/ipMonitoring-Menu.png)
 
