@@ -44,13 +44,13 @@ To learn more about the integration between VCF as a Service and IBM Cloud Monit
 
     ![](_attachments/monitoringWorkaround3.png)
 
-~~4. Click **Actions** and select **Monitoring**.~~
+4. Click **Actions** and select **Monitoring**.
 
-!!! Info "You may be prompted to authenticate"
+    !!! Info "You may be prompted to authenticate"
 
-    When IBM Cloud Monitoring opens, you may be prompted to re-authenticate to IBM Cloud. Follow the instructions provided. The authentication steps are not listed here.
+        When IBM Cloud Monitoring opens, you may be prompted to re-authenticate to IBM Cloud. Follow the instructions provided. The authentication steps are not listed here.
 
-    <!-- ![](_attachments/ipMonitoring-Menu.png) -->
+    ![](_attachments/ipMonitoring-Menu.png)
 
 5. Adjust the **timeline** so more data is displayed.
 
