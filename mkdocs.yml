@@ -125,7 +125,7 @@ extra:
     collectionURL: "https://techzone.ibm.com/collection/ibm-cloud-for-vmware-level-3"
     environment: "https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7"
     resourceGroup: "SalesEnablement-L3-2024"
-    accessGroup: "VMware-SE-L3-2024"
+    accessGroup: "VMware-L3"
     dedicated:
       instanceName: "vcs-se-l3"
       clusterName: "vcs-mc-consolidated"
