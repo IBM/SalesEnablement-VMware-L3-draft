@@ -23,7 +23,7 @@ Follow these steps to create a reservation in ITZ.
 
     !!! Warning "You may be asked to authenticate to IBM Technology Zone"
 
-        IBM employees and business partners that have multi-factor authentication (MFA) enabled in their IBM Cloud account may also have additional authentication steps to perform. These steps are not detailed here.
+        These steps are not detailed here.
 
     <a href="{{itz.environment}}" target="_blank">{{itz.collectionName}} - reservation page</a>
 
