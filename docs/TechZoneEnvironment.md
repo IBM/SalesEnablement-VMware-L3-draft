@@ -39,7 +39,7 @@ Follow these steps to create a reservation in ITZ.
 
     **d**. Select any geography in the **Preferred Geography** drop-down.
 
-    **e**. The **End date and time** will be st to 2 days after the current date and time.
+    **e**. The **End date and time** will be set to 2 days after the current date and time.
 
     !!! tip "Extending a reservation"
 
