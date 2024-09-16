@@ -21,21 +21,6 @@ The other challenge is focusing the demonstration on the value add of the soluti
 
 Here are just a few high-level demonstration flows you may want to consider:
 
-- **VCF for Classic**
-    - Client's need:
-        - Move to cloud
-        - Data center evacuation
-    - Goals:
-        - Ease of provisioning a complete VCF stack based on clients needs
-        - Ease of growing the deployment on demand
-    - Benefits:
-        - Rapid deployment
-        - Elasticity and cloud pricing model
-        - Preserve current VMware skills and processes
-    - Demonstration method and flow:
-        - click-through demonstrations to provision and then manage a VCF for Classic instance
-  
-
 - **VCF as a Service multitenant**
     - Client's need:
         - Meet business growth demands
@@ -56,6 +41,20 @@ Here are just a few high-level demonstration flows you may want to consider:
         - Access vCloud director and deploy a VM
         - Utilize Veeam add-on service to easily protect data
   
+- **VCF for Classic**
+    - Client's need:
+        - Move to cloud
+        - Data center evacuation
+    - Goals:
+        - Ease of provisioning a complete VCF stack based on clients needs
+        - Ease of growing the deployment on demand
+    - Benefits:
+        - Rapid deployment
+        - Elasticity and cloud pricing model
+        - Preserve current VMware skills and processes
+    - Demonstration method and flow:
+        - click-through demonstrations to provision and then manage a VCF for Classic instance
+    
 Mock client demonstrations of both to these are available in the {{learningplan.name}} learning plan in YourLearning (for IBMers) and learn.ibm.com (for Business Partners). 
 
 When preparing for a client demonstration, or for IBMers doing their stand and deliver recording, don't wait to the last minute. Make sure the IBM Technology Zone (ITZ) environment that you need is up and running and the reservation is not about to expire. If the demonstration is to be given virtually, make sure everything works with the e-meeting technology you are using. For those demonstrating VCF for Classic, a second version of the **Managing an instance of VCF for Classic** is available. In this version, there is a menu to allow you to quickly jump to key locations in the demonstration. In addition, there are home, back, and forward buttons located in the bottom left corner of all subsequent slides for quicker navigation.
