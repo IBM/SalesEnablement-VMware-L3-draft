@@ -68,36 +68,67 @@ In some images, the following styles of highlighting are used:
 The following acronyms and short-form terminology are used throughout the guide:
 
 **APIs**: Application programming interfaces
+
 **CIDR**: Classless inter-domain routing 
+
 **Control (ctrl)**: The control key on keyboard
+
 **Command (cmd)**: The command key on keyboard
+
 **DR**: Disaster Recovery 
+
 **DNS**: Domain Name Service 
+
 **DHCP**: Dynamic Host Configuration Protocol 
+
 **GB**: Gigabyte 
+
 **Gbps**: Gigabits per second
 **HIPAA*: Health Insurance Portability and Accountability Act 
+
 **HA**: High Availability 
+
 **ITZ**: IBM Technology Zone 
+
 **ID**: Identification 
+
 **IAM**: Identity Access Management 
+
 **IaaS**: Infrastructure as a Service 
+
 **IOPs**: Input/output operations per second 
+
 **IP**: Internet Protocol 
+
 **OS**: Operating System 
+
 **RAM**: Random access memory 
+
 **RPO**: Recovery Point Objective 
+
 **RAS**: Reliability, Availability, and Serviceability 
+
 **SDDC**: Software Defined Data Center 
+
 **SSH**: Secure Shell
+
 **TechZone**: IBM Technology Zone
+
 **vApp**: Virtual Application 
+
 **vCPU**: Virtual Central Processor Unit 
+
 **VCD**: VMware Cloud Director 
+
 **VCF**: VMware Cloud Foundation 
+
 **VDC**: Virtual Data Center 
+
 **VM**:L Virtual Machine 
+
 **VCS**: VMware vCenter Server 
+
 **vRLI**: VMware vRealize Log Insight 
+
 **vROps**: VMware vRealize Operations 
 

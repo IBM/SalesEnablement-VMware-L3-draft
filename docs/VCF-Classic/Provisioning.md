@@ -336,13 +336,13 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
     Before proceeding to the agreements and final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.
 
-    a. An itemized summary of the components and options selected is presented along with the estimated costs.
+    **a**. An itemized summary of the components and options selected is presented along with the estimated costs.
 
-    b. A client can enter a promotion code for discounted pricing.
+    **b**. A client can enter a promotion code for discounted pricing.
         
-    c. The configuration options specified can be saved and reused for future provisioning activity.
+    **c**. The configuration options specified can be saved and reused for future provisioning activity.
         
-    d. The current estimate can be saved for later pricing activities.
+    **d**. The current estimate can be saved for later pricing activities.
 
     ![](_attachments/summaryPanel.png)
 

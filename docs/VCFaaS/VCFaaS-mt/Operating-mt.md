@@ -12,9 +12,9 @@ These VMware products are large, complex, and full of many, many features. The i
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    The steps that follow are specific to the ITZ environment reserved as part of the {{learningplan.name}} learning plan. If you don't already have an active reservation, you can create one <a href="{{itz.environment}}" target="_blank">here</a>. Follow the directions specified in the "Reserve the environment" activity in the learning plan.
+    The steps that follow are specific to the ITZ environment reserved as part of the {{learningplan.name}} learning plan. If you don't already have an active reservation, refer to [Reserve the IBM Technology Zone environment](../../TechZoneEnvironment.md).
 
-   ** The images shown in this document will look different than the live environment you will be using.** The resources described here will have already been created and other users may have created additional resources.
+    ** The images shown in this document will look different than the live environment you will be using.** The resources described here will have already been created and other users may have created additional resources.
     
     All of the steps described in this module **CAN** be completed by every user of the shared ITZ environment using VMware vCloud Director (VCD). However, in some instances, creating new resources (like networks) will be discouraged. 
 
@@ -243,9 +243,9 @@ The network is now setup and ready to be used.
 
 40. Review the **Compute** and **NICs** settings and click **OK**.
 
-    a. The **Compute** settings are defined by the template selected.
+    **a**. The **Compute** settings are defined by the template selected.
 
-    b. The network interface cards (NICs) is set to the default network, which was created earlier, and DHCP is selected.
+    **b**. The network interface cards (NICs) is set to the default network, which was created earlier, and DHCP is selected.
 
     ![](_attachments/vcd-vApp-NewvApp-cpunics.png)
 
@@ -263,11 +263,11 @@ The network is now setup and ready to be used.
 
 44. Observe the VMs in the vApp and the options available.
 
-    a. Notice the state of the VMs. It may take a few minutes for them to show **Powered on**.
+    **a**. Notice the state of the VMs. It may take a few minutes for them to show **Powered on**.
     
-    b. Try accessing the VM using the **VM console** link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the **Guest OS Customization**.
+    **b**. Try accessing the VM using the **VM console** link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the **Guest OS Customization**.
     
-    c. Review the **Network Diagram** that VMware generates for the vAPP.
+    **c**. Review the **Network Diagram** that VMware generates for the vAPP.
 
     ![](_attachments/vcd-vApp-Details.png)
 

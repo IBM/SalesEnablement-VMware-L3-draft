@@ -10,7 +10,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    The steps that follow are specific to the ITZ environment reserved as part of the {{learningplan.name}} learning plan. If you don't already have an active reservation, you can create one <a href="{{itz.environment}}" target="_blank">here</a>. Follow the directions specified in the "Reserve the environment" activity in the learning plan.
+    The steps that follow are specific to the ITZ environment reserved as part of the {{learningplan.name}} learning plan. If you don't already have an active reservation, refer to [Reserve the IBM Technology Zone environment](../../TechZoneEnvironment.md).
 
     Remember, in the ITZ environment you will **NOT** have permission to create, delete, or modify resources. You will be utilizing pre-provisioned and pre-configured resources that are shared by all users of the learning plan.
 

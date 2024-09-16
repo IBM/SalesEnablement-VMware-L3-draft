@@ -21,6 +21,10 @@ Follow these steps to create a reservation in ITZ.
 
 1. Click the link below to open a browser to the reservation page of the **{{itz.collectionName}}**.
 
+    !!! Warning "You may be asked to authenticate to IBM Technology Zone"
+
+        IBM employees and business partners that have multi-factor authentication (MFA) enabled in their IBM Cloud account may also have additional authentication steps to perform. These steps are not detailed here.
+
     <a href="{{itz.environment}}" target="_blank">{{itz.collectionName}} - reservation page</a>
 
 2. Click **Reserve now**.
@@ -45,7 +49,7 @@ Follow these steps to create a reservation in ITZ.
 
         The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments is allowed. Steps to extend the reservation are shown below.
 
-    **f**. Accept the ITZ terms and conditions and security policy.
+    **f**. Accept the IBM Technology Zone's terms and conditions and security policies.
 
     **g**. When satisfied with the parameters, click **Submit**.
 

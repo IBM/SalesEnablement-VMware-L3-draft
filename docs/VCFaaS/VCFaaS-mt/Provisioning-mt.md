@@ -74,7 +74,7 @@ For this demonstration, the default Network settings are used.
 
     Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a> (scroll down to **Details and pricing**). It is important to understand that with the on-demand model, resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
 
-### Consumption limit
+### Consumption limits
 vCPU and RAM charges for on-demand virtual data centers are based on the amount that is used for running workloads. To control cost, clients can use limits to restrict the maximum amount of vCPU and RAM usage in the virtual data center.
 
 12. Click the **vCPU limit (cores)** entry box to set it to 100.
