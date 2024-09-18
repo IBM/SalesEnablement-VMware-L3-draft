@@ -119,6 +119,8 @@ extra:
     vcsManagingMenu: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-Classic-ManagingMenu/index.html"
     vcsaasmtProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Provisioning/index.html"
     vcsaasmtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/VCF-aas-MT-Managing/index.html"
+    migrating1: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/MigrateSharedToAsAServiceWithCallouts/index.html"
+    migrating2: "https://ibm.github.io/SalesEnablement-VMware-L3-draft/includes/MigrateSharedToAsAService/index.html"
   itz:
     account: "2326338 - ITZ-VMWARE"
     collectionName: "IBM Cloud for VMware Solutions - Level 3"
