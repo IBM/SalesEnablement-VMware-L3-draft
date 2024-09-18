@@ -10,4 +10,4 @@ Due to the permissions required to perform this type of migration, it is not pos
 
 **Click-through demonstration with callouts:** <a href={{clickthru.migrating1}} target ="_blank">Migrate from IBM Cloud for VMware Solutions Shared to VCF as a Service multitenant</a>
 
-**Click-through demonstration without call outs:** <a href={{clickthru.migrating2}} target ="_blank">Migrate from IBM Cloud for VMware Solutions Shared to VCF as a Service multitenant</a>
+**Click-through demonstration without callouts:** <a href={{clickthru.migrating2}} target ="_blank">Migrate from IBM Cloud for VMware Solutions Shared to VCF as a Service multitenant</a>
