@@ -1,4 +1,4 @@
-The IBM Cloud fro VMware Solutions shared offering has been deprecated and no longer supported after January 15, 2025. Clients can use VMware Cloud Director Availability (VCDA) to migrate workloads from their IBM Cloud for VMware Solutions Shared virtual data center (VDC) to VMware Cloud Foundation (VCF) as a Service. 
+The IBM Cloud for VMware Solutions shared offering has been deprecated and no longer supported after January 15, 2025. Clients can use VMware Cloud Director Availability (VCDA) to migrate workloads from their IBM Cloud for VMware Solutions Shared virtual data center (VDC) to VMware Cloud Foundation (VCF) as a Service. 
 
 Documentation on how to perform this migration is documented in the *Migration tutorials* in the product documentation located <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vcda-migrating-cloudtocloud-shared" target="_blank">here</a>. Included in the documentation is a video that shows how the migration is performed very similar to the click-through demonstrations below.
 
