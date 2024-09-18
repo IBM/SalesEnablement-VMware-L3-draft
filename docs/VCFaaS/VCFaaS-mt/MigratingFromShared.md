@@ -4,8 +4,6 @@ Documentation on how to perform this migration is documented in the *Migration t
 
 Due to the permissions required to perform this type of migration, it is not possible to use the IBM Technology Zone (ITZ) environment provided with this learning plan. However, two click-through demonstrations are provided to illustrate this migration process. In lieu of providing step-by-step instructions in the demonstration guide, the first click-through provides on-screen call outs that describe the steps being performed and includes control buttons at the bottom to navigate through the demonstration. The second click-through does not include the call outs but does include the highlight boxes to assist in stepping through the process.
 
-Note: some authentication steps have been removed as they will vary by your IBM account setup.
-
 !!! tip
     
     When using the click-through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click-through demonstration.
