@@ -23,6 +23,7 @@ nav:
       - 'Managing a site': 'VCFaaS/VCFaaS-mt/Managing-mt-site.md'
       - 'Operating': 'VCFaaS/VCFaaS-mt/Operating-mt.md'
       - 'Monitoring': 'VCFaaS/VCFaaS-mt/Monitoring-mt.md'
+      - 'Migrating virtual machines from VMware Shared': 'VCFaaS/VCFaaS-mt/MigratingFromShared.md'
       # - 'NRFR - Managing': 
       #   - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
       #   - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
