@@ -3,6 +3,7 @@ In VMware Cloud Foundation (VCF) as a Service, a **Cloud Director site** is wher
 In VCF as a Service **single-tenant**, the client would be responsible for specifying the compute and storage infrastructure for their site. Using the IBM Cloud portal, the client could grow and shrink their site as they desire.
 
 In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Director site**. Each site may host Virtual Data Centers (VDCs) for many different clients. The only actions clients can perform on the IBM managed site are:
+foo
 
 - create new VDCs
 - add and remove **Add-on services**
